@@ -1,0 +1,432 @@
+<?xml version="1.0" encoding="UTF-8"?> <?xml-stylesheet type="text/xsl"
+href="rfc2629.xslt" ?>
+
+<!DOCTYPE rfc SYSTEM "rfc2629.dtd" [
+<!ENTITY RFC0003 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.0003.xml">
+<!ENTITY RFC1000 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.1000.xml">
+<!ENTITY RFC2555 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.2555.xml">
+<!ENTITY RFC4714 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.4714.xml">
+<!ENTITY RFC4744 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.4744.xml">
+<!ENTITY RFC4846 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.4846.xml">
+<!ENTITY RFC5540 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.5540.xml">
+<!ENTITY RFC6548 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.6548.xml">
+<!ENTITY RFC6635 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.6635.xml">
+]>
+
+<rfc ipr="trust200902" docName="draft-flanagan-fiftyyears" category="info">
+
+  <front> <title abbrev="I-D">Fifty Years of RFCs</title>
+
+  <author initials="H." surname="Flanagan" fullname="Heather Flanagan">
+    <organization>RFC Editor</organization>
+    <address>
+      <email>rse@rfc-editor.org</email>
+      <uri>https://orcid.org/0000-0002-2647-2220</uri>
+    </address>
+  </author>
+
+    <date year="2018" month="October" day="05"/>
+
+    <abstract>
+
+<t>[ Insert abstract here ]</t>
+
+    </abstract>
+
+  </front>
+
+  <middle>
+
+<section anchor="introduction" title="Introduction"> <t>The Series is not the
+IETF, nor the IAB, nor the IRTF. The purpose and goals are not the same, though
+they are often well aligned. The goal of the Series is to provide a solid,
+stable reference point for information and protocols about the Internet. Anyone
+should be able to access the documents, and anyone can submit a document (modulo
+going through one of several no-cost-to-publish processes to do so). </t>
+
+<t>Since the very first RFC fifty years ago, the focus of the Series has been on
+that stable record and dissemination of ideas to the world. At times there have
+been conflicts over what is more important - a stable, archival record, or
+making the latest ideas available as soon as possible. As the Internet has
+evolved, so to has the expectation of instant access, faster changes, and
+ubiquitous availability. It seems that the need for a stable reference point is
+often deprioritized against those more immediate needs. </t>
+
+<t>Change does come to the Series, albeit slowly. First, we saw the distribution
+method change from postal mail to FTP and email. From there, we saw increased
+guidance for authors on how to write an RFC. The editorial staff went from one
+person to a team of five to seven. The actual editing and publishing arm split
+from the protocol registration service. The whole RFC Editor structure was
+reviewed and refined <xref target="RFC6635"/>. And, in the last few years, we've
+started to the process to change the format of the RFC documents themselves.
+This is evolution, and the need to change to meet the needs and expectations of
+the world will continue, and will be balanced against the core mission of
+maintaining a strong, stable, archival record of what has been published.</t>
+
+<t>In this document, several individuals who have been a part of shaping the
+Series offer their observations of key moments in the series. Steve Crocker,
+author of RFC 1, offers his thoughts on how and why the Series began. Leslie
+Daigle, a major influence in the development of the RFC Editor model, offers her
+thoughts on the change of the RFC Editor to a stronger, contracted function.
+Nevil Brownlee, Independent Submissions Editor from 20xx through February 2018,
+shares his view on the clarification of the IS and its transition from Bob
+Braden. As the current RFC Series Editor, I will put my thoughts in on the most
+recent changes in formalizing the digital preservation of the Series, the
+process to modernize the format while respecting the need for stability, and my
+thoughts on the next fifty years of RFCs.</t>
+
+</section> <section anchor="the-state-of-the-series" title="The State of the
+Series"> <t>Publication rates, preservation actions, evolution of format</t>
+
+</section> <section anchor="perspectives" title="Perspectives">
+
+<section anchor="the-origins-of-rfcs-by-stephen-d-crocker" title="The Origins of
+RFCs - by Stephen D.  Crocker">
+
+<t>[This is a revision of material included in <xref target="RFC1000"/> August
+1987, more than thirty years ago.]</t>
+
+<t>The Internet community now includes millions of nodes and billions of users,
+but once it was all a gleam in Bob Taylor's and Larry Roberts' eyes.  While much
+of the development proceeded according to a grand plan, the design of the
+protocols and the creation of the RFCs was largely accidental.</t>
+
+<t>The procurement of the ARPANET was initiated in the summer of 1968 - Remember
+Vietnam, flower children, etc? There had been prior experiments at various ARPA
+sites to link together computer systems, but this was the first version to
+explore packet-switching on a grand scale.  ("ARPA" didn't become "DARPA" until
+1972.  It changed back to ARPA and then back again to DARPA several years
+later.)   The government's RFQ (Request for Quote) called for four Interface
+Message Processors ("IMPs") to be delivered to four sites in the western part of
+the United States: UCLA in Los Angeles, CA; SRI International in Menlo Park, CA;
+University of California, Santa Barbara; the University of Utah in Salt Lake
+City.  These sites were running a Scientific Data Systems (SDS) Sigma 7, an SDS
+940, an IBM 360/75, and a DEC PDP-10.  These machines not only had their own
+operating systems, even details like character sets and byte sizes varied.  The
+Quote specified there would be additional nodes if the first experiments were
+successful, and we knew these sites would have further variations.</t>
+
+<t>The precise usage of the ARPANET was not spelled out in advance, and the
+research community could be counted on to take some initiative.  To stimulate
+this process, a meeting was called in August 1968 with representatives from the
+selected sites, chaired by Elmer Shapiro from SRI.  Shapiro's notes from that
+meeting list J. Hopper and Jeff Rulifson from SRI, Glen Culler and G. Buck from
+Santa Barbara, R. Stephenson, C. Stephen Carr and W. Boam from Utah, and Vint
+Cerf and me from UCLA.  A few others from potential future sites also
+attended.</t>
+
+<t>That first meeting was seminal.  We had lots of questions - how IMPs and
+"hosts" (I think that was the first time I was first exposed to that term) would
+be connected?  What hosts would say to each other?  What applications would be
+supported?  The only concrete answers were remote login and file transfer, but
+we knew the vision had to be larger.  We found ourselves imagining all kinds of
+possibilities - interactive graphics, cooperating processes, automatic data base
+query, electronic mail - but no one knew where to begin.  We weren't sure
+whether there was really room to think hard about these problems; surely someone
+from the east would be along by and by to bring the word.  But we did come to
+one conclusion: We ought to meet again.  Over the next several months, we met at
+each of our sites, thereby setting the precedent for regular face to face
+meetings.  We also instantly felt the irony.  This new network was supposed to
+make it possible to work together at a distance, and the first thing we did was
+schedule a significant amount of travel.</t>
+
+<t>In short order a small, fairly consistent set of graduate students and staff
+members from the first four sites met over the next several months.  We adopted
+the term Network Working Group (NWG) to designate ourselves.  This was the same
+term Elmer Shapiro had used when he convened our first meeting, and it had been
+used until that point to refer to the principal investigators and ARPA personnel
+senior people who had been planning the network.  Our group was junior and
+disjoint from the prior group, except, of course, that each of us worked for one
+of the principal investigators.</t>
+
+<t>The first few meetings were quite tenuous.  We had no official charter or
+leadership, and it was not clear, at least to me, whether someone or some group
+would show up with the official authority and responsibility to take over the
+problems we were dealing with.  Without clear definition of what the host-IMP
+interface would look like, or even a precise definition of what functions the
+IMP would provide, we focused on broader ideas.  We envisioned the possibility
+of application specific protocols, with code downloaded to user sites, and we
+took a crack at designing a language to support this.  The first version was
+known as DEL, for "Decode-Encode Language" and a later version was called NIL,
+for "Network Interchange Language.""</t>
+
+<t>In late 1968 Bolt, Beranek and Newman (BBN) in Cambridge, MA won the contract
+for the IMPs and began work in January 1969.  A few of us flew to Boston in the
+middle of February to meet the BBN crew.  The BBN folks, led by Frank Heart, Bob
+Kahn, Severo Ornstein, Ben Barker, Will Crowther and Dave Walden, were
+organized, professional and focused.  Their first concern was how to meet their
+contract schedule of delivering the first IMP to UCLA at the beginning of
+September and how to get bits to flow quickly and reliably.  The details of the
+host-IMP were not yet firm; the specification came a few months later.  They
+didn�t take over the protocol design process, nor did any other source of
+authority appear.  We doggedly pushed forward.</t>
+
+<t>A month later our small NWG met in Utah.  As the meeting came toward an end,
+it became clear to us that we should start writing down our discussions.  We had
+accumulated a few notes on the design of DEL and other matters, and we decided
+to put them together in a set of notes.  We assigned writing chores to each of
+us, and I took on the additional task of organizing the notes.  I suppose I was
+the first RFC Editor, though I never use that term because we never reviewed or
+changed the content of any of the RFCs.  The only rule I imposed was the note
+had to be complete before I assigned a number because I wanted to minimize the
+number of holes in the sequence.</t>
+
+<t>I tried a couple of times to write a note on how the notes would be
+organized, but I found myself full of trepidation.  Would these notes look as if
+we were asserting authority we didn't have?  Would we unintentionally offend
+whomever the official protocol designers were?  Finally, unable to sleep, I
+wrote the a few humble words.  The basic ground rules were that anyone could say
+anything and that nothing was official.  And to emphasize the point, I used Bill
+Duvall's suggestion and labeled the notes "Request for Comments." I never
+dreamed these notes would eventually be distributed through the very medium we
+were discussing in these notes.  Talk about Sorcerer�s Apprentice!</t>
+
+<t>After BBN published the specification for the hardware and software interface
+to the IMPs our attention shifted to low-level matters.  The ambitious ideas for
+automatic downloading of code evaporated.  It would be several years before
+ideas like remote procedure calls, ActiveX, JAVA and RESTful interfaces
+appeared.</t>
+
+<t>Over the spring and summer of that year we grappled with the detailed
+problems of protocol design.  Although we had a vision of the vast potential for
+intercomputer communication, designing usable protocols was another matter. We
+knew a custom hardware interface and a custom software addition in the operating
+system was going to be required for anything we designed, and we anticipated
+these would pose some difficulty at each of the sites.  We looked for existing
+abstractions to use.  It would have been convenient if we could have made the
+network simply look like regular device, e.g., a tape drive, but we knew that
+wouldn�t do.  The essence of this network was cooperation among the machines,
+not master-slave relationships.  We settled on a virtual bit stream as the basic
+building block for the protocols, but even back then we knew that some
+applications like voice might need to avoid that layer of software.</t>
+
+<t>Over the next two years, ideas were developed, exchanged, and implemented.  I
+took a leave from UCLA in June 1971 to spend time working at ARPA.  Jon Postel
+took over the care and feeding of the RFCs, evolving the process over the next
+twenty seven years.</t>
+
+<t>The rapid growth of the network and the working group also led to a large
+pile of RFCs.  When the 100th RFC was in sight, Peggy Karp at MITRE took on the
+task of indexing them.  That seemed like a large task then, and we could have
+hardly anticipated seeing more than a 1000 RFCs several years later, and the
+evolution toward Internet Drafts yet later.</t>
+
+<t>When we first started working on the protocols, the network did not exist.
+Except for our occasional face to face meetings, RFCs were our only means of
+communication.  In <xref target="RFC0003"/> I set the bar as low as
+possible:</t>
+
+<t><list style='empty'> <t>The content of a NWG note may be any thought,
+suggestion, etc.  related to the HOST software or other aspect of the
+network.<vspace /> Notes are encouraged to be timely rather than
+polished.<vspace /> Philosophical positions without examples or other specifics,
+specific suggestions or implementation techniques without  introductory or
+background explication, and explicit questions  without any attempted answers
+are all acceptable.  The minimum  length for a NWG note is one sentence.</t>
+</list></t>
+
+<t>These standards (or lack of them) are stated explicitly for two reasons.
+First, there is a tendency to view a written statement as ipso facto
+authoritative, and we hope to promote the exchange and discussion of
+considerably less than authoritative ideas.  Second, there is a natural
+hesitancy to publish something unpolished, and we hope to ease this
+inhibition.</t>
+
+<t>Making the RFCs informal was not only a way of encouraging participation, it
+was also important in making the communication effective.  One of the early
+participants said he was having trouble writing and sending an RFC because his
+institution wanted to subject them to publication review.  These are not
+"publications," I declared, and the problem went away.  Another small detail,
+handled instinctively and without debate was the distribution model.  Each
+institution was required to send a copy directly to each of the other
+institutions.  Each institution handled internal copies and distribution itself.
+Submission to a central point for redistribution was not required, so we
+minimized the delays.  SRI's Network Information Center, however, did maintain a
+central repository of everything and provided an invaluable record.</t>
+
+<t>We didn't intentionally set out to challenge the existing standards
+organizations, but our natural mode of operation yielded some striking results.
+The RFCs are open in two important respects: anyone can write one for free and
+anyone get them for free.  At the time, virtually everyone in the Arpanet
+community was sponsored by the government, so there was little competition and
+no need to use documents as a way of raising money.  The effect of this openness
+is often overlooked.  Students and young professionals all over the world
+download the RFCs and build the most amazing software.</t>
+
+<t>Where will it end? The network has the exceeded all estimates of its growth.
+It has been transformed, extended, cloned, renamed and reimplemented.  All of
+the computers have changed, as have all of the transmission lines.  But the RFCs
+march on.  Maybe I'll write a few words for RFC 10,000.</t>
+
+<t>Quite obviously the circumstances have changed.  Email is ubiquitous for the
+immediate exchange of inchoate thoughts.  Internet Drafts are the means for
+exchanging substantial drafts.  And RFCs are reserved for fully polished,
+reviewed, edited and approved protocols.  Comments to RFCs are no longer
+requested.  Rather than bemoan the change, I take it as a remarkable example of
+adaptation.  RFCs continue to serve the protocol development community.  Indeed,
+they are the bedrock of a very vibrant, productive and process that has fueled
+and guided the Internet revolution.</t>
+
+</section> <section anchor="formalizing-the-rfc-editor-model-leslie-daigle"
+title="Formalizing the RFC Editor Model - Leslie Daigle"> <t>I was the chair of
+the Internet Architecture Board, the board responsible for the general oversight
+of the RFC Series, at a particular inflection point in the evolution of all
+Internet technology institutions. To understand what we did, and why we had to,
+let me first paint a broader picture of the arc of these institutions.</t>
+
+<t>Like many others who were in decision-making roles in the mid -00's, I wasn't
+present when the Internet was born. The lore passed down to me was that, out of
+the group of talented researchers that developed the core specifications and
+established the direction of the Internet, different individuals stepped up to
+take on roles necessary to keep the process of specification development
+organized and open. As the work of specification expanded, those individuals
+were generally supported by organizations that carried on in the same spirit.
+This was mostly Jon Postel, doing the work of names and numbers, as well as
+working as the editor of RFCs, but there were also individuals and institutions
+supporting the IETF's Secretariat function. By the late 20th century, even this
+model was wearing thin - the support functions were growing, and organizations
+didn't have the ability to donate even more resources to run them. In some cases
+(IANA) there was significant industry and international dependence on the
+function and its neutrality.</t>
+
+<t>The IETF, too, had grown in size, stature, and commercial reliance. This
+system of institutional pieces "flying in formation" was not providing the kind
+of contractual regularity or integrated development that the IETF needed. People
+who hadn't been there as the institutions developed, including IETF
+decision-makers, didn�t innately understand why things "had to be the way they
+were", and were frustrated when trying to get individual systems updated for new
+requirements, and better integrated across the spectrum of activities.</t>
+
+<t>Internet engineering had expanded beyond the point of being supportable by a
+loosely-coupled set of organizations of people who had been there since the
+beginning and knew each other well. New forms of governance and were needed, as
+well as rationalized funding The IANA function was absorbed into a purpose-built
+international not-for-profit organization. The IETF stepped up to manage its own
+organizational destiny (IASA), and the Secretariat became one of its contracted
+functions.</t>
+
+<t>This left the RFC Editor function as an ISOC-supported, independent
+effort.</t>
+
+<t>That independence of nature was necessary for the historic role of the RFC
+Series in considering all technical contributions. But, at that inflection point
+in the Series� history, it needed a new governance and funding model, just as
+the other Internet technical specification supporting organizations had. Also,
+the IETF leadership had some concerns it felt it needed to be addressed in its
+own technical publication sream. While the RFC Series had been established
+before there was an IETF, and had historically continued to have documents in it
+that didn�t originate from the IETF, the IETF was its largest and most organized
+contributor. There was no particular organization of independent contributors.
+Equally, the funding for the RFC Editor was at that point coming from the
+Internet Society in the guise of "support for the IETF". For people who hadn't
+been involved with the institution from the outset, it was pretty easy to
+perceive the RFC Series uniquely as the IETF's publication series. So, the
+challenge was to identify and address the IETF's issues, along with governance
+and funding, without sacrificing the fundamental nature of the RFC Series as a
+broader-than-IETF publication series.</t>
+
+<t>To give a sense of the kinds of tensions that were prevalent, let me share
+that the one phrase that sticks in my mind from those discussions is: "push to
+publish". There were those in IETF leadership who felt that it would
+significantly reduce costs and improve timeliness if an RFC could be published
+by, literally, pushing a button on a web interface the moment it was approved by
+the IESG. It would also, they argued, remove the specification issues being
+introduced by copy-editors that were hired as occasional workers to help with
+improving publication rates, but who weren�t necessarily up to speed on terms of
+art in technical specifications. (There were some pretty egregious examples that
+I forebear from citing here; let's just say it wasn't strictly a problem of
+Internet engineers getting uptight about their cheese being moved). While "push
+to publish" would have addressed those issues, it would not have addressed the
+loss of clarity from the many significant text improvements copy editors
+successfully introduced, or the fact that not all RFCs are approved by the
+IESG.</t>
+
+<t>Institutionally, it was clear that the target was to have the RFC Editor
+function governance within the reach of the Internet technical community (as
+opposed to any particular private organization), without tying it specifically
+to the IETF. That was reasonably achievable by ensuring that the resultant
+pieces were established under the oversight of the IAB (which is, itself,
+independent of the IETF, even as it is supported by the IASA organization).</t>
+
+<t>The IETF worked on a document outlining functional requirements for its
+technical specification publication. This could have been useful for
+establishing its own series, but it also was helpful in establishing awareness
+of the challenges in document publishing (it always looks easy when you haven�t
+thought about it), and also to lay the ground work for dialogue with the RFC
+Editor. The requirements document was published as <xref target="RFC4714"/>, as an Informational
+RFC that stands today to provide guidance in the editing processes surrounding
+IETF publications.</t>
+
+<t>There was still, however, a certain lack of clarity about responsibilities
+for making decisions and changes in the RFC Series itself. To that end, I and
+the IAB worked with the various involved parties to produce <xref
+target="RFC4744"/>. That document captured the RFC Series mission (for a purpose
+greater than IETF technical specification publication), as well as the roles and
+responsibilities of the parties involved. The RFC Editor has responsibility for
+ensuring the implementation of the mission. The IAB continues to have oversight
+responsibilities, including policy oversight, which it could act on by changing
+the person (organization) in the role of RFC Editor. At the same time,
+operational oversight was migrated to the IASA support function of the IETF (and
+IAB).</t>
+
+<t>The discussions, and the resulting publication of RFC 4744, allowed greater
+visibility into and commitment to the RFC Series, as a general Internet
+publication. It also meant that subsequent adjustments could be made, as
+requirements evolved � the responsible parties are clearly identified. </t>
+
+</section>
+<section
+anchor="the-continuation-or-creation-of-a-stream-nevil-brownlee" title="The
+Continuation, or Creation, of a Stream - Nevil Brownlee">
+
+</section>
+<section anchor="a-view-from-inside-the-rfc-editor-sandy-ginoza"
+title="A View from Inside the RFC Editor - Sandy Ginoza">
+
+</section>
+</section>
+<section anchor="the-next-fifty-years-of-rfcs" title="The
+Next Fifty Years of RFCs">
+<t>As Steve Crocker mentioned, the Series began with a goal of communication
+over formality, openness over structure. As the Internet has grown and become a
+pervasive, global construct, we still aim for openness and communication, but
+recognize that for protocols and other information to support interoperability,
+there must be points of stability to build from. Small-time app developers to
+multi-billion dollar companies are on the same footing. And anyone can look back
+at a point in time and understand what was done, and why.</t>
+
+<t>While the informality has given way to increased structure, the openness and
+solid foundation that the Series provides must continue. With that in mind,
+what is next for the next fifty years of RFCs?</t>
+
+<section anchor="preservation" title="Preservation">
+  <t></t>
+</section>
+
+<section anchor="futureformat" title="Evolution of the RFC Format">
+  <t></t>
+</section>
+
+<section anchor="streamstructure" title="Stream Structure">
+  <t></t>
+</section>
+
+</section>
+
+  </middle>
+
+  <back>
+
+    <references title='Normative References'>
+
+&RFC5540; &RFC2555;
+
+    </references>
+
+    <references title='Informative References'>
+
+&RFC0003; &RFC1000; &RFC4744; &RFC4846; &RFC6548; &RFC6635;
+
+    </references>
+
+  </back> </rfc>
