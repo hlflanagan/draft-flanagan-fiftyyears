@@ -32,7 +32,7 @@ href="rfc2629.xslt" ?>
     </address>
   </author>
 
-    <date year="2018" month="October" day="20"/>
+    <date year="2019" month="January" day="4"/>
 
     <abstract>
 
@@ -98,7 +98,7 @@ Series offer their observations of key moments in the series. Steve Crocker,
 author of RFC 1, offers his thoughts on how and why the Series began. Leslie
 Daigle, a major influence in the development of the RFC Editor model, offers her
 thoughts on the change of the RFC Editor to a stronger, contracted function.
-Nevil Brownlee, Independent Submissions Editor from 20xx through February 2018,
+Nevil Brownlee, Independent Submissions Editor from 2010 through February 2018,
 shares his view on the clarification of the IS and its transition from Bob
 Braden. As the current RFC Series Editor, I will put my thoughts in on the most
 recent changes in formalizing the digital preservation of the Series, the
@@ -371,7 +371,7 @@ Series in considering all technical contributions. But, at that inflection point
 in the Series' history, it needed a new governance and funding model, just as
 the other Internet technical specification supporting organizations had. Also,
 the IETF leadership had some concerns it felt it needed to be addressed in its
-own technical publication sream. While the RFC Series had been established
+own technical publication stream. While the RFC Series had been established
 before there was an IETF, and had historically continued to have documents in it
 that didn't originate from the IETF, the IETF was its largest and most organized
 contributor. There was no particular organization of independent contributors.
@@ -532,7 +532,177 @@ of talented Professional Staff.</t>
 
 <section anchor="a-view-from-inside-the-rfc-editor-sandy-ginoza"
 title="A View from Inside the RFC Editor - Sandy Ginoza">
-<t>Content forthcoming</t>
+<t>When I joined ISI, shortly after Jon Postel passed away, the RFC Editor as
+  we know it today (as defined in RFC 5620, and as obsoleted  by RFCs 6548 and
+  6635) did not exist.  The RFC Editor functioned as one unit; there was no
+  RSE, Production Center, Publisher, or Independent Submissions Editor.  All of
+  these roles were performed by the RFC Editor, which was comprised of four
+  individuals: Bob Braden, Joyce Reynolds, a part-time student programmer, and
+  me.
+</t>
+
+<t>Bob provided high-level guidance and reviewed Independent Submissions. While
+  Bob was a researcher in “Div 7” (Networking) at ISI, ostensibly, the
+  percentage of time he had for the RFC Editor was 10%, but he invested much
+  more time to keep the series running.  He pitched in where he could,
+  especially when processing times were getting longer; at one point, he even
+  NROFFed a couple of RFCs-to-be.  Joyce was a full-time employee, but while
+  continuing to ensure RFCs were published and serve as a User Services Area
+  Director and a keynote speaker about the Internet, she was also temporarily
+  on loan to IANA for 50% of her time while IANA was getting established after
+  separating from ISI.  The student programmer performed programming tasks as
+  requested and was, at the time, responsible for parsing MIBs.  I was a
+  full-time staffer and had to quickly learn the ropes so RFCs would continue
+  to be published.
+</t>
+
+<t>My primary tasks were to manage the publication queue, format and prepare
+  documents for Joyce’s review, carry out AUTH48 once Joyce completed her
+  review, and publish, index, and archive the RFCs (both soft and hard copies).
+</t>
+
+<t>The workload increased significantly over the next few years.  As the
+  workload increased, the RFC Editor reacted and slowly grew their staff over
+  time.  To understand the team growth, let’s first take a look at the
+  publication rates throughout history.  The table below shows average annual
+  publication rates during 5-year periods.
+</t>
+
+
+  <texttable anchor='AvgPubs' title="Annual Publication Rates">
+    <ttcol align='center'>Years</ttcol>
+    <ttcol align='center'>Avg Pubs per Year</ttcol>
+    <c>1969 – 1972</c>
+    <c>80</c>
+    <c>1973 – 1977</c>
+    <c>55</c>
+    <c>1978 – 1982</c>
+    <c>20</c>
+    <c>1983 – 1987</c>
+    <c>39</c>
+    <c>1988 – 1992</c>
+    <c>69</c>
+    <c>1993 – 1997</c>
+    <c>171</c>
+    <c>1998 – 2002</c>
+    <c>237</c>
+    <c>2003 – 2007</c>
+    <c>325</c>
+    <c>2008 – 2012</c>
+    <c>333</c>
+    <c>2013 – 2017</c>
+    <c>295</c>
+  </texttable>
+
+
+<t>There were significant jumps in the publication rates in the 90s and onward,
+  with the number of publications almost doubling between 1993 and 2007.  The
+  annual submission count surpassed the 300 mark for the first time in 2004 and
+  reached an all-time high of 385 in 2011.  The submission rate did not drop
+  below 300 until 2016 (284).
+</t>
+
+<t>As the submissions grew, the RFC Editor experienced growing pains. Processing
+  times began to increase as the existing staff was unable to keep up with the
+  expanding queue size.  In an attempt to reduce the training hump and to avoid
+  permanently hiring staff in case the submission burst was a fluke, ISI brought
+  on temporary copy editors – this way, the staff could easily be resized as
+  needed.  However, as Leslie noted, this didn’t work very well. The effects of
+  the experiment would be lasting, as this led to a form of the process we have
+  now, where the RFC Editor asks more questions during AUTH/AUTH48 and technical
+  changes require approval from the relevant Area Directors. These changes added
+  to the workload and extended publication times; many often now jokingly refer
+  to AUTH48 as the authors’ “48 days”, “48 weeks”, etc.
+</t>
+
+<t>Because the workload continued to increase (in more ways than just document
+  submissions) and the lessons learned with temporary copy editors, our team
+  grew more permanently.  While we had other editors in between, two additions
+  are of particular interest, as they experienced much of the RFC Editor’s
+  growing pains, helped work us out of a backlogged state, shaped the RFC Editor
+  function, and are still with the team today: Alice Russo joined the team in
+  2005 and Megan Ferguson joined us in 2007.
+</t>
+
+<t>With the understanding that the record breaking number of submissions was not an
+  anomaly, we made significant upgrades to the infrastructure of the RFC Editor
+  function to facilitate document tracking and reporting.  For example, the
+  illustrious “black binder” – an actual 3-ring binder used to track number
+  assignment, a manually edited HTML file for the queue page, and a Rube-Goldberg
+  set of text files and scripts that created queue statistics, all were eventually
+  replaced; an errata system was proposed and implemented; and XML became a newly
+  accepted source file.
+</t>
+
+<t>In 2009, RFC 5620 was published, introducing the initial version of the RFC
+  Editor model we have now.  While it was published in 2009, it did not go into
+  effect until 2010, when the RFC Editor project as I knew it was disbanded and
+  divvyed up into four pieces: RFC Series Editor (RSE), Independent Submissions
+  Editor (ISE), RFC Production Center (RPC), and Publisher.  In addition, the
+  RFC Series Advisory Group (RSAG) was created to “provide expert, informed
+  guidance (chiefly, to the RSE) in matters affecting the RFC Series operation
+  and development.”
+</t>
+
+<t>In 2010, the RPC and Publisher contracts were awarded to AMS; we started
+  with three existing team members (Alice Russo, Megan Ferguson, and me) and we
+  were pleased to be joined by Lynne Bartholomew, a new colleague to anchor us
+  in the AMS office, and later Rebecca  VanRheenen shortly thereafter.
+</t>
+
+<t>I was wary of this model and was especially worried about the hole Bob
+  Braden’s departure would create.  Luckily for us, Bob Braden provided wise
+  counsel and insight during the transition (and beyond). He gave the staff
+  transitioning to AMS particularly helpful parting words – “keep the RFCs
+  coming” - and that is what we did.
+</t>
+
+<t>AMS embraced the RFC Series and helped us quickly get set up on new servers.
+  The RFC Production Center and Publisher were now part of the AMS family and
+  it was all hands on deck to make sure the transition went smoothly to minimize
+  the impact on document processing.
+</t>
+
+
+<t>Our focus during transition was to 1) keep the trains running; that is, we
+  wanted to get ourselves up and running with minimal down time and 2) work with
+  the Transitional RSE, the Independent Submissions Editor (Nevil Brownlee),
+  RSAG, and the IAD to better understand and implement the newly defined RFC
+  Editor model.
+</t>
+
+<t>Though some portions of the transition were challenging and lasted longer
+  than expected, the Acting RSE officially handed the reigns over to the RSE
+  (Heather Flanagan) in 2012.  She had to jump in, learn the RFC Editor and IETF
+  culture, and work through a backlog of issues that had been left unattended.
+</t>
+
+<t>Two of the backlogged issues were so old, they were ones someone asked me
+  about at my first IETF: when is the RFC Editor going to allow UTF-8 in RFCs
+  and when will the RFC Editor adopt a more modern publication format.
+</t>
+
+<t>At that time, while we understood the desire to move toward UTF-8 and to
+  have more modern outputs, we also routinely received emails from individuals
+  requesting that we send them plain-text files (instead of pointing them to the
+  website) because their Internet access was limited.  We also regularly
+  received complaints from rfc-editor.org users whenever something on the site
+  didn’t work correctly with their older browsers.  In short, we could not
+  advance without leaving a large number of users behind.
+</t>
+
+<t>However, we now find ourselves on the precipice of change.  2019 promises to
+  be a BIG year for the RFC Series, as we expect to transition from publishing
+  plaintext, ASCII-only files to publishing multiple file formats (XML, HTML,
+  PDF/A-3, and TXT) that allow both UTF-8 and SVG art.
+</t>
+
+<t>Interestingly enough, I find that the RFC Editor has been in an almost
+  constant state of change since I joined the team, even though the goal of the
+  RFC Editor remains the same: to produce archival quality RFCs in a timely
+  manner that are easily accessible for future generations.
+</t>
+
 </section>
 </section>
 
