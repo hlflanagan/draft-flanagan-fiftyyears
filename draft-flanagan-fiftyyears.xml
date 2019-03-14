@@ -20,7 +20,7 @@ href="rfc2629.xslt" ?>
 ]>
 
 
-<rfc ipr="trust200902" docName="draft-flanagan-fiftyyears-01" category="info" updates="2555, 5540">
+<rfc ipr="trust200902" docName="draft-flanagan-fiftyyears-02" category="info" updates="2555, 5540">
 
   <front> <title abbrev="Fifty Years of RFCs">Fifty Years of RFCs</title>
 
@@ -32,7 +32,7 @@ href="rfc2629.xslt" ?>
     </address>
   </author>
 
-    <date year="2019" month="January" day="4"/>
+    <date year="2019" month="January" day="14"/>
 
     <abstract>
 
@@ -129,7 +129,7 @@ didn't become "DARPA" until 1972.  It briefly changed back to ARPA in 1993 and
 then back again to DARPA.)   The government’s Request for Quotations (RFQ)
 called for four packet-switching devices, called Interface Message Processors
 (“IMPs”), to be delivered to four sites in the western part of the United
-States: UCLA in Los Angeles, CA; SRI International in Menlo Park, CA; University
+States: University of California, Los Angeles (UCLA); SRI International in Menlo Park, CA; University
 of California, Santa Barbara; the University of Utah in Salt Lake City.  These
 sites, respectively, were running a Scientific Data Systems (SDS) Sigma 7, an
 SDS 940, an IBM 360/75, and a DEC PDP-10.  These machines not only had different
@@ -146,7 +146,7 @@ Stephenson, C. Stephen Carr and W. Boam from Utah, Vint Cerf and me from UCLA,
 and a few others from potential future sites.</t>
 
 <t>That first meeting was seminal.  We had lots of questions.  How IMPs and
-“hosts” (I think that was the first time I was first exposed to that term) would
+“hosts” (I think that was the first time I was exposed to that term) would
 be connected?  What hosts would say to each other?  What applications would be
 supported?  The only concrete answers were remote login as a replacement for
 dial-up, telephone based interactive terminal access, and file transfer, but we
@@ -162,7 +162,7 @@ network was supposed to make it possible to work together at a distance, and the
 first thing we did was schedule a significant amount of travel.</t>
 
 <t>Over the next several months, a small, fairly consistent set of graduate
-students and staff members from the first four sites met.  We adopted the term
+students and staff members from the first four sites met.  We used the term
 Network Working Group (NWG) to designate ourselves.  This was the same term
 Elmer Shapiro had used when he convened our first meeting, although it had been
 used until that point to refer to the principal investigators and ARPA personnel
@@ -191,7 +191,7 @@ concern was how to meet their contract schedule of delivering the first IMP to
 UCLA at the beginning of September and how to get bits to flow quickly and
 reliably.  The details of the host-IMP interface were not yet firm; the
 specification came a few months later as BBN Report 1822.  In particular, BBN
-didn't take over our own protocol design process, nor did any other source of
+didn't take over our protocol design process, nor did any other source of
 authority appear.  Thus, we doggedly continued debating and designing the
 protocols.</t>
 
@@ -319,7 +319,7 @@ specifications.  Comments to RFCs are not requested, although usage-related
 discussions and other commentary on mailing lists often takes place nonetheless.
 Rather than bemoan the change, I take it as a remarkable example of adaptation.
 RFCs continue to serve the protocol development community.  Indeed, they are the
-bedrock of a very vibrant, productive and process that has fueled and guided the
+bedrock of a very vibrant and productive process that has fueled and guided the
 Internet revolution.</t>
 
 
@@ -409,7 +409,7 @@ independent of the IETF, even as it is supported by the IASA organization).</t>
 <t>The IETF worked on a document outlining functional requirements for its
 technical specification publication. This could have been useful for
 establishing its own series, but it also was helpful in establishing awareness
-of the challenges in document publishing (it always looks easy when you haven�t
+of the challenges in document publishing (it always looks easy when you haven't
 thought about it), and also to lay the ground work for dialogue with the RFC
 Editor. The requirements document was published as <xref target="RFC4714"/>, as
 an Informational RFC that stands today to provide guidance in the editing
