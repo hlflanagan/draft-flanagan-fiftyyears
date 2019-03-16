@@ -5,22 +5,33 @@ href="rfc2629.xslt" ?>
 
 <!DOCTYPE rfc SYSTEM "rfc2629.dtd" [
 <!ENTITY RFC0003 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.0003.xml">
+<!ENTITY RFC0433 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.0433.xml">
+<!ENTITY RFC0748 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.0748.xml">
 <!ENTITY RFC1000 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.1000.xml">
+<!ENTITY RFC1150 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.1150.xml">
+<!ENTITY RFC1310 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.1310.xml">
+<!ENTITY RFC1311 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.1311.xml">
+<!ENTITY RFC1818 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.1818.xml">
 <!ENTITY RFC2441 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.2441.xml">
+<!ENTITY RFC2468 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.2468.xml">
 <!ENTITY RFC2555 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.2555.xml">
 <!ENTITY RFC4714 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.4714.xml">
 <!ENTITY RFC4744 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.4744.xml">
+<!ENTITY RFC4844 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.4844.xml">
 <!ENTITY RFC4846 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.4846.xml">
 <!ENTITY RFC5540 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.5540.xml">
 <!ENTITY RFC5629 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.5629.xml">
 <!ENTITY RFC5742 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.5742.xml">
+<!ENTITY RFC6360 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.6360.xml">
+<!ENTITY RFC6410 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.6410.xml">
 <!ENTITY RFC6635 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.6635.xml">
+<!ENTITY RFC6949 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.6949.xml">
 <!ENTITY RFC7990 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.7990.xml">
 <!ENTITY RFC8153 SYSTEM "http://xml.resource.org/public/rfc/bibxml/reference.RFC.8153.xml">
 ]>
 
 
-<rfc ipr="trust200902" docName="draft-flanagan-fiftyyears-00" category="info" updates="2555, 5540">
+<rfc ipr="trust200902" docName="draft-flanagan-fiftyyears-02" category="info" updates="2555, 5540">
 
   <front> <title abbrev="Fifty Years of RFCs">Fifty Years of RFCs</title>
 
@@ -32,7 +43,7 @@ href="rfc2629.xslt" ?>
     </address>
   </author>
 
-    <date year="2018" month="October" day="20"/>
+    <date year="2019" month="March" day="18"/>
 
     <abstract>
 
@@ -50,7 +61,9 @@ href="rfc2629.xslt" ?>
 
 <section anchor="introduction" title="Introduction">
   <t>The RFC Series began in April 1969 with the publication of "Host Software"
-  by Steve Crocker. Since then, over 8000 RFCs have been published, ranging from
+  by Steve Crocker. The early RFCs were extremely informal and included poems,
+  satires, and April 1 jokes, to name a few.  Since then, over 8000 RFCs have
+  been published, ranging from
   best practice information, experimental protocols, informational material,
   and, of course, standards. Material is accepted for publication through the
   IETF, the IAB, the IRTF, and the Independent Submissions stream, each with
@@ -59,13 +72,15 @@ href="rfc2629.xslt" ?>
   canonical source for the material published by the RFC Editor, and to support
   the preservation of that material in perpetuity. </t>
 
-<t>Since the very first RFC fifty years ago, the focus of the Series has been on
-that stable record and dissemination of ideas to the world. At times there have
-been conflicts over what is more important - a stable, archival record, or
-making the latest ideas available as soon as possible. As the Internet has
-evolved, so to have the expectations of instant access, faster publication, and
-ubiquitous availability. It seems that the need for a stable, archival record is
-often deprioritized against those more immediate needs. </t>
+<t>Since the very first RFC fifty years ago, the focus of the Series has evolved
+to that of a source of a stable record of what has been published and the
+dissemination of their ideas to the world. In particular, when Internet Drafts
+first started being produced [need a date check], RFCs became a much more formal
+body of material requiring serious curation, from the editing process through to
+the curation and archiving of the documents. Today, there is still a tension
+between having that stable, archival record, versus making the latest ideas
+available as soon as possible; evolution will continue, in no small part driven
+by that tension.  </t>
 
 <t>Change does come to the Series, albeit slowly. First, we saw the distribution
 method change from postal mail to FTP and email. From there, we saw increased
@@ -81,11 +96,13 @@ documents themselves.</t>
   and the other entities that make up the community that uses the RFC Series.
   These changes will be always be balanced against the core mission of the
   Series: to maintain a strong, stable, archival record of technical specifications,
-  protocols, and other information relevant to the Internet technical community.</t>
+  protocols, and other information relevant to the Arpanet and Internet
+  networking communities.</t>
 
 <t>There is more to the history of the RFC Series than can be covered in this
   document. Readers interested in earlier perspectives may find the following
-  RFCs of particular interest:
+  RFCs of particular interest that focus on the enormous contributions of Jon
+  Postel, Czar of Socket Numbers <xref target="RFC0433"/> and first RFC Editor:
 
   <list>
     <t><xref target="RFC2441"/>"Working with Jon, Tribute delivered at UCLA"</t>
@@ -98,13 +115,38 @@ Series offer their observations of key moments in the series. Steve Crocker,
 author of RFC 1, offers his thoughts on how and why the Series began. Leslie
 Daigle, a major influence in the development of the RFC Editor model, offers her
 thoughts on the change of the RFC Editor to a stronger, contracted function.
-Nevil Brownlee, Independent Submissions Editor from 20xx through February 2018,
+Nevil Brownlee, Independent Submissions Editor from 2010 through February 2018,
 shares his view on the clarification of the IS and its transition from Bob
 Braden. As the current RFC Series Editor, I will put my thoughts in on the most
 recent changes in formalizing the digital preservation of the Series, the
 process to modernize the format while respecting the need for stability, and my
 thoughts on the next fifty years of RFCs.</t>
 
+</section>
+
+<section anchor="keymoments" title="Key Moments in RFC History">
+  <t>
+  <list style="symbols">
+<t>First distribution of RFCs over the network = 1971/1972 (with the creation of FTP)</t>
+<t>First mention of the Czar of Socket Numbers and the proposal for a formal registry: December 1972 <xref target="RFC0433"/></t>
+<t>ISI and the RFC Editor = June 1975 (judging by Jon Postel’s affiliation change starting in RFC 690)</t>
+<t>IEN Series started = March 1977</t>
+<t>First April 1 = 1978 <xref target="RFC0748"/></t>
+<t>IEN Series concluded = September 1982</t>
+<t>FYI sub-series started = March 1990 <xref target="RFC1150"/> </t>
+<t>Three stage standards process = March 1992 <xref target="RFC1310"/></t>
+<t>STD sub-series = March 1992 <xref target ="RFC1311"/></t>
+<t>BCP sub-series = August 1995 <xref target="RFC1818"/></t>
+<t>RFC Online Project = (approx) 1998-2010 <xref target="RFC-ONLINE"/></t>
+<t>IAB approves the creation of an Internet Draft series = July 1988 <xref target="IAB-19880712"/></t>
+<t>Jon Postel's death = 15 October 1998</t>
+<t>RFC Stream structure = July 2007 <xref target="RFC4844"/></t>
+<t>FYI sub-series ended = August 2011 <xref target="RFC6360"/></t>
+<t>Two stage standards process = October 2011 <xref target="RFC6410"/></t>
+<t>RFC Format change project started = May 2013 <xref target="RFC6949"/></t>
+<t>RFCs no longer printed to paper upon publication = April 2017 <xref target="RFC8153"/></t>
+</list>
+</t>
 </section>
 
 <section anchor="perspectives" title="Perspectives">
@@ -117,7 +159,7 @@ RFCs - by Stephen D. Crocker">
 
 <t>The Internet community now includes millions of nodes and billions of users.
 It owes its beginning to the Arpanet, which was once but a gleam in the eyes of
-Bob Taylor and Larry Roberts of ARPA.  While much of the development proceeded
+Bob Taylor, Larry Roberts, and J. C. R. Licklider of ARPA.  While much of the development proceeded
 according to plan, the initial design of the protocols and the creation of the
 RFCs was largely accidental.</t>
 
@@ -129,7 +171,7 @@ didn't become "DARPA" until 1972.  It briefly changed back to ARPA in 1993 and
 then back again to DARPA.)   The government’s Request for Quotations (RFQ)
 called for four packet-switching devices, called Interface Message Processors
 (“IMPs”), to be delivered to four sites in the western part of the United
-States: UCLA in Los Angeles, CA; SRI International in Menlo Park, CA; University
+States: University of California, Los Angeles (UCLA); SRI International in Menlo Park, CA; University
 of California, Santa Barbara; the University of Utah in Salt Lake City.  These
 sites, respectively, were running a Scientific Data Systems (SDS) Sigma 7, an
 SDS 940, an IBM 360/75, and a DEC PDP-10.  These machines not only had different
@@ -146,7 +188,7 @@ Stephenson, C. Stephen Carr and W. Boam from Utah, Vint Cerf and me from UCLA,
 and a few others from potential future sites.</t>
 
 <t>That first meeting was seminal.  We had lots of questions.  How IMPs and
-“hosts” (I think that was the first time I was first exposed to that term) would
+“hosts” (I think that was the first time I was exposed to that term) would
 be connected?  What hosts would say to each other?  What applications would be
 supported?  The only concrete answers were remote login as a replacement for
 dial-up, telephone based interactive terminal access, and file transfer, but we
@@ -162,7 +204,7 @@ network was supposed to make it possible to work together at a distance, and the
 first thing we did was schedule a significant amount of travel.</t>
 
 <t>Over the next several months, a small, fairly consistent set of graduate
-students and staff members from the first four sites met.  We adopted the term
+students and staff members from the first four sites met.  We used the term
 Network Working Group (NWG) to designate ourselves.  This was the same term
 Elmer Shapiro had used when he convened our first meeting, although it had been
 used until that point to refer to the principal investigators and ARPA personnel
@@ -191,7 +233,7 @@ concern was how to meet their contract schedule of delivering the first IMP to
 UCLA at the beginning of September and how to get bits to flow quickly and
 reliably.  The details of the host-IMP interface were not yet firm; the
 specification came a few months later as BBN Report 1822.  In particular, BBN
-didn't take over our own protocol design process, nor did any other source of
+didn't take over our protocol design process, nor did any other source of
 authority appear.  Thus, we doggedly continued debating and designing the
 protocols.</t>
 
@@ -319,11 +361,35 @@ specifications.  Comments to RFCs are not requested, although usage-related
 discussions and other commentary on mailing lists often takes place nonetheless.
 Rather than bemoan the change, I take it as a remarkable example of adaptation.
 RFCs continue to serve the protocol development community.  Indeed, they are the
-bedrock of a very vibrant, productive and process that has fueled and guided the
+bedrock of a very vibrant and productive process that has fueled and guided the
 Internet revolution.</t>
 
+</section>
 
-</section> <section anchor="formalizing-the-rfc-editor-model-leslie-daigle"
+<section anchor="rfcmgmtteam" title="The RFC Management and Editing Team - Vint Cerf">
+  <t>As Steve Crocker mentions in Section 2.1, Jon Postel assumed the role of RFC
+manager in 1971 when Steve left UCLA for ARPA. Jon took on this role in addition
+to his subsequent “numbers Czar” responsibilities. Initially, his focus was
+largely on assigning RFC numbers to aspiring writers but with time, and as the
+standardization of the ARPANET and Internet protocols continued apace, he began
+to serve in an editorial capacity. Moreover, as an accomplished software
+engineer, he had opinions about technical content in addition to writing style
+and did not hesitate to exercise editorial discretion as would-be published
+authors presented their offerings for his scrutiny. As the load increased, he
+recruited additional “volunteer” talent, most notably Joyce K. Reynolds, a
+fellow researcher at USC/ISI. Over the ensuing years, he also drafted Robert
+(Bob) Braden into the team and when Jon unexpectedly passed away in October 1998
+(see <xref target="RFC2468"/>), Joyce and Bob undertook to carry on with the RFC work in his
+stead, adding Sandy Ginoza to the team. During the period when Jon and Joyce
+worked closely together, she would challenge me to tell which edits had been
+made by Jon and which by her. I found this impossible, so aligned were they in
+their editorial sensibilities. Sadly, three of these tireless Internauts have
+passed on and we have only the product of their joint work and Sandy Ginoza’s
+and others’ corporate memory by which to recall history. </t>
+
+</section>
+
+<section anchor="formalizing-the-rfc-editor-model-leslie-daigle"
 title="Formalizing the RFC Editor Model - Leslie Daigle">
 
 <t>I was the chair of the Internet Architecture Board, the board responsible for
@@ -339,7 +405,7 @@ established the direction of the Internet, different individuals stepped up to
 take on roles necessary to keep the process of specification development
 organized and open. As the work of specification expanded, those individuals
 were generally supported by organizations that carried on in the same spirit.
-This was mostly Jon Postel, doing the work of names and numbers, as well as
+This was mostly Jon Postel, managing the allocation and assignment of names and numbers, as well as
 working as the editor of RFCs, but there were also individuals and institutions
 supporting the IETF's Secretariat function. By the late 20th century, even this
 model was wearing thin - the support functions were growing, and organizations
@@ -360,10 +426,10 @@ loosely-coupled set of organizations of people who had been there since the
 beginning and knew each other well. New forms of governance and were needed, as
 well as rationalized funding The IANA function was absorbed into a purpose-built
 international not-for-profit organization. The IETF stepped up to manage its own
-organizational destiny (IASA), and the Secretariat became one of its contracted
-functions.</t>
+organizational destiny, creating the IETF Administrative Support Activity (IASA),
+and the Secretariat became one of its contracted functions.</t>
 
-<t>This left the RFC Editor function as an ISOC-supported, independent
+<t>This left the RFC Editor function as an Internet Society-supported, independent
 effort.</t>
 
 <t>That independence of nature was necessary for the historic role of the RFC
@@ -371,7 +437,7 @@ Series in considering all technical contributions. But, at that inflection point
 in the Series' history, it needed a new governance and funding model, just as
 the other Internet technical specification supporting organizations had. Also,
 the IETF leadership had some concerns it felt it needed to be addressed in its
-own technical publication sream. While the RFC Series had been established
+own technical publication stream. While the RFC Series had been established
 before there was an IETF, and had historically continued to have documents in it
 that didn't originate from the IETF, the IETF was its largest and most organized
 contributor. There was no particular organization of independent contributors.
@@ -392,7 +458,7 @@ the IESG. It would also, they argued, remove the specification issues being
 introduced by copy-editors that were hired as occasional workers to help with
 improving publication rates, but who weren't necessarily up to speed on terms of
 art in technical specifications. (There were some pretty egregious examples that
-I forebear from citing here; let's just say it wasn't strictly a problem of
+I forbear from citing here; let's just say it wasn't strictly a problem of
 Internet engineers getting uptight about their cheese being moved). While "push
 to publish" would have addressed those issues, it would not have addressed the
 loss of clarity from the many significant text improvements copy editors
@@ -409,7 +475,7 @@ independent of the IETF, even as it is supported by the IASA organization).</t>
 <t>The IETF worked on a document outlining functional requirements for its
 technical specification publication. This could have been useful for
 establishing its own series, but it also was helpful in establishing awareness
-of the challenges in document publishing (it always looks easy when you haven�t
+of the challenges in document publishing (it always looks easy when you haven't
 thought about it), and also to lay the ground work for dialogue with the RFC
 Editor. The requirements document was published as <xref target="RFC4714"/>, as
 an Informational RFC that stands today to provide guidance in the editing
@@ -532,7 +598,178 @@ of talented Professional Staff.</t>
 
 <section anchor="a-view-from-inside-the-rfc-editor-sandy-ginoza"
 title="A View from Inside the RFC Editor - Sandy Ginoza">
-<t>Content forthcoming</t>
+<t>When I joined ISI, shortly after Jon Postel passed away, the RFC Editor as
+  we know it today (as defined in RFC 5620, and as obsoleted  by RFCs 6548 and
+  6635) did not exist.  The RFC Editor functioned as one unit; there was no
+  RSE, Production Center, Publisher, or Independent Submissions Editor.  All of
+  these roles were performed by the RFC Editor, which was comprised of four
+  individuals: Bob Braden, Joyce Reynolds, a part-time student programmer, and
+  me.
+</t>
+
+<t>Bob provided high-level guidance and reviewed Independent Submissions. While
+  Bob was a researcher in “Div 7” (Networking) at ISI, ostensibly, the
+  percentage of time he had for the RFC Editor was 10%, but he invested much
+  more time to keep the series running.  He pitched in where he could,
+  especially when processing times were getting longer; at one point, he even
+  NROFFed a couple of RFCs-to-be.  Joyce was a full-time employee, but while
+  continuing to ensure RFCs were published and serve as a User Services Area
+  Director and a keynote speaker about the Internet, she was also temporarily
+  on loan to IANA for 50% of her time while IANA was getting established after
+  separating from ISI.  The student programmer performed programming tasks as
+  requested and was, at the time, responsible for parsing MIBs.  I was a
+  full-time staffer and had to quickly learn the ropes so RFCs would continue
+  to be published.
+</t>
+
+<t>My primary tasks were to manage the publication queue, format and prepare
+  documents for Joyce’s review, carry out AUTH48 once Joyce completed her
+  review, and publish, index, and archive the RFCs (both soft and hard copies).
+</t>
+
+<t>The workload increased significantly over the next few years.  As the
+  workload increased, the RFC Editor reacted and slowly grew their staff over
+  time.  To understand the team growth, let’s first take a look at the
+  publication rates throughout history.  The table below shows average annual
+  publication rates during 5-year periods.
+</t>
+
+
+  <texttable anchor='AvgPubs' title="Annual Publication Rates">
+    <ttcol align='center'>Years</ttcol>
+    <ttcol align='center'>Avg Pubs per Year</ttcol>
+    <c>1969 – 1972</c>
+    <c>80</c>
+    <c>1973 – 1977</c>
+    <c>55</c>
+    <c>1978 – 1982</c>
+    <c>20</c>
+    <c>1983 – 1987</c>
+    <c>39</c>
+    <c>1988 – 1992</c>
+    <c>69</c>
+    <c>1993 – 1997</c>
+    <c>171</c>
+    <c>1998 – 2002</c>
+    <c>237</c>
+    <c>2003 – 2007</c>
+    <c>325</c>
+    <c>2008 – 2012</c>
+    <c>333</c>
+    <c>2013 – 2017</c>
+    <c>295</c>
+  </texttable>
+
+
+<t>There were significant jumps in the publication rates in the 90s and onward,
+  with the number of publications almost doubling between 1993 and 2007.  The
+  annual submission count surpassed the 300 mark for the first time in 2004 and
+  reached an all-time high of 385 in 2011.  The submission rate did not drop
+  below 300 until 2016 (284).
+</t>
+
+<t>As the submissions grew, the RFC Editor experienced growing pains. Processing
+  times began to increase as the existing staff was unable to keep up with the
+  expanding queue size.  In an attempt to reduce the training hump and to avoid
+  permanently hiring staff in case the submission burst was a fluke, ISI brought
+  on temporary copy editors – this way, the staff could easily be resized as
+  needed.  However, as Leslie noted, this didn’t work very well. The effects of
+  the experiment would be lasting, as this led to a form of the process we have
+  now, where the RFC Editor asks more questions during AUTH/AUTH48 and technical
+  changes require approval from the relevant Area Directors. These changes added
+  to the workload and extended publication times; many often now jokingly refer
+  to AUTH48 as the authors’ “48 days”, “48 weeks”, etc.
+</t>
+
+<t>Because the workload continued to increase (in more ways than just document
+  submissions) and the lessons learned with temporary copy editors, our team
+  grew more permanently.  While we had other editors in between, two additions
+  are of particular interest, as they experienced much of the RFC Editor’s
+  growing pains, helped work us out of a backlogged state, shaped the RFC Editor
+  function, and are still with the team today: Alice Russo joined the team in
+  2005 and Megan Ferguson joined us in 2007.
+</t>
+
+<t>With the understanding that the record breaking number of submissions was not an
+  anomaly, we made significant upgrades to the infrastructure of the RFC Editor
+  function to facilitate document tracking and reporting.  For example, the
+  illustrious “black binder” – an actual 3-ring binder used to track number
+  assignment, a manually edited HTML file for the queue page, and a Rube-Goldberg
+  set of text files and scripts that created queue statistics, all were eventually
+  replaced; an errata system was proposed and implemented; and XML became a newly
+  accepted source file.
+</t>
+
+<t>In 2009, RFC 5620 was published, introducing the initial version of the RFC
+  Editor model we have now.  While it was published in 2009, it did not go into
+  effect until 2010, when the RFC Editor project as I knew it was disbanded and
+  divvied up into four pieces: RFC Series Editor (RSE), Independent Submissions
+  Editor (ISE), RFC Production Center (RPC), and Publisher.  In addition, the
+  RFC Series Advisory Group (RSAG) was created to “provide expert, informed
+  guidance (chiefly, to the RSE) in matters affecting the RFC Series operation
+  and development.”
+</t>
+
+<t>In 2010, the RPC and Publisher contracts were awarded to Association Management Systems (AMS); we
+   started with three existing team members (Alice Russo, Megan
+   Ferguson, and me) and we were pleased to be joined by Lynne
+   Bartholomew, a new colleague to anchor us in the AMS office, and
+   later Rebecca VanRheenen shortly thereafter.
+</t>
+
+<t>I was wary of this model and was especially worried about the hole Bob
+  Braden’s departure would create.  Luckily for us, Bob Braden provided wise
+  counsel and insight during the transition (and beyond). He gave the staff
+  transitioning to AMS particularly helpful parting words – “keep the RFCs
+  coming” - and that is what we did.
+</t>
+
+<t>AMS embraced the RFC Series and helped us quickly get set up on new servers.
+  The RFC Production Center and Publisher were now part of the AMS family and
+  it was all hands on deck to make sure the transition went smoothly to minimize
+  the impact on document processing.
+</t>
+
+
+<t>Our focus during transition was to 1) keep the trains running; that is, we
+  wanted to get ourselves up and running with minimal down time and 2) work with
+  the Transitional RSE, the Independent Submissions Editor (Nevil Brownlee),
+  RSAG, and the IAD to better understand and implement the newly defined RFC
+  Editor model.
+</t>
+
+<t>Though some portions of the transition were challenging and lasted longer
+  than expected, the Acting RSE officially handed the reigns over to the RSE
+  (Heather Flanagan) in 2012.  She had to jump in, learn the RFC Editor and IETF
+  culture, and work through a backlog of issues that had been left unattended.
+</t>
+
+<t>Two of the backlogged issues were so old, they were ones someone asked me
+  about at my first IETF: when is the RFC Editor going to allow UTF-8 in RFCs
+  and when will the RFC Editor adopt a more modern publication format.
+</t>
+
+<t>At that time, while we understood the desire to move toward UTF-8 and to
+  have more modern outputs, we also routinely received emails from individuals
+  requesting that we send them plain-text files (instead of pointing them to the
+  website) because their Internet access was limited.  We also regularly
+  received complaints from rfc-editor.org users whenever something on the site
+  didn’t work correctly with their older browsers.  In short, we could not
+  advance without leaving a large number of users behind.
+</t>
+
+<t>However, we now find ourselves on the precipice of change.  2019 promises to
+  be a BIG year for the RFC Series, as we expect to transition from publishing
+  plaintext, ASCII-only files to publishing multiple file formats (XML, HTML,
+  PDF/A-3, and TXT) that allow both UTF-8 and SVG art.
+</t>
+
+<t>Interestingly enough, I find that the RFC Editor has been in an almost
+  constant state of change since I joined the team, even though the goal of the
+  RFC Editor remains the same: to produce archival quality RFCs in a timely
+  manner that are easily accessible for future generations.
+</t>
+
 </section>
 </section>
 
@@ -636,13 +873,34 @@ title="A View from Inside the RFC Editor - Sandy Ginoza">
 
     <references title='Informative References'>
 
-&RFC0003; &RFC1000; &RFC2441; &RFC2555; &RFC4714; &RFC4744; &RFC4846; &RFC5540;
-&RFC5629; &RFC5742; &RFC6635; &RFC7990; &RFC8153;
+&RFC0003; &RFC0433; &RFC0748; &RFC1000; &RFC1150; &RFC1310; &RFC1311; &RFC1818;
+&RFC2441; &RFC2468; &RFC2555; &RFC4714; &RFC4744; &RFC4844; &RFC4846; &RFC5540;
+&RFC5629; &RFC5742; &RFC6360; &RFC6410; &RFC6635; &RFC6949; &RFC7990; &RFC8153;
+
+<reference anchor="IAB-19880712" target="https://www.iab.org/documents/minutes/minutes-1988/iab-minutes-1988-07-12/">
+  <front>
+    <title>"IAB Minutes 1988-07-12"</title>
+    <author>
+      <organization>IAB</organization>
+    </author>
+    <date year="1988" month="July"/>
+  </front>
+</reference>
+
+<reference anchor="RFC-ONLINE" target="http://www.rfc-editor.org/rfc-online-2000.html">
+  <front>
+    <title>History of RFC Online Project</title>
+    <author >
+      <organization>RFC Editor</organization>
+    </author>
+    <date year="n.d."/>
+  </front>
+</reference>
 
     </references>
 
 <section anchor="contributors" title="Contributors">
-  <t>With many thanks to Steve Crocker, Leslie Daigle, Nevil Brownlee, and
+  <t>With many thanks to Steve Crocker, Vint Cerf, Leslie Daigle, Nevil Brownlee, and
     Sandy Ginoza for their perspectives on the Series, and their ongoing support.
   </t>
 </section>
