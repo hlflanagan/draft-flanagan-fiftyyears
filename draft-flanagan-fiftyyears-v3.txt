@@ -162,7 +162,7 @@ Table of Contents
      +----------------+-----------+---------------------------------+
      | [RFC0690]      | June 1975 | Relationship starts between ISI |
      |                |           | and the RFC Editor, judging by  |
-     |                |           | Jon Postel's affilation change  |
+     |                |           | Jon Postel's affiliation change |
      +----------------+-----------+---------------------------------+
      | [RFC0748]      | March     | First April 1st RFC             |
      |                | 1977      |                                 |
