@@ -18,7 +18,8 @@ Abstract
    includes both retrospective material from individuals involved at key
    inflection points, as well as a review of the current state of
    affairs.  It concludes with thoughts on possibilities for the next
-   fifty years for the Series.
+   fifty years for the Series.  This document updates and brings current
+   the history started in RFCs 2555 and 5540.
 
 Status of This Memo
 
@@ -76,45 +77,45 @@ Table of Contents
    The RFC Series began in April 1969 with the publication of "Host
    Software" by Steve Crocker.  The early RFCs were extremely informal
    and included poems, satires, and April 1 jokes, to name a few.  Since
-   then, over 8000 RFCs have been published, ranging from best practice
-   information, experimental protocols, informational material, and, of
-   course, standards.  Material is accepted for publication through the
-   IETF, the IAB, the IRTF, and the Independent Submissions stream, each
-   with clear processes on how drafts are submitted and potentially
-   approved for publication as an RFC.  Ultimately, the goal of the RFC
-   Series is to provide a canonical source for the material published by
-   the RFC Editor, and to support the preservation of that material in
-   perpetuity.
+   then, over 8000 RFCs have been published, ranging across best
+   practice information, experimental protocols, informational material,
+   and, of course, standards.  Material is accepted for publication
+   through the IETF, the IAB, the IRTF, and the Independent Submissions
+   stream, each with clear processes on how drafts are submitted and
+   potentially approved for publication as an RFC.  Ultimately, the goal
+   of the RFC Series is to provide a canonical source for the material
+   published by the RFC Editor, and to support the preservation of that
+   material in perpetuity.
 
-   Since the very first RFC fifty years ago, the focus of the Series has
-   evolved to that of a source of a stable record of what has been
-   published and the dissemination of their ideas to the world.  In
-   particular, when Internet Drafts first started being produced [need a
-   date check], RFCs became a much more formal body of material
-   requiring serious curation, from the editing process through to the
-   curation and archiving of the documents.  Today, there is still a
-   tension between having that stable, archival record, versus making
-   the latest ideas available as soon as possible; evolution will
-   continue, in no small part driven by that tension.
+   Since the very first RFC was published fifty years ago, the focus of
+   the Series has evolved to be a stable record of what has been
+   published and to provide a source for the dissemination to the world
+   of the ideas contained in the RFCs.  In particular, when Internet
+   Drafts first started being produced [need a date check], RFCs became
+   a much more formal body of material requiring serious curation, from
+   the editing process through to the curation and archiving of the
+   documents.  Today, there is still a tension between having that
+   stable, archival record, versus making the latest ideas available as
+   soon as possible; evolution will continue, in no small part driven by
+   that tension.
 
    Change does come to the Series, albeit slowly.  First, we saw the
    distribution method change from postal mail to FTP and email.  From
    there, we saw increased guidance for authors on how to write an RFC.
    The editorial staff went from one person, Jon Postel, to a team of
    five to seven.  The actual editing and publishing work split from the
-   protocol registration service.  The whole RFC Editor structure was
-   reviewed and refined [RFC6635].  And, in the last few years, we have
-   started to the process to change the format of the RFC documents
-   themselves.
+   service for registration of protocol codepoints.  The whole RFC
+   Editor structure was reviewed and refined [RFC6635].  And, in the
+   last few years, we have started the process to change the format of
+   the RFC documents themselves.
 
    This is evolution, and the Series will continue to adapt in order to
    meet the needs and expectations of the community of authors,
-   operators, historians, and the other entities that make up the
-   community that uses the RFC Series.  These changes will be always be
-   balanced against the core mission of the Series: to maintain a
-   strong, stable, archival record of technical specifications,
-   protocols, and other information relevant to the Arpanet and Internet
-   networking communities.
+   operators, historians, and users of the RFC Series.  These changes
+   will be always be balanced against the core mission of the Series: to
+   maintain a strong, stable, archival record of technical
+   specifications, protocols, and other information relevant to the
+   Arpanet and Internet networking communities.
 
    There is more to the history of the RFC Series than can be covered in
    this document.  Readers interested in earlier perspectives may find
@@ -142,48 +143,72 @@ Table of Contents
    format while respecting the need for stability, and my thoughts on
    the next fifty years of RFCs.
 
+   This document brings up to date the historical records started in
+   RFCs 2555 and 5540.
+
 2.  Key Moments in RFC History
 
-   *  First distribution of RFCs over the network = 1971/1972 (with the
-      creation of FTP)
+     +----------------+-----------+---------------------------------+
+     |     Marker     |    Date   |              Event              |
+     +================+===========+=================================+
+     |   [RFC0001]    |    1969   |       First RFC published       |
+     +----------------+-----------+---------------------------------+
+     |   [RFC0114]    |    1971   | First distribution of RFCs over |
+     |                |           |           the network           |
+     +----------------+-----------+---------------------------------+
+     |   [RFC0433]    |  December |   First mention of the Czar of  |
+     |                |    1972   | Socket Numbers and the proposal |
+     |                |           |      for a formal registry      |
+     +----------------+-----------+---------------------------------+
+     |   [RFC0690]    | June 1975 | Relationship starts between ISI |
+     |                |           |  and the RFC Editor, judging by |
+     |                |           |  Jon Postel's affilation change |
+     +----------------+-----------+---------------------------------+
+     |   [RFC0748]    |   March   |       First April 1st RFC       |
+     |                |    1977   |                                 |
+     +----------------+-----------+---------------------------------+
+     |   [RFC1083]    |  December |  Three stage standards process  |
+     |                |    1988   |             defined             |
+     +----------------+-----------+---------------------------------+
+     |   [RFC1150]    |   March   |      FYI sub-series started     |
+     |                |    1990   |                                 |
+     +----------------+-----------+---------------------------------+
+     |   [RFC1311]    |   March   |      STD sub-series started     |
+     |                |    1992   |                                 |
+     +----------------+-----------+---------------------------------+
+     |   [RFC1818]    |   August  |      BCP sub-series started     |
+     |                |    1995   |                                 |
+     +----------------+-----------+---------------------------------+
+     |  [RFC-ONLINE]  |  (approx) |        RFC Online Project       |
+     |                | 1998-2010 |                                 |
+     +----------------+-----------+---------------------------------+
+     | [IAB-19880712] | July 1988 | IAB approves the creation of an |
+     |                |           |      Internet Draft series      |
+     +----------------+-----------+---------------------------------+
+     |   [RFC2441]    |     15    |        Jon Postel's death       |
+     |                |  October  |                                 |
+     |                |    1998   |                                 |
+     +----------------+-----------+---------------------------------+
+     |  [ISI-to-AMS]  |  October  |  Transition starts from ISI to  |
+     |                |    2009   |      Association Management     |
+     |                |           |         Solutions (AMS)         |
+     +----------------+-----------+---------------------------------+
+     |   [RFC4844]    | July 2007 |       RFC Stream structure      |
+     +----------------+-----------+---------------------------------+
+     |   [RFC6360]    |   August  |       FYI sub-series ended      |
+     |                |    2011   |                                 |
+     +----------------+-----------+---------------------------------+
+     |   [RFC6410]    |  October  |   Two stage standards process   |
+     |                |    2011   |            formalized           |
+     +----------------+-----------+---------------------------------+
+     |   [RFC6949]    |  May 2013 |    RFC Format change project    |
+     |                |           |             started             |
+     +----------------+-----------+---------------------------------+
+     |   [RFC8153]    |   April   | RFCs no longer printed to paper |
+     |                |    2017   |         upon publication        |
+     +----------------+-----------+---------------------------------+
 
-   *  First mention of the Czar of Socket Numbers and the proposal for a
-      formal registry: December 1972 [RFC0433]
-
-   *  ISI and the RFC Editor = June 1975 (judging by Jon Postel's
-      affiliation change starting in RFC 690)
-
-   *  IEN Series started = March 1977
-
-   *  First April 1 = 1978 [RFC0748]
-
-   *  IEN Series concluded = September 1982
-
-   *  FYI sub-series started = March 1990 [RFC1150]
-
-   *  Three stage standards process = March 1992 [RFC1310]
-
-   *  STD sub-series = March 1992 [RFC1311]
-
-   *  BCP sub-series = August 1995 [RFC1818]
-
-   *  RFC Online Project = (approx) 1998-2010 [RFC-ONLINE]
-
-   *  IAB approves the creation of an Internet Draft series = July 1988
-      [IAB-19880712]
-
-   *  Jon Postel's death = 15 October 1998
-
-   *  RFC Stream structure = July 2007 [RFC4844]
-
-   *  FYI sub-series ended = August 2011 [RFC6360]
-
-   *  Two stage standards process = October 2011 [RFC6410]
-
-   *  RFC Format change project started = May 2013 [RFC6949]
-
-   *  RFCs no longer printed to paper upon publication = April 2017
-      [RFC8153]
+                                 Table 1
 
 3.  Perspectives
 
@@ -396,7 +421,7 @@ Table of Contents
    is often overlooked.  Students and young professionals all over the
    world have been able to download the RFCs, learn about the many
    pieces of technology, and then build the most amazing software.  And
-   they still are.  [They are also a fantastic resource of historians.]
+   they still are.  [They are also a fantastic resource for historians.]
 
    Where will it end?  The Arpanet begat the Internet and the underlying
    technology transitioned from the original host-host protocol to TCP/
@@ -411,17 +436,17 @@ Table of Contents
    I'll write a few words for RFC 10,000.
 
    Quite obviously the circumstances have changed.  Email and other
-   media are ubiquitous for the immediate exchange of inchoate thoughts.
-   Internet Drafts are the means for exchanging substantial, albeit
-   sometimes speculative content.  And RFCs are reserved for fully
-   polished, reviewed, edited and approved specifications.  Comments to
-   RFCs are not requested, although usage-related discussions and other
-   commentary on mailing lists often takes place nonetheless.  Rather
-   than bemoan the change, I take it as a remarkable example of
-   adaptation.  RFCs continue to serve the protocol development
-   community.  Indeed, they are the bedrock of a very vibrant and
-   productive process that has fueled and guided the Internet
-   revolution.
+   media are most often used for the immediate exchange of inchoate
+   thoughts.  Internet Drafts are the means for exchanging substantial,
+   albeit sometimes speculative content.  And RFCs are reserved for
+   fully polished, reviewed, edited and approved specifications.
+   Comments to RFCs are not requested, although usage-related
+   discussions and other commentary on mailing lists often takes place
+   nonetheless.  Rather than bemoan the change, I take it as a
+   remarkable example of adaptation.  RFCs continue to serve the
+   protocol development community.  Indeed, they are the bedrock of a
+   very vibrant and productive process that has fueled and guided the
+   Internet revolution.
 
 3.2.  The RFC Management and Editing Team - Vint Cerf
 
@@ -442,7 +467,7 @@ Table of Contents
    away in October 1998 (see [RFC2468]), Joyce and Bob undertook to
    carry on with the RFC work in his stead, adding Sandy Ginoza to the
    team.  During the period when Jon and Joyce worked closely together,
-   she would challenge me to tell which edits had been made by Jon and
+   Joyce would challenge me to tell which edits had been made by Jon and
    which by her.  I found this impossible, so aligned were they in their
    editorial sensibilities.  Sadly, three of these tireless Internauts
    have passed on and we have only the product of their joint work and
@@ -498,25 +523,24 @@ Table of Contents
    This left the RFC Editor function as an Internet Society-supported,
    independent effort.
 
-   That independence of nature was necessary for the historic role of
-   the RFC Series in considering all technical contributions.  But, at
-   that inflection point in the Series' history, it needed a new
-   governance and funding model, just as the other Internet technical
-   specification supporting organizations had.  Also, the IETF
-   leadership had some concerns it felt it needed to be addressed in its
-   own technical publication stream.  While the RFC Series had been
-   established before there was an IETF, and had historically continued
-   to have documents in it that didn't originate from the IETF, the IETF
-   was its largest and most organized contributor.  There was no
-   particular organization of independent contributors.  Equally, the
-   funding for the RFC Editor was at that point coming from the Internet
-   Society in the guise of "support for the IETF".  For people who
-   hadn't been involved with the institution from the outset, it was
-   pretty easy to perceive the RFC Series uniquely as the IETF's
-   publication series.  So, the challenge was to identify and address
-   the IETF's issues, along with governance and funding, without
-   sacrificing the fundamental nature of the RFC Series as a broader-
-   than-IETF publication series.
+   That independent nature was necessary for the historic role of the
+   RFC Series in considering all technical contributions.  But, at that
+   inflection point in the Series' history, it needed a new governance
+   and funding model, just as the other Internet technical specification
+   supporting organizations had.  Also, the IETF leadership had some
+   concerns it felt needed to addressed in its own technical publication
+   stream.  While the RFC Series had been established before there was
+   an IETF, and had historically continued to have documents in it that
+   didn't originate from the IETF, the IETF was its largest and most
+   organized contributor.  There was no particular organization of
+   independent contributors.  Equally, the funding for the RFC Editor
+   was at that point coming from the Internet Society in the guise of
+   "support for the IETF".  For people who hadn't been involved with the
+   institution from the outset, it was pretty easy to perceive the RFC
+   Series uniquely as the IETF's publication series.  So, the challenge
+   was to identify and address the IETF's issues, along with governance
+   and funding, without sacrificing the fundamental nature of the RFC
+   Series as a broader-than-IETF publication series.
 
    To give a sense of the kinds of tensions that were prevalent, let me
    share that the one phrase that sticks in my mind from those
@@ -528,13 +552,14 @@ Table of Contents
    being introduced by copy-editors that were hired as occasional
    workers to help with improving publication rates, but who weren't
    necessarily up to speed on terms of art in technical specifications.
-   (There were some pretty egregious examples that I forbear from citing
-   here; let's just say it wasn't strictly a problem of Internet
-   engineers getting uptight about their cheese being moved).  While
-   "push to publish" would have addressed those issues, it would not
-   have addressed the loss of clarity from the many significant text
-   improvements copy editors successfully introduced, or the fact that
-   not all RFCs are approved by the IESG.
+   (There were some pretty egregious examples of copyeditors introducing
+   changes that significantly changed the technical meaning of the text
+   that I forbear from citing here; let's just say it wasn't strictly a
+   problem of Internet engineers getting uptight about their cheese
+   being moved).  While "push to publish" would have addressed those
+   issues, it would not have addressed the loss of clarity from the many
+   significant text improvements copy editors successfully introduced,
+   or the fact that not all RFCs are approved by the IESG.
 
    Institutionally, it was clear that the target was to have the RFC
    Editor function governance within the reach of the Internet technical
@@ -626,8 +651,8 @@ Table of Contents
    happy to help.
 
    Most drafts were straightforward, but there were some that needed
-   extra attention.  Often a draft requests IANA code points, For that
-   IANA were always been quick to offer help and support.  Code points
+   extra attention.  Often a draft requests IANA code points, and for
+   that IANA were always quick to offer help and support.  Code points
    in some IANA Registries require Expert Review - sometimes the
    interactions with Expert reviewers took quite a long time!  Again,
    sometimes a draft seemed to fit better in the IETF Stream; for these
@@ -649,10 +674,11 @@ Table of Contents
    ISE published the draft.
 
    One rather special part of the Independent Stream is the April First
-   drafts.  These don't really exist, so authors must send them directly
-   to the ISE or the RFC Editor.  Only a few of them can be published
-   each year; they are reviewed by the ISE and The RSE; Bob Braden's
-   criteria for April First drafts were:
+   drafts.  These are humorous RFCs that are never formally posted as
+   drafts and which have no formal review process.  The authors must
+   send them directly to the ISE or the RFC Editor.  Only a few of them
+   can be published each year; they are reviewed by the ISE and the RSE;
+   Bob Braden's criteria for April First drafts were:
 
       They must relate to the Internet (like all drafts)
 
@@ -734,7 +760,7 @@ Table of Contents
                     | 2013 - 2017 |        295        |
                     +-------------+-------------------+
 
-                                  Table 1
+                                  Table 2
 
    There were significant jumps in the publication rates in the 90s and
    onward, with the number of publications almost doubling between 1993
@@ -757,13 +783,14 @@ Table of Contents
    authors' "48 days", "48 weeks", etc.
 
    Because the workload continued to increase (in more ways than just
-   document submissions) and the lessons learned with temporary copy
-   editors, our team grew more permanently.  While we had other editors
-   in between, two additions are of particular interest, as they
-   experienced much of the RFC Editor's growing pains, helped work us
-   out of a backlogged state, shaped the RFC Editor function, and are
-   still with the team today: Alice Russo joined the team in 2005 and
-   Megan Ferguson joined us in 2007.
+   document submissions; tool testing, editorial process changes, and
+   more) and the lessons learned with temporary copy editors, our team
+   grew more permanently.  While we had other editors in between, two
+   additions are of particular interest, as they experienced much of the
+   RFC Editor's growing pains, helped work us out of a backlogged state,
+   shaped the RFC Editor function, and are still with the team today:
+   Alice Russo joined the team in 2005 and Megan Ferguson joined us in
+   2007.
 
    With the understanding that the record breaking number of submissions
    was not an anomaly, we made significant upgrades to the
@@ -939,17 +966,35 @@ Table of Contents
               <https://www.iab.org/documents/minutes/minutes-1988/iab-
               minutes-1988-07-12/>.
 
+   [ISI-to-AMS]
+              The IETF Administrative Support Activity, "RFC Production
+              Center Agreement between Association Management Solutions,
+              LLC, and the Internet Society", October 2009,
+              <https://iaoc.ietf.org/documents/AMS-RPC-Public-Final-
+              2009.pdf>.
+
    [RFC-ONLINE]
               RFC Editor, "History of RFC Online Project", March 2019,
               <http://www.rfc-editor.org/rfc-online-2000.html>.
+
+   [RFC0001]  Crocker, S., "Host Software", RFC 1, DOI 10.17487/RFC0001,
+              April 1969, <https://www.rfc-editor.org/info/rfc1>.
 
    [RFC0003]  Crocker, S.D., "Documentation conventions", RFC 3,
               DOI 10.17487/RFC0003, April 1969,
               <https://www.rfc-editor.org/info/rfc3>.
 
+   [RFC0114]  Bhushan, A.K., "File Transfer Protocol", RFC 114,
+              DOI 10.17487/RFC0114, April 1971,
+              <https://www.rfc-editor.org/info/rfc114>.
+
    [RFC0433]  Postel, J., "Socket number list", RFC 433,
               DOI 10.17487/RFC0433, December 1972,
               <https://www.rfc-editor.org/info/rfc433>.
+
+   [RFC0690]  Postel, J., "Comments on the proposed Host/IMP Protocol
+              changes", RFC 690, DOI 10.17487/RFC0690, June 1975,
+              <https://www.rfc-editor.org/info/rfc690>.
 
    [RFC0748]  Crispin, M.R., "Telnet randomly-lose option", RFC 748,
               DOI 10.17487/RFC0748, April 1978,
@@ -959,13 +1004,14 @@ Table of Contents
               reference guide", RFC 1000, DOI 10.17487/RFC1000, August
               1987, <https://www.rfc-editor.org/info/rfc1000>.
 
+   [RFC1083]  Defense Advanced Research Projects Agency and Internet
+              Activities Board, "IAB official protocol standards",
+              RFC 1083, DOI 10.17487/RFC1083, December 1988,
+              <https://www.rfc-editor.org/info/rfc1083>.
+
    [RFC1150]  Malkin, G.S. and J.K. Reynolds, "FYI on FYI: Introduction
               to the FYI Notes", RFC 1150, DOI 10.17487/RFC1150, March
               1990, <https://www.rfc-editor.org/info/rfc1150>.
-
-   [RFC1310]  Chapin, L., "The Internet Standards Process", RFC 1310,
-              DOI 10.17487/RFC1310, March 1992,
-              <https://www.rfc-editor.org/info/rfc1310>.
 
    [RFC1311]  Postel, J., "Introduction to the STD Notes", RFC 1311,
               DOI 10.17487/RFC1311, March 1992,

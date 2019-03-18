@@ -1,6 +1,6 @@
 <!DOCTYPE html>
-<html class="Internet-Draft" lang="en"><head>
-<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<html lang="en" class="Internet-Draft">
+<head>
 <meta charset="utf-8">
 <meta content="Common,Latin" name="scripts">
 <title>Fifty Years of RFCs</title>
@@ -10,10 +10,11 @@
   retrospective material from individuals involved at key inflection points, as
   well as a review of the current state of affairs. It concludes with thoughts
   on possibilities for the next fifty years for the Series.
+  This document updates and brings current the history started in RFCs 2555 and 5540.
  
     " name="description">
 <meta content="xml2rfc 2.21.1" name="generator">
-<link href="http://xml2rfc.tools.ietf.org/var/tmp/CGItemp1975.dir/draft-flanagan-fiftyyears.xml" type="application/rfc+xml" rel="alternate">
+<link href="/var/tmp/CGItemp4955.dir/draft-flanagan-fiftyyears.xml" type="application/rfc+xml" rel="alternate">
 <link href="#copyright" rel="license">
 <style type="text/css">/* fonts */
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans'); /* Sans-serif */
@@ -896,7 +897,7 @@ caption a[href] {
   font-size: 0.9em;
 }
 </style>
-<link href="draft-flanagan-fiftyyears-v3_files/rfc-local.html" type="text/css" rel="stylesheet">
+<link href="rfc-local.css" type="text/css" rel="stylesheet">
 </head>
 <body>
 <table class="ears">
@@ -946,6 +947,7 @@ caption a[href] {
   retrospective material from individuals involved at key inflection points, as
   well as a review of the current state of affairs. It concludes with thoughts
   on possibilities for the next fifty years for the Series.
+  This document updates and brings current the history started in RFCs 2555 and 5540.
 <a href="#section-abstract-1" class="pilcrow">¶</a></p>
 </section>
 <div id="status-of-memo">
@@ -1061,12 +1063,12 @@ caption a[href] {
 <div id="introduction">
 <section id="section-1">
       <h2 id="name-introduction">
-<a href="#section-1" class="section-number selfRef">1.&nbsp;</a><a href="#name-introduction" class="section-name selfRef">Introduction</a>
+<a href="#section-1" class="section-number selfRef">1. </a><a href="#name-introduction" class="section-name selfRef">Introduction</a>
       </h2>
 <p id="section-1-1">The RFC Series began in April 1969 with the publication of "Host Software"
   by Steve Crocker. The early RFCs were extremely informal and included poems,
   satires, and April 1 jokes, to name a few.  Since then, over 8000 RFCs have
-  been published, ranging from
+  been published, ranging across
   best practice information, experimental protocols, informational material,
   and, of course, standards. Material is accepted for publication through the
   IETF, the IAB, the IRTF, and the Independent Submissions stream, each with
@@ -1074,9 +1076,10 @@ caption a[href] {
   publication as an RFC.  Ultimately, the goal of the RFC Series is to provide a
   canonical source for the material published by the RFC Editor, and to support
   the preservation of that material in perpetuity. <a href="#section-1-1" class="pilcrow">¶</a></p>
-<p id="section-1-2">Since the very first RFC fifty years ago, the focus of the Series has evolved
-to that of a source of a stable record of what has been published and the
-dissemination of their ideas to the world. In particular, when Internet Drafts
+<p id="section-1-2">Since the very first RFC was published fifty years ago, the focus of
+   the Series has evolved to be a stable record of what has been
+   published and to provide a source for the dissemination to the world
+   of the ideas contained in the RFCs. In particular, when Internet Drafts
 first started being produced [need a date check], RFCs became a much more formal
 body of material requiring serious curation, from the editing process through to
 the curation and archiving of the documents. Today, there is still a tension
@@ -1086,14 +1089,14 @@ by that tension.  <a href="#section-1-2" class="pilcrow">¶</a></p>
 <p id="section-1-3">Change does come to the Series, albeit slowly. First, we saw the distribution
 method change from postal mail to FTP and email. From there, we saw increased
 guidance for authors on how to write an RFC. The editorial staff went from one
-person, Jon Postel, to a team of five to seven. The actual editing and
-publishing work split from the protocol registration service. The whole RFC
+person, Jon Postel, to a team of five to seven. The actual editing and publishing
+work split from the service for registration of protocol codepoints. The whole RFC
 Editor structure was reviewed and refined <span>[<a href="#RFC6635" class="xref">RFC6635</a>]</span>. And, in the
-last few years, we have started to the process to change the format of the RFC
+last few years, we have started the process to change the format of the RFC
 documents themselves.<a href="#section-1-3" class="pilcrow">¶</a></p>
-<p id="section-1-4">This is evolution, and the Series will continue to adapt in order to meet the
-  needs and expectations of the community of authors, operators, historians,
-  and the other entities that make up the community that uses the RFC Series.
+<p id="section-1-4">This is evolution, and the Series will continue to adapt in order to
+   meet the needs and expectations of the community of authors,
+   operators, historians, and users of the RFC Series.
   These changes will be always be balanced against the core mission of the
   Series: to maintain a strong, stable, archival record of technical specifications,
   protocols, and other information relevant to the Arpanet and Internet
@@ -1127,61 +1130,167 @@ Braden. As the current RFC Series Editor, I will put my thoughts in on the most
 recent changes in formalizing the digital preservation of the Series, the
 process to modernize the format while respecting the need for stability, and my
 thoughts on the next fifty years of RFCs.<a href="#section-1-7" class="pilcrow">¶</a></p>
+<p id="section-1-8">This document brings up to date the historical records started in RFCs 2555 and 5540.<a href="#section-1-8" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="keymoments">
 <section id="section-2">
       <h2 id="name-key-moments-in-rfc-history">
-<a href="#section-2" class="section-number selfRef">2.&nbsp;</a><a href="#name-key-moments-in-rfc-history" class="section-name selfRef">Key Moments in RFC History</a>
+<a href="#section-2" class="section-number selfRef">2. </a><a href="#name-key-moments-in-rfc-history" class="section-name selfRef">Key Moments in RFC History</a>
       </h2>
-<ul><li id="section-2-1.1">First distribution of RFCs over the network = 1971/1972 (with the creation of FTP)<a href="#section-2-1.1" class="pilcrow">¶</a>
-</li>
-        <li id="section-2-1.2">First mention of the Czar of Socket Numbers and the proposal for a formal registry: December 1972 <span>[<a href="#RFC0433" class="xref">RFC0433</a>]</span><a href="#section-2-1.2" class="pilcrow">¶</a>
-</li>
-        <li id="section-2-1.3">ISI and the RFC Editor = June 1975 (judging by Jon Postel's affiliation change starting in RFC 690)<a href="#section-2-1.3" class="pilcrow">¶</a>
-</li>
-        <li id="section-2-1.4">IEN Series started = March 1977<a href="#section-2-1.4" class="pilcrow">¶</a>
-</li>
-        <li id="section-2-1.5">First April 1 = 1978 <span>[<a href="#RFC0748" class="xref">RFC0748</a>]</span><a href="#section-2-1.5" class="pilcrow">¶</a>
-</li>
-        <li id="section-2-1.6">IEN Series concluded = September 1982<a href="#section-2-1.6" class="pilcrow">¶</a>
-</li>
-        <li id="section-2-1.7">FYI sub-series started = March 1990 <span>[<a href="#RFC1150" class="xref">RFC1150</a>]</span> <a href="#section-2-1.7" class="pilcrow">¶</a>
-</li>
-        <li id="section-2-1.8">Three stage standards process = March 1992 <span>[<a href="#RFC1310" class="xref">RFC1310</a>]</span><a href="#section-2-1.8" class="pilcrow">¶</a>
-</li>
-        <li id="section-2-1.9">STD sub-series = March 1992 <span>[<a href="#RFC1311" class="xref">RFC1311</a>]</span><a href="#section-2-1.9" class="pilcrow">¶</a>
-</li>
-        <li id="section-2-1.10">BCP sub-series = August 1995 <span>[<a href="#RFC1818" class="xref">RFC1818</a>]</span><a href="#section-2-1.10" class="pilcrow">¶</a>
-</li>
-        <li id="section-2-1.11">RFC Online Project = (approx) 1998-2010 <span>[<a href="#RFC-ONLINE" class="xref">RFC-ONLINE</a>]</span><a href="#section-2-1.11" class="pilcrow">¶</a>
-</li>
-        <li id="section-2-1.12">IAB approves the creation of an Internet Draft series = July 1988 <span>[<a href="#IAB-19880712" class="xref">IAB-19880712</a>]</span><a href="#section-2-1.12" class="pilcrow">¶</a>
-</li>
-        <li id="section-2-1.13">Jon Postel's death = 15 October 1998<a href="#section-2-1.13" class="pilcrow">¶</a>
-</li>
-        <li id="section-2-1.14">RFC Stream structure = July 2007 <span>[<a href="#RFC4844" class="xref">RFC4844</a>]</span><a href="#section-2-1.14" class="pilcrow">¶</a>
-</li>
-        <li id="section-2-1.15">FYI sub-series ended = August 2011 <span>[<a href="#RFC6360" class="xref">RFC6360</a>]</span><a href="#section-2-1.15" class="pilcrow">¶</a>
-</li>
-        <li id="section-2-1.16">Two stage standards process = October 2011 <span>[<a href="#RFC6410" class="xref">RFC6410</a>]</span><a href="#section-2-1.16" class="pilcrow">¶</a>
-</li>
-        <li id="section-2-1.17">RFC Format change project started = May 2013 <span>[<a href="#RFC6949" class="xref">RFC6949</a>]</span><a href="#section-2-1.17" class="pilcrow">¶</a>
-</li>
-        <li id="section-2-1.18">RFCs no longer printed to paper upon publication = April 2017 <span>[<a href="#RFC8153" class="xref">RFC8153</a>]</span><a href="#section-2-1.18" class="pilcrow">¶</a>
-</li>
-      </ul>
+<span id="name-key-moments-in-rfc-history-2"></span><div id="keymoments-table">
+<table class="center" id="table-1">
+        <caption>
+<a href="#table-1">Table 1</a>:
+<a href="#name-key-moments-in-rfc-history-2" class="selfRef">Key Moments in RFC History</a>
+        </caption><thead>
+          <tr>
+            <th class="text-center" rowspan="1" colspan="1">Marker</th>
+            <th class="text-center" rowspan="1" colspan="1">Date</th>
+            <th class="text-center" rowspan="1" colspan="1">Event</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td class="text-center" rowspan="1" colspan="1">
+              <span>[<a href="#RFC0001" class="xref">RFC0001</a>]</span>
+</td>
+            <td class="text-center" rowspan="1" colspan="1">1969</td>
+            <td class="text-center" rowspan="1" colspan="1">First RFC published</td>
+          </tr>
+          <tr>
+            <td class="text-center" rowspan="1" colspan="1">
+              <span>[<a href="#RFC0114" class="xref">RFC0114</a>]</span>
+</td>
+            <td class="text-center" rowspan="1" colspan="1">1971</td>
+            <td class="text-center" rowspan="1" colspan="1">First distribution of RFCs over the network</td>
+          </tr>
+          <tr>
+            <td class="text-center" rowspan="1" colspan="1">
+              <span>[<a href="#RFC0433" class="xref">RFC0433</a>]</span>
+</td>
+            <td class="text-center" rowspan="1" colspan="1">December 1972</td>
+            <td class="text-center" rowspan="1" colspan="1">First mention of the Czar of Socket Numbers and the proposal for a formal registry</td>
+          </tr>
+          <tr>
+            <td class="text-center" rowspan="1" colspan="1">
+              <span>[<a href="#RFC0690" class="xref">RFC0690</a>]</span>
+</td>
+            <td class="text-center" rowspan="1" colspan="1">June 1975</td>
+            <td class="text-center" rowspan="1" colspan="1">Relationship starts between ISI and the RFC Editor, judging by Jon Postel's affilation change</td>
+          </tr>
+          <tr>
+            <td class="text-center" rowspan="1" colspan="1">
+              <span>[<a href="#RFC0748" class="xref">RFC0748</a>]</span>
+</td>
+            <td class="text-center" rowspan="1" colspan="1">March 1977</td>
+            <td class="text-center" rowspan="1" colspan="1">First April 1st RFC</td>
+          </tr>
+          <tr>
+            <td class="text-center" rowspan="1" colspan="1">
+              <span>[<a href="#RFC1083" class="xref">RFC1083</a>]</span>
+</td>
+            <td class="text-center" rowspan="1" colspan="1">December 1988</td>
+            <td class="text-center" rowspan="1" colspan="1">Three stage standards process defined</td>
+          </tr>
+          <tr>
+            <td class="text-center" rowspan="1" colspan="1">
+              <span>[<a href="#RFC1150" class="xref">RFC1150</a>]</span>
+</td>
+            <td class="text-center" rowspan="1" colspan="1">March 1990</td>
+            <td class="text-center" rowspan="1" colspan="1">FYI sub-series started</td>
+          </tr>
+          <tr>
+            <td class="text-center" rowspan="1" colspan="1">
+              <span>[<a href="#RFC1311" class="xref">RFC1311</a>]</span>
+</td>
+            <td class="text-center" rowspan="1" colspan="1">March 1992</td>
+            <td class="text-center" rowspan="1" colspan="1">STD sub-series started</td>
+          </tr>
+          <tr>
+            <td class="text-center" rowspan="1" colspan="1">
+              <span>[<a href="#RFC1818" class="xref">RFC1818</a>]</span>
+</td>
+            <td class="text-center" rowspan="1" colspan="1">August 1995</td>
+            <td class="text-center" rowspan="1" colspan="1">BCP sub-series started</td>
+          </tr>
+          <tr>
+            <td class="text-center" rowspan="1" colspan="1">
+              <span>[<a href="#RFC-ONLINE" class="xref">RFC-ONLINE</a>]</span>
+</td>
+            <td class="text-center" rowspan="1" colspan="1">(approx) 1998-2010</td>
+            <td class="text-center" rowspan="1" colspan="1">RFC Online Project</td>
+          </tr>
+          <tr>
+            <td class="text-center" rowspan="1" colspan="1">
+              <span>[<a href="#IAB-19880712" class="xref">IAB-19880712</a>]</span>
+</td>
+            <td class="text-center" rowspan="1" colspan="1">July 1988</td>
+            <td class="text-center" rowspan="1" colspan="1">IAB approves the creation of an Internet Draft series</td>
+          </tr>
+          <tr>
+            <td class="text-center" rowspan="1" colspan="1">
+              <span>[<a href="#RFC2441" class="xref">RFC2441</a>]</span>
+</td>
+            <td class="text-center" rowspan="1" colspan="1">15 October 1998</td>
+            <td class="text-center" rowspan="1" colspan="1">Jon Postel's death</td>
+          </tr>
+          <tr>
+            <td class="text-center" rowspan="1" colspan="1">
+              <span>[<a href="#ISI-to-AMS" class="xref">ISI-to-AMS</a>]</span>
+</td>
+            <td class="text-center" rowspan="1" colspan="1">October 2009</td>
+            <td class="text-center" rowspan="1" colspan="1">Transition starts from ISI to Association Management Solutions (AMS)</td>
+          </tr>
+          <tr>
+            <td class="text-center" rowspan="1" colspan="1">
+              <span>[<a href="#RFC4844" class="xref">RFC4844</a>]</span>
+</td>
+            <td class="text-center" rowspan="1" colspan="1">July 2007 </td>
+            <td class="text-center" rowspan="1" colspan="1">RFC Stream structure</td>
+          </tr>
+          <tr>
+            <td class="text-center" rowspan="1" colspan="1">
+              <span>[<a href="#RFC6360" class="xref">RFC6360</a>]</span>
+</td>
+            <td class="text-center" rowspan="1" colspan="1">August 2011</td>
+            <td class="text-center" rowspan="1" colspan="1">FYI sub-series ended</td>
+          </tr>
+          <tr>
+            <td class="text-center" rowspan="1" colspan="1">
+              <span>[<a href="#RFC6410" class="xref">RFC6410</a>]</span>
+</td>
+            <td class="text-center" rowspan="1" colspan="1">October 2011</td>
+            <td class="text-center" rowspan="1" colspan="1">Two stage standards process formalized</td>
+          </tr>
+          <tr>
+            <td class="text-center" rowspan="1" colspan="1">
+              <span>[<a href="#RFC6949" class="xref">RFC6949</a>]</span>
+</td>
+            <td class="text-center" rowspan="1" colspan="1">May 2013</td>
+            <td class="text-center" rowspan="1" colspan="1">RFC Format change project started</td>
+          </tr>
+          <tr>
+            <td class="text-center" rowspan="1" colspan="1">
+              <span>[<a href="#RFC8153" class="xref">RFC8153</a>]</span>
+</td>
+            <td class="text-center" rowspan="1" colspan="1">April 2017</td>
+            <td class="text-center" rowspan="1" colspan="1">RFCs no longer printed to paper upon publication</td>
+          </tr>
+        </tbody>
+      </table>
+</div>
 </section>
 </div>
 <div id="perspectives">
 <section id="section-3">
       <h2 id="name-perspectives">
-<a href="#section-3" class="section-number selfRef">3.&nbsp;</a><a href="#name-perspectives" class="section-name selfRef">Perspectives</a>
+<a href="#section-3" class="section-number selfRef">3. </a><a href="#name-perspectives" class="section-name selfRef">Perspectives</a>
       </h2>
 <div id="the-origins-of-rfcs-by-stephen-d-crocker">
 <section id="section-3.1">
         <h3 id="name-the-origins-of-rfcs-by-step">
-<a href="#section-3.1" class="section-number selfRef">3.1.&nbsp;</a><a href="#name-the-origins-of-rfcs-by-step" class="section-name selfRef">The Origins of RFCs - by Stephen D. Crocker</a>
+<a href="#section-3.1" class="section-number selfRef">3.1. </a><a href="#name-the-origins-of-rfcs-by-step" class="section-name selfRef">The Origins of RFCs - by Stephen D. Crocker</a>
         </h3>
 <p id="section-3.1-1">[This is a revision of material included in <span>[<a href="#RFC1000" class="xref">RFC1000</a>]</span> August
 1987, more than thirty years ago.]<a href="#section-3.1-1" class="pilcrow">¶</a></p>
@@ -1350,7 +1459,7 @@ ARPANET became just a portion of the Internet, this distribution process became
 worldwide.  The effect of this openness is often overlooked.  Students and young
 professionals all over the world have been able to download the RFCs, learn
 about the many pieces of technology, and then build the most amazing software.
-And they still are.  [They are also a fantastic resource of historians.]<a href="#section-3.1-18" class="pilcrow">¶</a></p>
+And they still are.  [They are also a fantastic resource for historians.]<a href="#section-3.1-18" class="pilcrow">¶</a></p>
 <p id="section-3.1-19">Where will it end? The Arpanet begat the Internet and the underlying
 technology transitioned from the original host-host protocol to TCP/IP, but the
 superstructure of protocol layers, community driven protocol design, and the
@@ -1361,8 +1470,8 @@ from thousands to billions of users, this superstructure, including the RFCs has
 continued to serve the community.  All of the computers have changed, as have
 all of the transmission lines.  But the RFCs march on.  Maybe I'll write a few
 words for RFC 10,000.<a href="#section-3.1-19" class="pilcrow">¶</a></p>
-<p id="section-3.1-20">Quite obviously the circumstances have changed.  Email and other media are
-ubiquitous for the immediate exchange of inchoate thoughts.  Internet Drafts are
+<p id="section-3.1-20">Quite obviously the circumstances have changed. Email and other media are most
+  often used for the immediate exchange of inchoate thoughts.  Internet Drafts are
 the means for exchanging substantial, albeit sometimes speculative content.  And
 RFCs are reserved for fully polished, reviewed, edited and approved
 specifications.  Comments to RFCs are not requested, although usage-related
@@ -1376,7 +1485,7 @@ Internet revolution.<a href="#section-3.1-20" class="pilcrow">¶</a></p>
 <div id="rfcmgmtteam">
 <section id="section-3.2">
         <h3 id="name-the-rfc-management-and-edit">
-<a href="#section-3.2" class="section-number selfRef">3.2.&nbsp;</a><a href="#name-the-rfc-management-and-edit" class="section-name selfRef">The RFC Management and Editing Team - Vint Cerf</a>
+<a href="#section-3.2" class="section-number selfRef">3.2. </a><a href="#name-the-rfc-management-and-edit" class="section-name selfRef">The RFC Management and Editing Team - Vint Cerf</a>
         </h3>
 <p id="section-3.2-1">As Steve Crocker mentions in Section 3.1, Jon Postel assumed the role of RFC
 manager in 1971 when Steve left UCLA for ARPA. Jon took on this role in addition
@@ -1392,7 +1501,7 @@ fellow researcher at USC/ISI. Over the ensuing years, he also drafted Robert
 (Bob) Braden into the team and when Jon unexpectedly passed away in October 1998
 (see <span>[<a href="#RFC2468" class="xref">RFC2468</a>]</span>), Joyce and Bob undertook to carry on with the RFC work in his
 stead, adding Sandy Ginoza to the team. During the period when Jon and Joyce
-worked closely together, she would challenge me to tell which edits had been
+worked closely together, Joyce would challenge me to tell which edits had been
 made by Jon and which by her. I found this impossible, so aligned were they in
 their editorial sensibilities. Sadly, three of these tireless Internauts have
 passed on and we have only the product of their joint work and Sandy Ginoza's
@@ -1402,7 +1511,7 @@ and others' corporate memory by which to recall history. <a href="#section-3.2-1
 <div id="formalizing-the-rfc-editor-model-leslie-daigle">
 <section id="section-3.3">
         <h3 id="name-formalizing-the-rfc-editor-">
-<a href="#section-3.3" class="section-number selfRef">3.3.&nbsp;</a><a href="#name-formalizing-the-rfc-editor-" class="section-name selfRef">Formalizing the RFC Editor Model - Leslie Daigle</a>
+<a href="#section-3.3" class="section-number selfRef">3.3. </a><a href="#name-formalizing-the-rfc-editor-" class="section-name selfRef">Formalizing the RFC Editor Model - Leslie Daigle</a>
         </h3>
 <p id="section-3.3-1">I was the chair of the Internet Architecture Board, the board responsible for
 the general oversight of the RFC Series, at a particular inflection point in the
@@ -1439,11 +1548,11 @@ organizational destiny, creating the IETF Administrative Support Activity (IASA)
 and the Secretariat became one of its contracted functions.<a href="#section-3.3-4" class="pilcrow">¶</a></p>
 <p id="section-3.3-5">This left the RFC Editor function as an Internet Society-supported, independent
 effort.<a href="#section-3.3-5" class="pilcrow">¶</a></p>
-<p id="section-3.3-6">That independence of nature was necessary for the historic role of the RFC
+<p id="section-3.3-6">That independent nature was necessary for the historic role of the RFC
 Series in considering all technical contributions. But, at that inflection point
 in the Series' history, it needed a new governance and funding model, just as
 the other Internet technical specification supporting organizations had. Also,
-the IETF leadership had some concerns it felt it needed to be addressed in its
+the IETF leadership had some concerns it felt needed to addressed in its
 own technical publication stream. While the RFC Series had been established
 before there was an IETF, and had historically continued to have documents in it
 that didn't originate from the IETF, the IETF was its largest and most organized
@@ -1463,7 +1572,8 @@ by, literally, pushing a button on a web interface the moment it was approved by
 the IESG. It would also, they argued, remove the specification issues being
 introduced by copy-editors that were hired as occasional workers to help with
 improving publication rates, but who weren't necessarily up to speed on terms of
-art in technical specifications. (There were some pretty egregious examples that
+art in technical specifications. (There were some pretty egregious examples of
+copyeditors introducing changes that significantly changed the technical meaning of the text that
 I forbear from citing here; let's just say it wasn't strictly a problem of
 Internet engineers getting uptight about their cheese being moved). While "push
 to publish" would have addressed those issues, it would not have addressed the
@@ -1503,7 +1613,7 @@ requirements evolved - the responsible parties are clearly identified. <a href="
 <div id="the-continuation-or-creation-of-a-stream-nevil-brownlee">
 <section id="section-3.4">
         <h3 id="name-the-continuation-or-creatio">
-<a href="#section-3.4" class="section-number selfRef">3.4.&nbsp;</a><a href="#name-the-continuation-or-creatio" class="section-name selfRef">The Continuation, or Creation, of a Stream - Nevil Brownlee</a>
+<a href="#section-3.4" class="section-number selfRef">3.4. </a><a href="#name-the-continuation-or-creatio" class="section-name selfRef">The Continuation, or Creation, of a Stream - Nevil Brownlee</a>
         </h3>
 <p id="section-3.4-1">Starting in 2006 with <span>[<a href="#RFC4714" class="xref">RFC4714</a>]</span>, the IAB began working towards
 a new structure for publishing RFCs; in 2009 that emerged as the 'RFC Editor
@@ -1547,8 +1657,8 @@ Submissions Editorial Board (Ed Board) that he can ask for reviewers.  My
 experience with reviewers was that most of those I approached were happy to
 help.<a href="#section-3.4-6" class="pilcrow">¶</a></p>
 <p id="section-3.4-7">Most drafts were straightforward, but there were some that needed extra
-attention. Often a draft requests IANA code points, For that IANA were always
-been quick to offer help and support. Code points in some IANA Registries
+attention. Often a draft requests IANA code points, and for that IANA were always
+quick to offer help and support. Code points in some IANA Registries
 require Expert Review - sometimes the interactions with Expert reviewers took
 quite a long time! Again, sometimes a draft seemed to fit better in the IETF
 Stream; for these I would suggest that the draft authors try to find an Area
@@ -1566,9 +1676,10 @@ were somewhat controversial - for those I was able to work with the IESG to
 negotiate  a suitable 'IESG Statement' and/or an 'ISE Statement' to make it
 clearer why the ISE published the draft.<a href="#section-3.4-9" class="pilcrow">¶</a></p>
 <p id="section-3.4-10">One rather special part of the Independent Stream is the April First drafts.
-These don't really exist, so authors must send them directly to the ISE or the
+These are humorous RFCs that are never formally posted as drafts and which have no formal
+review process. The authors must send them directly to the ISE or the
 RFC Editor.  Only a few of them can be published each year; they are reviewed by
-the ISE and The RSE; Bob Braden's criteria for April First drafts were:
+the ISE and the RSE; Bob Braden's criteria for April First drafts were:
 
 <a href="#section-3.4-10" class="pilcrow">¶</a></p>
 <ul class="ulEmpty"><li class="ulEmpty" id="section-3.4-11.1"> They must relate to the Internet (like all drafts)<a href="#section-3.4-11.1" class="pilcrow">¶</a>
@@ -1595,7 +1706,7 @@ of talented Professional Staff.<a href="#section-3.4-13" class="pilcrow">¶</a><
 <div id="a-view-from-inside-the-rfc-editor-sandy-ginoza">
 <section id="section-3.5">
         <h3 id="name-a-view-from-inside-the-rfc-">
-<a href="#section-3.5" class="section-number selfRef">3.5.&nbsp;</a><a href="#name-a-view-from-inside-the-rfc-" class="section-name selfRef">A View from Inside the RFC Editor - Sandy Ginoza</a>
+<a href="#section-3.5" class="section-number selfRef">3.5. </a><a href="#name-a-view-from-inside-the-rfc-" class="section-name selfRef">A View from Inside the RFC Editor - Sandy Ginoza</a>
         </h3>
 <p id="section-3.5-1">When I joined ISI, shortly after Jon Postel passed away, the RFC Editor as
   we know it today (as defined in RFC 5620, and as obsoleted  by RFCs 6548 and
@@ -1630,9 +1741,9 @@ of talented Professional Staff.<a href="#section-3.4-13" class="pilcrow">¶</a><
   publication rates during 5-year periods.
 <a href="#section-3.5-4" class="pilcrow">¶</a></p>
 <span id="name-annual-publication-rates"></span><div id="AvgPubs">
-<table class="center" id="table-1">
+<table class="center" id="table-2">
           <caption>
-<a href="#table-1">Table 1</a>:
+<a href="#table-2">Table 2</a>:
 <a href="#name-annual-publication-rates" class="selfRef">Annual Publication Rates</a>
           </caption><thead>
             <tr>
@@ -1703,7 +1814,8 @@ of talented Professional Staff.<a href="#section-3.4-13" class="pilcrow">¶</a><
   to AUTH48 as the authors' "48 days", "48 weeks", etc.
 <a href="#section-3.5-7" class="pilcrow">¶</a></p>
 <p id="section-3.5-8">Because the workload continued to increase (in more ways than just document
-  submissions) and the lessons learned with temporary copy editors, our team
+  submissions; tool testing, editorial process changes, and more) and the lessons
+  learned with temporary copy editors, our team
   grew more permanently.  While we had other editors in between, two additions
   are of particular interest, as they experienced much of the RFC Editor's
   growing pains, helped work us out of a backlogged state, shaped the RFC Editor
@@ -1785,7 +1897,7 @@ of talented Professional Staff.<a href="#section-3.4-13" class="pilcrow">¶</a><
 <div id="the-next-fifty-years-of-rfcs">
 <section id="section-4">
       <h2 id="name-the-next-fifty-years-of-rfc">
-<a href="#section-4" class="section-number selfRef">4.&nbsp;</a><a href="#name-the-next-fifty-years-of-rfc" class="section-name selfRef">The Next Fifty Years of   RFCs</a>
+<a href="#section-4" class="section-number selfRef">4. </a><a href="#name-the-next-fifty-years-of-rfc" class="section-name selfRef">The Next Fifty Years of   RFCs</a>
       </h2>
 <p id="section-4-1">As Steve Crocker mentioned, the Series began with a goal of communication
     over formality, openness over structure. As the Internet has grown and become a
@@ -1802,7 +1914,7 @@ of talented Professional Staff.<a href="#section-3.4-13" class="pilcrow">¶</a><
 <div id="preservation">
 <section id="section-4.1">
         <h3 id="name-preservation">
-<a href="#section-4.1" class="section-number selfRef">4.1.&nbsp;</a><a href="#name-preservation" class="section-name selfRef">Preservation</a>
+<a href="#section-4.1" class="section-number selfRef">4.1. </a><a href="#name-preservation" class="section-name selfRef">Preservation</a>
         </h3>
 <p id="section-4.1-1">The RFC Editor exists to edit, publish, and maintain an archive of documents
     published in the RFC Series. A proper digital archive, however, is more than
@@ -1823,7 +1935,7 @@ of talented Professional Staff.<a href="#section-3.4-13" class="pilcrow">¶</a><
 <div id="futureformat">
 <section id="section-4.2">
         <h3 id="name-evolution-of-the-rfc-format">
-<a href="#section-4.2" class="section-number selfRef">4.2.&nbsp;</a><a href="#name-evolution-of-the-rfc-format" class="section-name selfRef">Evolution of the RFC Format</a>
+<a href="#section-4.2" class="section-number selfRef">4.2. </a><a href="#name-evolution-of-the-rfc-format" class="section-name selfRef">Evolution of the RFC Format</a>
         </h3>
 <p id="section-4.2-1">RFCs have been digital documents since very early in the days of the
     Series. While not always published in US-ASCII, that format has been the
@@ -1851,7 +1963,7 @@ of talented Professional Staff.<a href="#section-3.4-13" class="pilcrow">¶</a><
 <div id="streamstructure">
 <section id="section-4.3">
         <h3 id="name-stream-structure">
-<a href="#section-4.3" class="section-number selfRef">4.3.&nbsp;</a><a href="#name-stream-structure" class="section-name selfRef">Stream Structure</a>
+<a href="#section-4.3" class="section-number selfRef">4.3. </a><a href="#name-stream-structure" class="section-name selfRef">Stream Structure</a>
         </h3>
 <p id="section-4.3-1">In the eyes of many [this content may be updated based on conversations
   with third-party marketing research groups], particularly within the IETF, the
@@ -1875,7 +1987,7 @@ of talented Professional Staff.<a href="#section-3.4-13" class="pilcrow">¶</a><
 <div id="conclusion">
 <section id="section-5">
       <h2 id="name-conclusion">
-<a href="#section-5" class="section-number selfRef">5.&nbsp;</a><a href="#name-conclusion" class="section-name selfRef">Conclusion</a>
+<a href="#section-5" class="section-number selfRef">5. </a><a href="#name-conclusion" class="section-name selfRef">Conclusion</a>
       </h2>
 <p id="section-5-1">As the Internet evolves, expectations and possibilities evolve, too. Over
     the next fifty years, the Series will continue demonstrate a balance between
@@ -1888,25 +2000,41 @@ of talented Professional Staff.<a href="#section-3.4-13" class="pilcrow">¶</a><
 </div>
 <section id="section-6">
       <h2 id="name-informative-references">
-<a href="#section-6" class="section-number selfRef">6.&nbsp;</a><a href="#name-informative-references" class="section-name selfRef">Informative References</a>
+<a href="#section-6" class="section-number selfRef">6. </a><a href="#name-informative-references" class="section-name selfRef">Informative References</a>
       </h2>
 <dl class="references">
 <dt id="IAB-19880712">[IAB-19880712]</dt>
       <dd>
 <span class="refAuthor">IAB</span>, <span class="refTitle">""IAB Minutes 1988-07-12""</span>, <time datetime="1988-07">July 1988</time>
         <span>, &lt;<a href="https://www.iab.org/documents/minutes/minutes-1988/iab-minutes-1988-07-12/">https://www.iab.org/documents/minutes/minutes-1988/iab-minutes-1988-07-12/</a>&gt;</span>. </dd>
+<dt id="ISI-to-AMS">[ISI-to-AMS]</dt>
+      <dd>
+<span class="refAuthor">The IETF Administrative Support Activity</span>, <span class="refTitle">"RFC Production Center Agreement between Association Management Solutions, LLC, and the Internet Society"</span>, <time datetime="2009-10">October 2009</time>
+        <span>, &lt;<a href="https://iaoc.ietf.org/documents/AMS-RPC-Public-Final-2009.pdf">https://iaoc.ietf.org/documents/AMS-RPC-Public-Final-2009.pdf</a>&gt;</span>. </dd>
 <dt id="RFC-ONLINE">[RFC-ONLINE]</dt>
       <dd>
 <span class="refAuthor">RFC Editor</span>, <span class="refTitle">"History of RFC Online Project"</span>, <time datetime="2019-03">March 2019</time>
         <span>, &lt;<a href="http://www.rfc-editor.org/rfc-online-2000.html">http://www.rfc-editor.org/rfc-online-2000.html</a>&gt;</span>. </dd>
+<dt id="RFC0001">[RFC0001]</dt>
+      <dd>
+<span class="refAuthor">Crocker, S.</span>, <span class="refTitle">"Host Software"</span>, <span class="seriesInfo">RFC 1</span>, <span class="seriesInfo">DOI 10.17487/RFC0001</span>, <time datetime="1969-04">April 1969</time>
+        <span>, &lt;<a href="https://www.rfc-editor.org/info/rfc1">https://www.rfc-editor.org/info/rfc1</a>&gt;</span>. </dd>
 <dt id="RFC0003">[RFC0003]</dt>
       <dd>
 <span class="refAuthor">Crocker, S.D.</span>, <span class="refTitle">"Documentation conventions"</span>, <span class="seriesInfo">RFC 3</span>, <span class="seriesInfo">DOI 10.17487/RFC0003</span>, <time datetime="1969-04">April 1969</time>
         <span>, &lt;<a href="https://www.rfc-editor.org/info/rfc3">https://www.rfc-editor.org/info/rfc3</a>&gt;</span>. </dd>
+<dt id="RFC0114">[RFC0114]</dt>
+      <dd>
+<span class="refAuthor">Bhushan, A.K.</span>, <span class="refTitle">"File Transfer Protocol"</span>, <span class="seriesInfo">RFC 114</span>, <span class="seriesInfo">DOI 10.17487/RFC0114</span>, <time datetime="1971-04">April 1971</time>
+        <span>, &lt;<a href="https://www.rfc-editor.org/info/rfc114">https://www.rfc-editor.org/info/rfc114</a>&gt;</span>. </dd>
 <dt id="RFC0433">[RFC0433]</dt>
       <dd>
 <span class="refAuthor">Postel, J.</span>, <span class="refTitle">"Socket number list"</span>, <span class="seriesInfo">RFC 433</span>, <span class="seriesInfo">DOI 10.17487/RFC0433</span>, <time datetime="1972-12">December 1972</time>
         <span>, &lt;<a href="https://www.rfc-editor.org/info/rfc433">https://www.rfc-editor.org/info/rfc433</a>&gt;</span>. </dd>
+<dt id="RFC0690">[RFC0690]</dt>
+      <dd>
+<span class="refAuthor">Postel, J.</span>, <span class="refTitle">"Comments on the proposed Host/IMP Protocol changes"</span>, <span class="seriesInfo">RFC 690</span>, <span class="seriesInfo">DOI 10.17487/RFC0690</span>, <time datetime="1975-06">June 1975</time>
+          <span>, &lt;<a href="https://www.rfc-editor.org/info/rfc690">https://www.rfc-editor.org/info/rfc690</a>&gt;</span>. </dd>
 <dt id="RFC0748">[RFC0748]</dt>
       <dd>
 <span class="refAuthor">Crispin, M.R.</span>, <span class="refTitle">"Telnet randomly-lose option"</span>, <span class="seriesInfo">RFC 748</span>, <span class="seriesInfo">DOI 10.17487/RFC0748</span>, <time datetime="1978-04">April 1978</time>
@@ -1915,14 +2043,14 @@ of talented Professional Staff.<a href="#section-3.4-13" class="pilcrow">¶</a><
       <dd>
 <span class="refAuthor">Reynolds, J.K.</span><span class="refAuthor"> and J. Postel</span>, <span class="refTitle">"Request For Comments reference guide"</span>, <span class="seriesInfo">RFC 1000</span>, <span class="seriesInfo">DOI 10.17487/RFC1000</span>, <time datetime="1987-08">August 1987</time>
           <span>, &lt;<a href="https://www.rfc-editor.org/info/rfc1000">https://www.rfc-editor.org/info/rfc1000</a>&gt;</span>. </dd>
+<dt id="RFC1083">[RFC1083]</dt>
+      <dd>
+<span class="refAuthor">Defense Advanced Research Projects Agency</span><span class="refAuthor"> and Internet Activities Board</span>, <span class="refTitle">"IAB official protocol standards"</span>, <span class="seriesInfo">RFC 1083</span>, <span class="seriesInfo">DOI 10.17487/RFC1083</span>, <time datetime="1988-12">December 1988</time>
+          <span>, &lt;<a href="https://www.rfc-editor.org/info/rfc1083">https://www.rfc-editor.org/info/rfc1083</a>&gt;</span>. </dd>
 <dt id="RFC1150">[RFC1150]</dt>
       <dd>
 <span class="refAuthor">Malkin, G.S.</span><span class="refAuthor"> and J.K. Reynolds</span>, <span class="refTitle">"FYI on FYI: Introduction to the FYI Notes"</span>, <span class="seriesInfo">RFC 1150</span>, <span class="seriesInfo">DOI 10.17487/RFC1150</span>, <time datetime="1990-03">March 1990</time>
           <span>, &lt;<a href="https://www.rfc-editor.org/info/rfc1150">https://www.rfc-editor.org/info/rfc1150</a>&gt;</span>. </dd>
-<dt id="RFC1310">[RFC1310]</dt>
-      <dd>
-<span class="refAuthor">Chapin, L.</span>, <span class="refTitle">"The Internet Standards Process"</span>, <span class="seriesInfo">RFC 1310</span>, <span class="seriesInfo">DOI 10.17487/RFC1310</span>, <time datetime="1992-03">March 1992</time>
-          <span>, &lt;<a href="https://www.rfc-editor.org/info/rfc1310">https://www.rfc-editor.org/info/rfc1310</a>&gt;</span>. </dd>
 <dt id="RFC1311">[RFC1311]</dt>
       <dd>
 <span class="refAuthor">Postel, J.</span>, <span class="refTitle">"Introduction to the STD Notes"</span>, <span class="seriesInfo">RFC 1311</span>, <span class="seriesInfo">DOI 10.17487/RFC1311</span>, <time datetime="1992-03">March 1992</time>
@@ -2000,7 +2128,7 @@ of talented Professional Staff.<a href="#section-3.4-13" class="pilcrow">¶</a><
 <div id="contributors">
 <section id="section-appendix.a">
       <h2 id="name-contributors">
-<a href="#section-appendix.a" class="section-number selfRef">Appendix A.&nbsp;</a><a href="#name-contributors" class="section-name selfRef">Contributors</a>
+<a href="#section-appendix.a" class="section-number selfRef">Appendix A. </a><a href="#name-contributors" class="section-name selfRef">Contributors</a>
       </h2>
 <p id="section-appendix.a-1">With many thanks to Steve Crocker, Vint Cerf, Leslie Daigle, Nevil Brownlee, and
     Sandy Ginoza for their perspectives on the Series, and their ongoing support.
@@ -2066,6 +2194,5 @@ window.onresize = function () {
     }
 }
 </script>
-
-
-</body></html>
+</body>
+</html>
