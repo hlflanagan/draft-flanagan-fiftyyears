@@ -134,9 +134,9 @@ thoughts on the next fifty years of RFCs.</t>
 <section anchor="keymoments" title="Key Moments in RFC History">
 
 <texttable anchor='keymoments-table' title="Key Moments in RFC History">
-  <ttcol align='center'>Marker</ttcol>
-  <ttcol align='center'>Date</ttcol>
-  <ttcol align='center'>Event</ttcol>
+  <ttcol align='left'>Marker</ttcol>
+  <ttcol align='left'>Date</ttcol>
+  <ttcol align='left'>Event</ttcol>
   <c><xref target="RFC0001"/></c>
   <c>1969</c>
   <c>First RFC published</c>
@@ -148,7 +148,7 @@ thoughts on the next fifty years of RFCs.</t>
   <c>First mention of the Czar of Socket Numbers and the proposal for a formal registry</c>
   <c><xref target="RFC0690"/></c>
   <c>June 1975</c>
-  <c>Relationship starts between ISI and the RFC Editor, judging by Jon Postel's affilation change</c>
+  <c>Relationship starts between ISI and the RFC Editor, judging by Jon Postel's affiliation change</c>
   <c><xref target="RFC0748"/></c>
   <c>March 1977</c>
   <c>First April 1st RFC</c>
