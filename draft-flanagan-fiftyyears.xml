@@ -134,9 +134,9 @@ thoughts on the next fifty years of RFCs.</t>
 <section anchor="keymoments" title="Key Moments in RFC History">
 
 <texttable anchor='keymoments-table' title="Key Moments in RFC History">
-  <ttcol align='center'>Marker</ttcol>
-  <ttcol align='center'>Date</ttcol>
-  <ttcol align='center'>Event</ttcol>
+  <ttcol align='left'>Marker</ttcol>
+  <ttcol align='left'>Date</ttcol>
+  <ttcol align='left'>Event</ttcol>
   <c><xref target="RFC0001"/></c>
   <c>1969</c>
   <c>First RFC published</c>

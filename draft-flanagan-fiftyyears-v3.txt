@@ -149,63 +149,63 @@ Table of Contents
 2.  Key Moments in RFC History
 
      +----------------+-----------+---------------------------------+
-     |     Marker     |    Date   |              Event              |
+     | Marker         | Date      | Event                           |
      +================+===========+=================================+
-     |   [RFC0001]    |    1969   |       First RFC published       |
+     | [RFC0001]      | 1969      | First RFC published             |
      +----------------+-----------+---------------------------------+
-     |   [RFC0114]    |    1971   | First distribution of RFCs over |
-     |                |           |           the network           |
+     | [RFC0114]      | 1971      | First distribution of RFCs over |
+     |                |           | the network                     |
      +----------------+-----------+---------------------------------+
-     |   [RFC0433]    |  December |   First mention of the Czar of  |
-     |                |    1972   | Socket Numbers and the proposal |
-     |                |           |      for a formal registry      |
+     | [RFC0433]      | December  | First mention of the Czar of    |
+     |                | 1972      | Socket Numbers and the proposal |
+     |                |           | for a formal registry           |
      +----------------+-----------+---------------------------------+
-     |   [RFC0690]    | June 1975 | Relationship starts between ISI |
-     |                |           |  and the RFC Editor, judging by |
-     |                |           |  Jon Postel's affilation change |
+     | [RFC0690]      | June 1975 | Relationship starts between ISI |
+     |                |           | and the RFC Editor, judging by  |
+     |                |           | Jon Postel's affilation change  |
      +----------------+-----------+---------------------------------+
-     |   [RFC0748]    |   March   |       First April 1st RFC       |
-     |                |    1977   |                                 |
+     | [RFC0748]      | March     | First April 1st RFC             |
+     |                | 1977      |                                 |
      +----------------+-----------+---------------------------------+
-     |   [RFC1083]    |  December |  Three stage standards process  |
-     |                |    1988   |             defined             |
+     | [RFC1083]      | December  | Three stage standards process   |
+     |                | 1988      | defined                         |
      +----------------+-----------+---------------------------------+
-     |   [RFC1150]    |   March   |      FYI sub-series started     |
-     |                |    1990   |                                 |
+     | [RFC1150]      | March     | FYI sub-series started          |
+     |                | 1990      |                                 |
      +----------------+-----------+---------------------------------+
-     |   [RFC1311]    |   March   |      STD sub-series started     |
-     |                |    1992   |                                 |
+     | [RFC1311]      | March     | STD sub-series started          |
+     |                | 1992      |                                 |
      +----------------+-----------+---------------------------------+
-     |   [RFC1818]    |   August  |      BCP sub-series started     |
-     |                |    1995   |                                 |
+     | [RFC1818]      | August    | BCP sub-series started          |
+     |                | 1995      |                                 |
      +----------------+-----------+---------------------------------+
-     |  [RFC-ONLINE]  |  (approx) |        RFC Online Project       |
+     | [RFC-ONLINE]   | (approx)  | RFC Online Project              |
      |                | 1998-2010 |                                 |
      +----------------+-----------+---------------------------------+
      | [IAB-19880712] | July 1988 | IAB approves the creation of an |
-     |                |           |      Internet Draft series      |
+     |                |           | Internet Draft series           |
      +----------------+-----------+---------------------------------+
-     |   [RFC2441]    |     15    |        Jon Postel's death       |
-     |                |  October  |                                 |
-     |                |    1998   |                                 |
+     | [RFC2441]      | 15        | Jon Postel's death              |
+     |                | October   |                                 |
+     |                | 1998      |                                 |
      +----------------+-----------+---------------------------------+
-     |  [ISI-to-AMS]  |  October  |  Transition starts from ISI to  |
-     |                |    2009   |      Association Management     |
-     |                |           |         Solutions (AMS)         |
+     | [ISI-to-AMS]   | October   | Transition starts from ISI to   |
+     |                | 2009      | Association Management          |
+     |                |           | Solutions (AMS)                 |
      +----------------+-----------+---------------------------------+
-     |   [RFC4844]    | July 2007 |       RFC Stream structure      |
+     | [RFC4844]      | July 2007 | RFC Stream structure            |
      +----------------+-----------+---------------------------------+
-     |   [RFC6360]    |   August  |       FYI sub-series ended      |
-     |                |    2011   |                                 |
+     | [RFC6360]      | August    | FYI sub-series ended            |
+     |                | 2011      |                                 |
      +----------------+-----------+---------------------------------+
-     |   [RFC6410]    |  October  |   Two stage standards process   |
-     |                |    2011   |            formalized           |
+     | [RFC6410]      | October   | Two stage standards process     |
+     |                | 2011      | formalized                      |
      +----------------+-----------+---------------------------------+
-     |   [RFC6949]    |  May 2013 |    RFC Format change project    |
-     |                |           |             started             |
+     | [RFC6949]      | May 2013  | RFC Format change project       |
+     |                |           | started                         |
      +----------------+-----------+---------------------------------+
-     |   [RFC8153]    |   April   | RFCs no longer printed to paper |
-     |                |    2017   |         upon publication        |
+     | [RFC8153]      | April     | RFCs no longer printed to paper |
+     |                | 2017      | upon publication                |
      +----------------+-----------+---------------------------------+
 
                                  Table 1

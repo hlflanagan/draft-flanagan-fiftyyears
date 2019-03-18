@@ -135,119 +135,119 @@ thoughts on the next fifty years of RFCs.</t>
         <name>Key Moments in RFC History</name>
         <thead>
           <tr>
-            <th align="center">Marker</th>
-            <th align="center">Date</th>
-            <th align="center">Event</th>
+            <th align="left">Marker</th>
+            <th align="left">Date</th>
+            <th align="left">Event</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td align="center">
+            <td align="left">
               <xref target="RFC0001" format="default"/></td>
-            <td align="center">1969</td>
-            <td align="center">First RFC published</td>
+            <td align="left">1969</td>
+            <td align="left">First RFC published</td>
           </tr>
           <tr>
-            <td align="center">
+            <td align="left">
               <xref target="RFC0114" format="default"/></td>
-            <td align="center">1971</td>
-            <td align="center">First distribution of RFCs over the network</td>
+            <td align="left">1971</td>
+            <td align="left">First distribution of RFCs over the network</td>
           </tr>
           <tr>
-            <td align="center">
+            <td align="left">
               <xref target="RFC0433" format="default"/></td>
-            <td align="center">December 1972</td>
-            <td align="center">First mention of the Czar of Socket Numbers and the proposal for a formal registry</td>
+            <td align="left">December 1972</td>
+            <td align="left">First mention of the Czar of Socket Numbers and the proposal for a formal registry</td>
           </tr>
           <tr>
-            <td align="center">
+            <td align="left">
               <xref target="RFC0690" format="default"/></td>
-            <td align="center">June 1975</td>
-            <td align="center">Relationship starts between ISI and the RFC Editor, judging by Jon Postel's affilation change</td>
+            <td align="left">June 1975</td>
+            <td align="left">Relationship starts between ISI and the RFC Editor, judging by Jon Postel's affilation change</td>
           </tr>
           <tr>
-            <td align="center">
+            <td align="left">
               <xref target="RFC0748" format="default"/></td>
-            <td align="center">March 1977</td>
-            <td align="center">First April 1st RFC</td>
+            <td align="left">March 1977</td>
+            <td align="left">First April 1st RFC</td>
           </tr>
           <tr>
-            <td align="center">
+            <td align="left">
               <xref target="RFC1083" format="default"/></td>
-            <td align="center">December 1988</td>
-            <td align="center">Three stage standards process defined</td>
+            <td align="left">December 1988</td>
+            <td align="left">Three stage standards process defined</td>
           </tr>
           <tr>
-            <td align="center">
+            <td align="left">
               <xref target="RFC1150" format="default"/></td>
-            <td align="center">March 1990</td>
-            <td align="center">FYI sub-series started</td>
+            <td align="left">March 1990</td>
+            <td align="left">FYI sub-series started</td>
           </tr>
           <tr>
-            <td align="center">
+            <td align="left">
               <xref target="RFC1311" format="default"/></td>
-            <td align="center">March 1992</td>
-            <td align="center">STD sub-series started</td>
+            <td align="left">March 1992</td>
+            <td align="left">STD sub-series started</td>
           </tr>
           <tr>
-            <td align="center">
+            <td align="left">
               <xref target="RFC1818" format="default"/></td>
-            <td align="center">August 1995</td>
-            <td align="center">BCP sub-series started</td>
+            <td align="left">August 1995</td>
+            <td align="left">BCP sub-series started</td>
           </tr>
           <tr>
-            <td align="center">
+            <td align="left">
               <xref target="RFC-ONLINE" format="default"/></td>
-            <td align="center">(approx) 1998-2010</td>
-            <td align="center">RFC Online Project</td>
+            <td align="left">(approx) 1998-2010</td>
+            <td align="left">RFC Online Project</td>
           </tr>
           <tr>
-            <td align="center">
+            <td align="left">
               <xref target="IAB-19880712" format="default"/></td>
-            <td align="center">July 1988</td>
-            <td align="center">IAB approves the creation of an Internet Draft series</td>
+            <td align="left">July 1988</td>
+            <td align="left">IAB approves the creation of an Internet Draft series</td>
           </tr>
           <tr>
-            <td align="center">
+            <td align="left">
               <xref target="RFC2441" format="default"/></td>
-            <td align="center">15 October 1998</td>
-            <td align="center">Jon Postel's death</td>
+            <td align="left">15 October 1998</td>
+            <td align="left">Jon Postel's death</td>
           </tr>
           <tr>
-            <td align="center">
+            <td align="left">
               <xref target="ISI-to-AMS" format="default"/></td>
-            <td align="center">October 2009</td>
-            <td align="center">Transition starts from ISI to Association Management Solutions (AMS)</td>
+            <td align="left">October 2009</td>
+            <td align="left">Transition starts from ISI to Association Management Solutions (AMS)</td>
           </tr>
           <tr>
-            <td align="center">
+            <td align="left">
               <xref target="RFC4844" format="default"/></td>
-            <td align="center">July 2007 </td>
-            <td align="center">RFC Stream structure</td>
+            <td align="left">July 2007 </td>
+            <td align="left">RFC Stream structure</td>
           </tr>
           <tr>
-            <td align="center">
+            <td align="left">
               <xref target="RFC6360" format="default"/></td>
-            <td align="center">August 2011</td>
-            <td align="center">FYI sub-series ended</td>
+            <td align="left">August 2011</td>
+            <td align="left">FYI sub-series ended</td>
           </tr>
           <tr>
-            <td align="center">
+            <td align="left">
               <xref target="RFC6410" format="default"/></td>
-            <td align="center">October 2011</td>
-            <td align="center">Two stage standards process formalized</td>
+            <td align="left">October 2011</td>
+            <td align="left">Two stage standards process formalized</td>
           </tr>
           <tr>
-            <td align="center">
+            <td align="left">
               <xref target="RFC6949" format="default"/></td>
-            <td align="center">May 2013</td>
-            <td align="center">RFC Format change project started</td>
+            <td align="left">May 2013</td>
+            <td align="left">RFC Format change project started</td>
           </tr>
           <tr>
-            <td align="center">
+            <td align="left">
               <xref target="RFC8153" format="default"/></td>
-            <td align="center">April 2017</td>
-            <td align="center">RFCs no longer printed to paper upon publication</td>
+            <td align="left">April 2017</td>
+            <td align="left">RFCs no longer printed to paper upon publication</td>
           </tr>
         </tbody>
       </table>
