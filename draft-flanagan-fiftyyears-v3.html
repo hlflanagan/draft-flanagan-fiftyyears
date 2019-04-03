@@ -13,18 +13,14 @@
   This document updates and brings current the history started in RFCs 2555 and 5540.
  
     " name="description">
-<meta content="xml2rfc 2.21.1" name="generator">
-<link href="/var/tmp/CGItemp4934.dir/draft-flanagan-fiftyyears.xml" type="application/rfc+xml" rel="alternate">
+<meta content="xml2rfc 2.22.2" name="generator">
+<link href="/var/tmp/CGItemp4085.dir/draft-flanagan-fiftyyears-v3.xml" type="application/rfc+xml" rel="alternate">
 <link href="#copyright" rel="license">
 <style type="text/css">/* fonts */
 @import url('https://fonts.googleapis.com/css?family=Noto+Sans'); /* Sans-serif */
 @import url('https://fonts.googleapis.com/css?family=Noto+Serif'); /* Serif (print) */
 @import url('https://fonts.googleapis.com/css?family=Roboto+Mono'); /* Monospace */
 
-@viewport {
-  zoom: 1.0;
-  width: extend-to-zoom;
-}
 @-ms-viewport {
   width: extend-to-zoom;
   zoom: 1.0;
@@ -630,30 +626,6 @@ hr.addr {
   }
 }
 
-.ears thead .left {
-  string-set: ears-top-left content();
-}
-
-.ears thead .center {
-  string-set: ears-top-center content();
-}
-
-.ears thead .right {
-  string-set: ears-top-right content();
-}
-
-.ears tfoot .left {
-  string-set: ears-bottom-left content();
-}
-
-.ears tfoot .center {
-  string-set: ears-bottom-center content();
-}
-
-.ears tfoot .right {
-  string-set: ears-bottom-right content();
-}
-
 @page :first {
   padding-top: 0;
   @top-left {
@@ -674,41 +646,6 @@ hr.addr {
   size: A4;
   margin-bottom: 45mm;
   padding-top: 20px;
-  @top-left {
-    content: 'Internet-Draft';
-    vertical-align: bottom;
-    border-bottom: solid 1px #ccc;
-  }
-  @top-left {
-    content: string(ears-top-left);
-    vertical-align: bottom;
-    border-bottom: solid 1px #ccc;
-  }
-  @top-center {
-    content: string(ears-top-center);
-    vertical-align: bottom;
-    border-bottom: solid 1px #ccc;
-  }
-  @top-right {
-    content: string(ears-top-right);
-    vertical-align: bottom;
-    border-bottom: solid 1px #ccc;
-  }
-  @bottom-left {
-    content: string(ears-bottom-left);
-    vertical-align: top;
-    border-top: solid 1px #ccc;
-  }
-  @bottom-center {
-    content: string(ears-bottom-center);
-    vertical-align: top;
-    border-top: solid 1px #ccc;
-  }
-  @bottom-right {
-      content: '[Page ' counter(page) ']';
-      vertical-align: top;
-      border-top: solid 1px #ccc;
-  }
 }
 
 /* Changes introduced to fix issues found during implementation */
@@ -896,6 +833,19 @@ caption a[href] {
   font-weight: bold;
   font-size: 0.9em;
 }
+/* Tweak the invisible space above H* in order not to overlay links in text above */
+ h2 {
+  margin-top: -18px;  /* provide offset for in-page anchors */
+  padding-top: 31px;
+ }
+ h3 {
+  margin-top: -18px;  /* provide offset for in-page anchors */
+  padding-top: 24px;
+ }
+ h4 {
+  margin-top: -18px;  /* provide offset for in-page anchors */
+  padding-top: 24px;
+ }
 </style>
 <link href="rfc-local.css" type="text/css" rel="stylesheet">
 </head>
@@ -904,18 +854,18 @@ caption a[href] {
 <thead><tr>
 <td class="left">Internet-Draft</td>
 <td class="center">Fifty Years of RFCs</td>
-<td class="right">March 2019</td>
+<td class="right">April 2019</td>
 </tr></thead>
 <tfoot><tr>
 <td class="left">Flanagan</td>
-<td class="center">Expires 19 September 2019</td>
+<td class="center">Expires 5 October 2019</td>
 <td class="right">[Page]</td>
 </tr></tfoot>
 </table>
 <div class="document-information">
 <dl id="identifiers">
 <dt class="label-internet-draft">Internet-Draft:</dt>
-<dd class="internet-draft">draft-flanagan-fiftyyears-02</dd>
+<dd class="internet-draft">draft-flanagan-fiftyyears-03</dd>
 <dt class="label-updates">Updates:</dt>
 <dd class="updates">
 <a href="https://www.rfc-editor.org/info/rfc2555.txt" class="eref">2555</a> </dd>
@@ -924,12 +874,12 @@ caption a[href] {
 <a href="https://www.rfc-editor.org/info/rfc5540.txt" class="eref">5540</a> (if approved)</dd>
 <dt class="label-published">Published:</dt>
 <dd class="published">
-<time datetime="2019-03-18" class="published">18 March 2019</time>
+<time datetime="2019-04-03" class="published">3 April 2019</time>
     </dd>
 <dt class="label-intended-status">Intended Status:</dt>
 <dd class="intended-status">Informational</dd>
 <dt class="label-expires">Expires:</dt>
-<dd class="expires"><time datetime="2019-09-19">19 September 2019</time></dd>
+<dd class="expires"><time datetime="2019-10-05">5 October 2019</time></dd>
 <dt class="label-authors">Author:</dt>
 <dd class="authors">
 <div class="author">
@@ -972,7 +922,7 @@ caption a[href] {
         material or to cite them other than as "work in progress."
         <a href="#section-boilerplate.1-3" class="pilcrow">¶</a></p>
 <p id="section-boilerplate.1-4">
-        This Internet-Draft will expire on 19 September 2019.
+        This Internet-Draft will expire on 5 October 2019.
         <a href="#section-boilerplate.1-4" class="pilcrow">¶</a></p>
 </section>
 </div>
@@ -1066,32 +1016,32 @@ caption a[href] {
 <a href="#section-1" class="section-number selfRef">1. </a><a href="#name-introduction" class="section-name selfRef">Introduction</a>
       </h2>
 <p id="section-1-1">The RFC Series began in April 1969 with the publication of "Host Software"
-  by Steve Crocker. The early RFCs were extremely informal and included poems,
-  satires, and April 1 jokes, to name a few.  Since then, over 8000 RFCs have
-  been published, ranging across
+  by Steve Crocker. The early RFCs were, in fact, requests for comments on ideas
+  and proposals; the goal was to start conversations, rather than to create an
+  archival record of a standard or best practice. This goal changed over time, as the
+  formality of the publication process evolved, and the community consuming the
+  material grew. Today, over 8500 RFCs have been published, ranging across
   best practice information, experimental protocols, informational material,
-  and, of course, standards. Material is accepted for publication through the
+  and, of course, Internet standards. Material is accepted for publication through the
   IETF, the IAB, the IRTF, and the Independent Submissions stream, each with
   clear processes on how drafts are submitted and potentially approved for
   publication as an RFC.  Ultimately, the goal of the RFC Series is to provide a
   canonical source for the material published by the RFC Editor, and to support
   the preservation of that material in perpetuity. <a href="#section-1-1" class="pilcrow">¶</a></p>
-<p id="section-1-2">Since the very first RFC was published fifty years ago, the focus of
-   the Series has evolved to be a stable record of what has been
-   published and to provide a source for the dissemination to the world
-   of the ideas contained in the RFCs. In particular, when Internet Drafts
-first started being produced [need a date check], RFCs became a much more formal
-body of material requiring serious curation, from the editing process through to
-the curation and archiving of the documents. Today, there is still a tension
-between having that stable, archival record, versus making the latest ideas
-available as soon as possible; evolution will continue, in no small part driven
-by that tension.  <a href="#section-1-2" class="pilcrow">¶</a></p>
+<p id="section-1-2">The RFC Editor as a role came a few years after the first RFC was published.
+  The actual date when the term was first used is murky; Jon Postel, the first RFC
+  Editor, defined the role by his actions and later by defining the initial processes
+  surrounding the publication of RFCs. What is certain is that the RFC Editor is
+  responsible for making sure that the editorial quality of the RFCs published
+  is high, and that the archival record of what has been published is maintained.
+<a href="#section-1-2" class="pilcrow">¶</a></p>
 <p id="section-1-3">Change does come to the Series, albeit slowly. First, we saw the distribution
 method change from postal mail to FTP and email. From there, we saw increased
 guidance for authors on how to write an RFC. The editorial staff went from one
 person, Jon Postel, to a team of five to seven. The actual editing and publishing
-work split from the service for registration of protocol codepoints. The whole RFC
-Editor structure was reviewed and refined <span>[<a href="#RFC6635" class="xref">RFC6635</a>]</span>. And, in the
+work split from the service for registration of protocol code points. The whole RFC
+Editor structure was reviewed <span>[<a href="#RFC4844" class="xref">RFC4844</a>]</span> and refined <span>[<a href="#RFC5620" class="xref">RFC5620</a>]</span>
+and refined again<span>[<a href="#RFC6635" class="xref">RFC6635</a>]</span>. And, in the
 last few years, we have started the process to change the format of the RFC
 documents themselves.<a href="#section-1-3" class="pilcrow">¶</a></p>
 <p id="section-1-4">This is evolution, and the Series will continue to adapt in order to
@@ -1099,7 +1049,7 @@ documents themselves.<a href="#section-1-3" class="pilcrow">¶</a></p>
    operators, historians, and users of the RFC Series.
   These changes will be always be balanced against the core mission of the
   Series: to maintain a strong, stable, archival record of technical specifications,
-  protocols, and other information relevant to the Arpanet and Internet
+  protocols, and other information relevant to the ARPANET and Internet
   networking communities.<a href="#section-1-4" class="pilcrow">¶</a></p>
 <p id="section-1-5">There is more to the history of the RFC Series than can be covered in this
   document. Readers interested in earlier perspectives may find the following
@@ -1184,6 +1134,13 @@ thoughts on the next fifty years of RFCs.<a href="#section-1-7" class="pilcrow">
               <span>[<a href="#RFC0748" class="xref">RFC0748</a>]</span>
 </td>
             <td class="text-left" rowspan="1" colspan="1">March 1977</td>
+            <td class="text-left" rowspan="1" colspan="1">First Internet Engineering Task Force (IETF) meeting</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">
+              <span>[<a href="#IETF1" class="xref">IETF1</a>]</span>
+</td>
+            <td class="text-left" rowspan="1" colspan="1">January 1986</td>
             <td class="text-left" rowspan="1" colspan="1">First April 1st RFC</td>
           </tr>
           <tr>
@@ -1191,6 +1148,13 @@ thoughts on the next fifty years of RFCs.<a href="#section-1-7" class="pilcrow">
               <span>[<a href="#RFC1083" class="xref">RFC1083</a>]</span>
 </td>
             <td class="text-left" rowspan="1" colspan="1">December 1988</td>
+            <td class="text-left" rowspan="1" colspan="1">First major effort to review key specifications and write applicability statements</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">
+              <span>[<a href="#RFC1122" class="xref">RFC1122</a>]</span><span>[<a href="#RFC1123" class="xref">RFC1123</a>]</span>
+</td>
+            <td class="text-left" rowspan="1" colspan="1">October 1989</td>
             <td class="text-left" rowspan="1" colspan="1">Three stage standards process defined</td>
           </tr>
           <tr>
@@ -1251,6 +1215,20 @@ thoughts on the next fifty years of RFCs.<a href="#section-1-7" class="pilcrow">
           </tr>
           <tr>
             <td class="text-left" rowspan="1" colspan="1">
+              <span>[<a href="#RFC4846" class="xref">RFC4846</a>]</span>
+</td>
+            <td class="text-left" rowspan="1" colspan="1">Formalize the Independent Submission document stream</td>
+            <td class="text-left" rowspan="1" colspan="1">July 2007</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">
+              <span>[<a href="#RFC5746" class="xref">RFC5746</a>]</span>
+</td>
+            <td class="text-left" rowspan="1" colspan="1">Formalize the Internet Research Task Force document stream</td>
+            <td class="text-left" rowspan="1" colspan="1">December 2009</td>
+          </tr>
+          <tr>
+            <td class="text-left" rowspan="1" colspan="1">
               <span>[<a href="#RFC6360" class="xref">RFC6360</a>]</span>
 </td>
             <td class="text-left" rowspan="1" colspan="1">August 2011</td>
@@ -1295,8 +1273,8 @@ thoughts on the next fifty years of RFCs.<a href="#section-1-7" class="pilcrow">
 <p id="section-3.1-1">[This is a revision of material included in <span>[<a href="#RFC1000" class="xref">RFC1000</a>]</span> August
 1987, more than thirty years ago.]<a href="#section-3.1-1" class="pilcrow">¶</a></p>
 <p id="section-3.1-2">The Internet community now includes millions of nodes and billions of users.
-It owes its beginning to the Arpanet, which was once but a gleam in the eyes of
-Bob Taylor, Larry Roberts, and J. C. R. Licklider of ARPA.  While much of the development proceeded
+It owes its beginning to the ARPANET, which was once but a gleam in the eyes of
+J. C. R. Licklider, Bob Taylor, and Larry Roberts of ARPA.  While much of the development proceeded
 according to plan, the initial design of the protocols and the creation of the
 RFCs was largely accidental.<a href="#section-3.1-2" class="pilcrow">¶</a></p>
 <p id="section-3.1-3">The procurement of the ARPANET was initiated in the summer of 1968 --remember
@@ -1460,7 +1438,7 @@ worldwide.  The effect of this openness is often overlooked.  Students and young
 professionals all over the world have been able to download the RFCs, learn
 about the many pieces of technology, and then build the most amazing software.
 And they still are.  [They are also a fantastic resource for historians.]<a href="#section-3.1-18" class="pilcrow">¶</a></p>
-<p id="section-3.1-19">Where will it end? The Arpanet begat the Internet and the underlying
+<p id="section-3.1-19">Where will it end? The ARPANET begat the Internet and the underlying
 technology transitioned from the original host-host protocol to TCP/IP, but the
 superstructure of protocol layers, community driven protocol design, and the
 RFCs continued.  Through the many changes in physical layer technology - analog
@@ -1596,7 +1574,7 @@ an Informational RFC that stands today to provide guidance in the editing
 processes surrounding IETF publications.<a href="#section-3.3-9" class="pilcrow">¶</a></p>
 <p id="section-3.3-10">There was still, however, a certain lack of clarity about responsibilities
 for making decisions and changes in the RFC Series itself. To that end, I and
-the IAB worked with the various involved parties to produce <span>[<a href="#RFC4744" class="xref">RFC4744</a>]</span>. That document captured the RFC Series mission (for a purpose
+the IAB worked with the various involved parties to produce <span>[<a href="#RFC4844" class="xref">RFC4844</a>]</span>. That document captured the RFC Series mission (for a purpose
 greater than IETF technical specification publication), as well as the roles and
 responsibilities of the parties involved. The RFC Editor has responsibility for
 ensuring the implementation of the mission. The IAB continues to have oversight
@@ -1604,7 +1582,7 @@ responsibilities, including policy oversight, which it could act on by changing
 the person (organization) in the role of RFC Editor. At the same time,
 operational oversight was migrated to the IASA support function of the IETF (and
 IAB).<a href="#section-3.3-10" class="pilcrow">¶</a></p>
-<p id="section-3.3-11">The discussions, and the resulting publication of RFC 4744, allowed greater
+<p id="section-3.3-11">The discussions, and the resulting publication of RFC 4844, allowed greater
 visibility into and commitment to the RFC Series, as a general Internet
 publication. It also meant that subsequent adjustments could be made, as
 requirements evolved - the responsible parties are clearly identified. <a href="#section-3.3-11" class="pilcrow">¶</a></p>
@@ -1615,39 +1593,36 @@ requirements evolved - the responsible parties are clearly identified. <a href="
         <h3 id="name-the-continuation-or-creatio">
 <a href="#section-3.4" class="section-number selfRef">3.4. </a><a href="#name-the-continuation-or-creatio" class="section-name selfRef">The Continuation, or Creation, of a Stream - Nevil Brownlee</a>
         </h3>
-<p id="section-3.4-1">Starting in 2006 with <span>[<a href="#RFC4714" class="xref">RFC4714</a>]</span>, the IAB began working towards
-a new structure for publishing RFCs; in 2009 that emerged as the 'RFC Editor
-(Version 1)' <span>[<a href="#RFC5629" class="xref">RFC5629</a>]</span>.  In this model the RFC Series Editor (RSE) oversees RFC
-publishing and development, and four separate 'Streams' produce the documents to
-be published. The IETF Stream produces standards-related material, all of its
-output has full IETF consensus.  The way each new Stream operates is specified
-in a separate RFC, i.e.,<a href="#section-3.4-1" class="pilcrow">¶</a></p>
-<dl class="dlParallel" id="section-3.4-2">
-          <dt id="section-3.4-2.1">[RFC 4845]</dt>
-          <dd id="section-3.4-2.2">  IAB: Architecture Reports and Procedures material</dd>
-          <dt id="section-3.4-2.3">[RFC 5743]</dt>
-          <dd id="section-3.4-2.4">  IRTF: Internet Research material</dd>
-          <dt id="section-3.4-2.5">[RFC 4846]</dt>
-          <dd id="section-3.4-2.6">  Independent:  Other material</dd>
-        </dl>
-<p id="section-3.4-3">Before 2009 the RFC Editor could accept 'Independent' submissions from
+<p id="section-3.4-1">Arguably starting in 2006 with <span>[<a href="#RFC4714" class="xref">RFC4714</a>]</span>, the IAB and the IETF community
+spent some time in the mid-2000's evolving the structure of the RFC Series. This work
+included defining how those groups that published into the RFC Series (initially
+including the IETF, the IAB <span>[<a href="#RFC4845" class="xref">RFC4845</a>]</span>, and the Independent Submissions
+stream <span>[<a href="#RFC4846" class="xref">RFC4846</a>]</span>, and later growing to include the IRTF <span>[<a href="#RFC5743" class="xref">RFC5743</a>]</span>)
+would handle approving documents to be published as RFCs. In 2009, the IAB published
+'RFC Editor (Version 1)' <span>[<a href="#RFC5620" class="xref">RFC5620</a>]</span>.  In this model, a new role was
+created within the RFC Editor, the RFC Series Editor (RSE), an individual that would oversee RFC
+publishing and development, while leaving the process for approving documents for publication
+outside his or her mandate. While arguably this was a role long filled by people like Jon Postel,
+Bob Braden, and Joyce Reynolds, RFC 5620 saw the role of RFC Series Editor defined in such a
+way as to distinctly separate it from that of the Independent Submissions Editor (ISE). <a href="#section-3.4-1" class="pilcrow">¶</a></p>
+<p id="section-3.4-2">Before 2009 the RFC Editor could accept 'Independent' submissions from
 individuals, and - if he judged they were significant - publish them as RFCs;
 the Independent Stream was set up to continue that function. From February 2010
-through February 2018 I was the Independent Stream Editor (ISE) - I began by
-reading <span>[<a href="#RFC4846" class="xref">RFC4846</a>]</span>, then went on to develop the Independent Stream (IS).<a href="#section-3.4-3" class="pilcrow">¶</a></p>
-<p id="section-3.4-4">First I spent several days at the RFC Production Centre at ISI in Marina Del
+through February 2018, I was the Independent Stream Editor (ISE) and I began by
+reading <span>[<a href="#RFC4846" class="xref">RFC4846</a>]</span>, then went on to develop the Independent Stream (IS).<a href="#section-3.4-2" class="pilcrow">¶</a></p>
+<p id="section-3.4-3">First I spent several days at the RFC Production Centre at ISI in Marina Del
 Ray with the RFC Editor (Bob Braden) and Sandy Ginoza and Alice Hagens, so as to
 learn how RFCs were actually edited and published. All RFCs reach the Production
 Centre as Internet Drafts; they are copy-edited, until the edited version can be
 approved by their authors (AUTH48).  At any stage authors can check their
-draft's status in the RFC Editor Database.<a href="#section-3.4-4" class="pilcrow">¶</a></p>
-<p id="section-3.4-5">For the Independent Submissions, Bob kept a journal (a simple ASCII file) of
+draft's status in the RFC Editor Database.<a href="#section-3.4-3" class="pilcrow">¶</a></p>
+<p id="section-3.4-4">For the Independent Submissions, Bob kept a journal (a simple ASCII file) of
 his interactions with authors for every draft, indexed by the draft name.  Bob
 also entered the Independent drafts into the RFC Editor database, so that
 authors could track their draft's status. After my few days with his team at
 ISI, he handed me that journal (covering about 30 drafts) over to me and said
-"now it's over to you!"<a href="#section-3.4-5" class="pilcrow">¶</a></p>
-<p id="section-3.4-6">I began by following in Bob's footsteps, maintaining a journal and tracking
+"now it's over to you!"<a href="#section-3.4-4" class="pilcrow">¶</a></p>
+<p id="section-3.4-5">I began by following in Bob's footsteps, maintaining a journal and tracking
 each draft's status in the RFC Editor database. My first consideration was that
 every serious Internet draft submitted needs several careful reviews.  If the
 ISE knows suitable reviewers, he can simply ask them.  Otherwise, if the draft
@@ -1655,52 +1630,52 @@ relates to an IETF or IRTF Working Group, he can ask ask Working Group chairs or
 Area Directors to suggest reviewers. As well, the ISE has an Independent
 Submissions Editorial Board (Ed Board) that he can ask for reviewers.  My
 experience with reviewers was that most of those I approached were happy to
-help.<a href="#section-3.4-6" class="pilcrow">¶</a></p>
-<p id="section-3.4-7">Most drafts were straightforward, but there were some that needed extra
+help.<a href="#section-3.4-5" class="pilcrow">¶</a></p>
+<p id="section-3.4-6">Most drafts were straightforward, but there were some that needed extra
 attention. Often a draft requests IANA code points, and for that IANA were always
 quick to offer help and support. Code points in some IANA Registries
 require Expert Review - sometimes the interactions with Expert reviewers took
 quite a long time! Again, sometimes a draft seemed to fit better in the IETF
 Stream; for these I would suggest that the draft authors try to find an Area
 Director to sponsor their work as in Individual submission to the IETF
-Stream.<a href="#section-3.4-7" class="pilcrow">¶</a></p>
-<p id="section-3.4-8">After my first few years as ISE, the IETF Tools Team developed the Data
+Stream.<a href="#section-3.4-6" class="pilcrow">¶</a></p>
+<p id="section-3.4-7">After my first few years as ISE, the IETF Tools Team developed the Data
 Tracker so that it could keep show draft status, and perform all the
 'housekeeping' tasks for all of the streams.  At that stage I switched to use
-the Data Tracker rather than the RFC Editor database.<a href="#section-3.4-8" class="pilcrow">¶</a></p>
-<p id="section-3.4-9">Once a draft has been reviewed, and the authors have revised it in dialogue
+the Data Tracker rather than the RFC Editor database.<a href="#section-3.4-7" class="pilcrow">¶</a></p>
+<p id="section-3.4-8">Once a draft has been reviewed, and the authors have revised it in dialogue
 with their reviewers, the ISE must submit that draft to the IESG for their
 "Conflict Review" <span>[<a href="#RFC5742" class="xref">RFC5742</a>]</span>. Overall, each IS draft benefited from discussions
 (which were usually simple) with my Ed Board and the IESG. A (very) few drafts
 were somewhat controversial - for those I was able to work with the IESG to
 negotiate  a suitable 'IESG Statement' and/or an 'ISE Statement' to make it
-clearer why the ISE published the draft.<a href="#section-3.4-9" class="pilcrow">¶</a></p>
-<p id="section-3.4-10">One rather special part of the Independent Stream is the April First drafts.
+clearer why the ISE published the draft.<a href="#section-3.4-8" class="pilcrow">¶</a></p>
+<p id="section-3.4-9">One rather special part of the Independent Stream is the April First drafts.
 These are humorous RFCs that are never formally posted as drafts and which have no formal
 review process. The authors must send them directly to the ISE or the
 RFC Editor.  Only a few of them can be published each year; they are reviewed by
 the ISE and the RSE; Bob Braden's criteria for April First drafts were:
 
-<a href="#section-3.4-10" class="pilcrow">¶</a></p>
-<ul class="ulEmpty"><li class="ulEmpty" id="section-3.4-11.1"> They must relate to the Internet (like all drafts)<a href="#section-3.4-11.1" class="pilcrow">¶</a>
+<a href="#section-3.4-9" class="pilcrow">¶</a></p>
+<ul class="ulEmpty"><li class="ulEmpty" id="section-3.4-10.1"> They must relate to the Internet (like all drafts)<a href="#section-3.4-10.1" class="pilcrow">¶</a>
 </li>
-          <li class="ulEmpty" id="section-3.4-11.2"> Their readers should reach the end of page two before realising this is an April First RFC<a href="#section-3.4-11.2" class="pilcrow">¶</a>
+          <li class="ulEmpty" id="section-3.4-10.2"> Their readers should reach the end of page two before realizing this is an April First RFC<a href="#section-3.4-10.2" class="pilcrow">¶</a>
 </li>
-          <li class="ulEmpty" id="section-3.4-11.3"> They must actually be funny!<a href="#section-3.4-11.3" class="pilcrow">¶</a>
+          <li class="ulEmpty" id="section-3.4-10.3"> They must actually be funny!<a href="#section-3.4-10.3" class="pilcrow">¶</a>
 </li>
         </ul>
-<p id="section-3.4-12">
+<p id="section-3.4-11">
 
-April First RFCs have a large following, feedback (on the rfc-interest list) on
-1 April each year has been enthusiastic and quick! <a href="#section-3.4-12" class="pilcrow">¶</a></p>
-<p id="section-3.4-13">I published 159 Independent Stream RFCs during my eight years as ISE. Over
+April First RFCs have a large following, and feedback from the Internet community on
+1 April each year has been enthusiastic and quick! <a href="#section-3.4-11" class="pilcrow">¶</a></p>
+<p id="section-3.4-12">I published 159 Independent Stream RFCs during my eight years as ISE. Over
 those eight years I worked with, and often met with at IETF meetings, most of
 their authors.  For me that was a very rewarding experience, so I thank all
 those contributors. Also, I've worked with most of the IESG members during those
 eight years, that also gave me a lot of helpful interaction. Last, I've always
 enjoyed working with the RFC Editor, and all the staff of the RFC Production
 Centre. The IETF (as a whole) is very fortunate to have such an effective team
-of talented Professional Staff.<a href="#section-3.4-13" class="pilcrow">¶</a></p>
+of talented Professional Staff.<a href="#section-3.4-12" class="pilcrow">¶</a></p>
 </section>
 </div>
 <div id="a-view-from-inside-the-rfc-editor-sandy-ginoza">
@@ -1809,7 +1784,8 @@ of talented Professional Staff.<a href="#section-3.4-13" class="pilcrow">¶</a><
   needed.  However, as Leslie noted, this didn't work very well. The effects of
   the experiment would be lasting, as this led to a form of the process we have
   now, where the RFC Editor asks more questions during AUTH/AUTH48 and technical
-  changes require approval from the relevant Area Directors. These changes added
+  changes require approval from the relevant Area Directors or stream managers,
+  depending on the document stream. These changes added
   to the workload and extended publication times; many often now jokingly refer
   to AUTH48 as the authors' "48 days", "48 weeks", etc.
 <a href="#section-3.5-7" class="pilcrow">¶</a></p>
@@ -1869,10 +1845,12 @@ of talented Professional Staff.<a href="#section-3.4-13" class="pilcrow">¶</a><
   culture, and work through a backlog of issues that had been left unattended.
 <a href="#section-3.5-15" class="pilcrow">¶</a></p>
 <p id="section-3.5-16">Two of the backlogged issues were so old, they were ones someone asked me
-  about at my first IETF: when is the RFC Editor going to allow UTF-8 in RFCs
-  and when will the RFC Editor adopt a more modern publication format.
+  about at my first IETF: when is the RFC Editor going to allow non-ASCII
+  characters in RFCs, and when will the RFC Editor adopt a more modern
+  publication format.
 <a href="#section-3.5-16" class="pilcrow">¶</a></p>
-<p id="section-3.5-17">At that time, while we understood the desire to move toward UTF-8 and to
+<p id="section-3.5-17">At that time, while we understood the desire to move toward supporting a
+  broader range of character sets and to
   have more modern outputs, we also routinely received emails from individuals
   requesting that we send them plain-text files (instead of pointing them to the
   website) because their Internet access was limited.  We also regularly
@@ -1883,7 +1861,7 @@ of talented Professional Staff.<a href="#section-3.4-13" class="pilcrow">¶</a><
 <p id="section-3.5-18">However, we now find ourselves on the precipice of change.  2019 promises to
   be a BIG year for the RFC Series, as we expect to transition from publishing
   plaintext, ASCII-only files to publishing multiple file formats (XML, HTML,
-  PDF/A-3, and TXT) that allow both UTF-8 and SVG art.
+  PDF/A-3, and TXT) that allow both non-ASCII characters and SVG art.
 <a href="#section-3.5-18" class="pilcrow">¶</a></p>
 <p id="section-3.5-19">Interestingly enough, I find that the RFC Editor has been in an almost
   constant state of change since I joined the team, even though the goal of the
@@ -1904,7 +1882,7 @@ of talented Professional Staff.<a href="#section-3.4-13" class="pilcrow">¶</a><
     pervasive, global construct, we still aim for openness and communication, but
     recognize that for protocols and other information to support interoperability,
     there must be points of stability to build from. Small-time app developers to
-    multi-billion dollar companies are on the same footing. And anyone can look back
+    multi-billion dollar companies are on the same footing. Anyone should be able to look back
     at a point in time and understand what was done, and why.
       <a href="#section-4-1" class="pilcrow">¶</a></p>
 <p id="section-4-2">While the informality has given way to increased structure, the openness and
@@ -1946,11 +1924,11 @@ of talented Professional Staff.<a href="#section-3.4-13" class="pilcrow">¶</a><
     expectations and requirements of users today. The entire field of
     online document presentation, consumption, and preservation, has in some cases
     only been invented years after the first RFC was published. While it can
-    and has) been argued that those newer fields and their tools have not had a
+    (and has) been argued that those newer fields and their tools have not had a
     chance to stand the test of time, the RFC Series Editor, in consultation with
     the community, started a concerted effort in 2012 to bring the RFC Series
     into alignment with a new array of possibilities for preservation and
-    display started.
+    display.
         <a href="#section-4.2-2" class="pilcrow">¶</a></p>
 <p id="section-4.2-3">Information about the current RFC format project, the reasoning and
     requirements for the changes underway today, can be found in <span>[<a href="#RFC7990" class="xref">RFC7990</a>]</span>.
@@ -2007,13 +1985,17 @@ of talented Professional Staff.<a href="#section-3.4-13" class="pilcrow">¶</a><
       <dd>
 <span class="refAuthor">IAB</span>, <span class="refTitle">""IAB Minutes 1988-07-12""</span>, <time datetime="1988-07">July 1988</time>
         <span>, &lt;<a href="https://www.iab.org/documents/minutes/minutes-1988/iab-minutes-1988-07-12/">https://www.iab.org/documents/minutes/minutes-1988/iab-minutes-1988-07-12/</a>&gt;</span>. </dd>
+<dt id="IETF1">[IETF1]</dt>
+      <dd>
+<span class="refAuthor"></span>, <span class="refTitle">"First IETF; January 16-17, 1986; San Diego, California"</span>, <time datetime="1986-01">January 1986</time>
+        <span>, &lt;<a href="https://www.ietf.org/old/2009/proceedings/prior29/IETF01.pdf">https://www.ietf.org/old/2009/proceedings/prior29/IETF01.pdf</a>&gt;</span>. </dd>
 <dt id="ISI-to-AMS">[ISI-to-AMS]</dt>
       <dd>
 <span class="refAuthor">The IETF Administrative Support Activity</span>, <span class="refTitle">"RFC Production Center Agreement between Association Management Solutions, LLC, and the Internet Society"</span>, <time datetime="2009-10">October 2009</time>
         <span>, &lt;<a href="https://iaoc.ietf.org/documents/AMS-RPC-Public-Final-2009.pdf">https://iaoc.ietf.org/documents/AMS-RPC-Public-Final-2009.pdf</a>&gt;</span>. </dd>
 <dt id="RFC-ONLINE">[RFC-ONLINE]</dt>
       <dd>
-<span class="refAuthor">RFC Editor</span>, <span class="refTitle">"History of RFC Online Project"</span>, <time datetime="2019-03">March 2019</time>
+<span class="refAuthor">RFC Editor</span>, <span class="refTitle">"History of RFC Online Project"</span>, <time datetime="2019-04">April 2019</time>
         <span>, &lt;<a href="http://www.rfc-editor.org/rfc-online-2000.html">http://www.rfc-editor.org/rfc-online-2000.html</a>&gt;</span>. </dd>
 <dt id="RFC0001">[RFC0001]</dt>
       <dd>
@@ -2047,6 +2029,14 @@ of talented Professional Staff.<a href="#section-3.4-13" class="pilcrow">¶</a><
       <dd>
 <span class="refAuthor">Defense Advanced Research Projects Agency</span><span class="refAuthor"> and Internet Activities Board</span>, <span class="refTitle">"IAB official protocol standards"</span>, <span class="seriesInfo">RFC 1083</span>, <span class="seriesInfo">DOI 10.17487/RFC1083</span>, <time datetime="1988-12">December 1988</time>
           <span>, &lt;<a href="https://www.rfc-editor.org/info/rfc1083">https://www.rfc-editor.org/info/rfc1083</a>&gt;</span>. </dd>
+<dt id="RFC1122">[RFC1122]</dt>
+      <dd>
+<span class="refAuthor">Braden, R., Ed.</span>, <span class="refTitle">"Requirements for Internet Hosts - Communication Layers"</span>, <span class="seriesInfo">STD 3</span>, <span class="seriesInfo">RFC 1122</span>, <span class="seriesInfo">DOI 10.17487/RFC1122</span>, <time datetime="1989-10">October 1989</time>
+          <span>, &lt;<a href="https://www.rfc-editor.org/info/rfc1122">https://www.rfc-editor.org/info/rfc1122</a>&gt;</span>. </dd>
+<dt id="RFC1123">[RFC1123]</dt>
+      <dd>
+<span class="refAuthor">Braden, R., Ed.</span>, <span class="refTitle">"Requirements for Internet Hosts - Application and Support"</span>, <span class="seriesInfo">STD 3</span>, <span class="seriesInfo">RFC 1123</span>, <span class="seriesInfo">DOI 10.17487/RFC1123</span>, <time datetime="1989-10">October 1989</time>
+          <span>, &lt;<a href="https://www.rfc-editor.org/info/rfc1123">https://www.rfc-editor.org/info/rfc1123</a>&gt;</span>. </dd>
 <dt id="RFC1150">[RFC1150]</dt>
       <dd>
 <span class="refAuthor">Malkin, G.S.</span><span class="refAuthor"> and J.K. Reynolds</span>, <span class="refTitle">"FYI on FYI: Introduction to the FYI Notes"</span>, <span class="seriesInfo">RFC 1150</span>, <span class="seriesInfo">DOI 10.17487/RFC1150</span>, <time datetime="1990-03">March 1990</time>
@@ -2075,14 +2065,14 @@ of talented Professional Staff.<a href="#section-3.4-13" class="pilcrow">¶</a><
       <dd>
 <span class="refAuthor">Mankin, A.</span><span class="refAuthor"> and S. Hayes</span>, <span class="refTitle">"Requirements for IETF Technical Publication Service"</span>, <span class="seriesInfo">RFC 4714</span>, <span class="seriesInfo">DOI 10.17487/RFC4714</span>, <time datetime="2006-10">October 2006</time>
           <span>, &lt;<a href="https://www.rfc-editor.org/info/rfc4714">https://www.rfc-editor.org/info/rfc4714</a>&gt;</span>. </dd>
-<dt id="RFC4744">[RFC4744]</dt>
-      <dd>
-<span class="refAuthor">Lear, E.</span><span class="refAuthor"> and K. Crozier</span>, <span class="refTitle">"Using the NETCONF Protocol over the Blocks Extensible Exchange Protocol (BEEP)"</span>, <span class="seriesInfo">RFC 4744</span>, <span class="seriesInfo">DOI 10.17487/RFC4744</span>, <time datetime="2006-12">December 2006</time>
-          <span>, &lt;<a href="https://www.rfc-editor.org/info/rfc4744">https://www.rfc-editor.org/info/rfc4744</a>&gt;</span>. </dd>
 <dt id="RFC4844">[RFC4844]</dt>
       <dd>
 <span class="refAuthor">Daigle, L., Ed.</span><span class="refAuthor"> and Internet Architecture Board</span>, <span class="refTitle">"The RFC Series and RFC Editor"</span>, <span class="seriesInfo">RFC 4844</span>, <span class="seriesInfo">DOI 10.17487/RFC4844</span>, <time datetime="2007-07">July 2007</time>
           <span>, &lt;<a href="https://www.rfc-editor.org/info/rfc4844">https://www.rfc-editor.org/info/rfc4844</a>&gt;</span>. </dd>
+<dt id="RFC4845">[RFC4845]</dt>
+      <dd>
+<span class="refAuthor">Daigle, L., Ed.</span><span class="refAuthor"> and Internet Architecture Board</span>, <span class="refTitle">"Process for Publication of IAB RFCs"</span>, <span class="seriesInfo">RFC 4845</span>, <span class="seriesInfo">DOI 10.17487/RFC4845</span>, <time datetime="2007-07">July 2007</time>
+          <span>, &lt;<a href="https://www.rfc-editor.org/info/rfc4845">https://www.rfc-editor.org/info/rfc4845</a>&gt;</span>. </dd>
 <dt id="RFC4846">[RFC4846]</dt>
       <dd>
 <span class="refAuthor">Klensin, J., Ed.</span><span class="refAuthor"> and D. Thaler, Ed.</span>, <span class="refTitle">"Independent Submissions to the RFC Editor"</span>, <span class="seriesInfo">RFC 4846</span>, <span class="seriesInfo">DOI 10.17487/RFC4846</span>, <time datetime="2007-07">July 2007</time>
@@ -2091,14 +2081,22 @@ of talented Professional Staff.<a href="#section-3.4-13" class="pilcrow">¶</a><
       <dd>
 <span class="refAuthor">Editor, RFC.</span>, <span class="refTitle">"40 Years of RFCs"</span>, <span class="seriesInfo">RFC 5540</span>, <span class="seriesInfo">DOI 10.17487/RFC5540</span>, <time datetime="2009-04">April 2009</time>
           <span>, &lt;<a href="https://www.rfc-editor.org/info/rfc5540">https://www.rfc-editor.org/info/rfc5540</a>&gt;</span>. </dd>
-<dt id="RFC5629">[RFC5629]</dt>
+<dt id="RFC5620">[RFC5620]</dt>
       <dd>
-<span class="refAuthor">Rosenberg, J.</span>, <span class="refTitle">"A Framework for Application Interaction in the Session Initiation Protocol (SIP)"</span>, <span class="seriesInfo">RFC 5629</span>, <span class="seriesInfo">DOI 10.17487/RFC5629</span>, <time datetime="2009-10">October 2009</time>
-          <span>, &lt;<a href="https://www.rfc-editor.org/info/rfc5629">https://www.rfc-editor.org/info/rfc5629</a>&gt;</span>. </dd>
+<span class="refAuthor">Kolkman, O., Ed.</span><span class="refAuthor"> and IAB</span>, <span class="refTitle">"RFC Editor Model (Version 1)"</span>, <span class="seriesInfo">RFC 5620</span>, <span class="seriesInfo">DOI 10.17487/RFC5620</span>, <time datetime="2009-08">August 2009</time>
+          <span>, &lt;<a href="https://www.rfc-editor.org/info/rfc5620">https://www.rfc-editor.org/info/rfc5620</a>&gt;</span>. </dd>
 <dt id="RFC5742">[RFC5742]</dt>
       <dd>
 <span class="refAuthor">Alvestrand, H.</span><span class="refAuthor"> and R. Housley</span>, <span class="refTitle">"IESG Procedures for Handling of Independent and IRTF Stream Submissions"</span>, <span class="seriesInfo">BCP 92</span>, <span class="seriesInfo">RFC 5742</span>, <span class="seriesInfo">DOI 10.17487/RFC5742</span>, <time datetime="2009-12">December 2009</time>
           <span>, &lt;<a href="https://www.rfc-editor.org/info/rfc5742">https://www.rfc-editor.org/info/rfc5742</a>&gt;</span>. </dd>
+<dt id="RFC5743">[RFC5743]</dt>
+      <dd>
+<span class="refAuthor">Falk, A.</span>, <span class="refTitle">"Definition of an Internet Research Task Force (IRTF) Document Stream"</span>, <span class="seriesInfo">RFC 5743</span>, <span class="seriesInfo">DOI 10.17487/RFC5743</span>, <time datetime="2009-12">December 2009</time>
+          <span>, &lt;<a href="https://www.rfc-editor.org/info/rfc5743">https://www.rfc-editor.org/info/rfc5743</a>&gt;</span>. </dd>
+<dt id="RFC5746">[RFC5746]</dt>
+      <dd>
+<span class="refAuthor">Rescorla, E.</span><span class="refAuthor">, Ray, M.</span><span class="refAuthor">, Dispensa, S.</span><span class="refAuthor">, and N. Oskov</span>, <span class="refTitle">"Transport Layer Security (TLS) Renegotiation Indication Extension"</span>, <span class="seriesInfo">RFC 5746</span>, <span class="seriesInfo">DOI 10.17487/RFC5746</span>, <time datetime="2010-02">February 2010</time>
+          <span>, &lt;<a href="https://www.rfc-editor.org/info/rfc5746">https://www.rfc-editor.org/info/rfc5746</a>&gt;</span>. </dd>
 <dt id="RFC6360">[RFC6360]</dt>
       <dd>
 <span class="refAuthor">Housley, R.</span>, <span class="refTitle">"Conclusion of FYI RFC Sub-Series"</span>, <span class="seriesInfo">RFC 6360</span>, <span class="seriesInfo">DOI 10.17487/RFC6360</span>, <time datetime="2011-08">August 2011</time>
