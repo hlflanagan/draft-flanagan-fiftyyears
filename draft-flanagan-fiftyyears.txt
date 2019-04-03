@@ -4,13 +4,13 @@
 
 Network Working Group                                   H. Flanagan, Ed.
 Internet-Draft                                                RFC Editor
-Updates: 2555, 5540 (if approved)                         March 18, 2019
+Updates: 2555, 5540 (if approved)                          April 3, 2019
 Intended status: Informational
-Expires: September 19, 2019
+Expires: October 5, 2019
 
 
                           Fifty Years of RFCs
-                      draft-flanagan-fiftyyears-02
+                      draft-flanagan-fiftyyears-03
 
 Abstract
 
@@ -36,7 +36,7 @@ Status of This Memo
    time.  It is inappropriate to use Internet-Drafts as reference
    material or to cite them other than as "work in progress."
 
-   This Internet-Draft will expire on September 19, 2019.
+   This Internet-Draft will expire on October 5, 2019.
 
 Copyright Notice
 
@@ -53,9 +53,9 @@ Copyright Notice
 
 
 
-Flanagan               Expires September 19, 2019               [Page 1]
+Flanagan                 Expires October 5, 2019                [Page 1]
 
-Internet-Draft             Fifty Years of RFCs                March 2019
+Internet-Draft             Fifty Years of RFCs                April 2019
 
 
    the Trust Legal Provisions and are provided without warranty as
@@ -71,61 +71,61 @@ Table of Contents
      3.3.  Formalizing the RFC Editor Model - Leslie Daigle  . . . .  11
      3.4.  The Continuation, or Creation, of a Stream - Nevil
            Brownlee  . . . . . . . . . . . . . . . . . . . . . . . .  13
-     3.5.  A View from Inside the RFC Editor - Sandy Ginoza  . . . .  15
+     3.5.  A View from Inside the RFC Editor - Sandy Ginoza  . . . .  16
    4.  The Next Fifty Years of   RFCs  . . . . . . . . . . . . . . .  19
-     4.1.  Preservation  . . . . . . . . . . . . . . . . . . . . . .  19
-     4.2.  Evolution of the RFC Format . . . . . . . . . . . . . . .  19
-     4.3.  Stream Structure  . . . . . . . . . . . . . . . . . . . .  20
-   5.  Conclusion  . . . . . . . . . . . . . . . . . . . . . . . . .  20
+     4.1.  Preservation  . . . . . . . . . . . . . . . . . . . . . .  20
+     4.2.  Evolution of the RFC Format . . . . . . . . . . . . . . .  20
+     4.3.  Stream Structure  . . . . . . . . . . . . . . . . . . . .  21
+   5.  Conclusion  . . . . . . . . . . . . . . . . . . . . . . . . .  21
    6.  Informative References  . . . . . . . . . . . . . . . . . . .  21
-   Appendix A.  Contributors . . . . . . . . . . . . . . . . . . . .  24
-   Author's Address  . . . . . . . . . . . . . . . . . . . . . . . .  24
+   Appendix A.  Contributors . . . . . . . . . . . . . . . . . . . .  25
+   Author's Address  . . . . . . . . . . . . . . . . . . . . . . . .  25
 
 1.  Introduction
 
    The RFC Series began in April 1969 with the publication of "Host
-   Software" by Steve Crocker.  The early RFCs were extremely informal
-   and included poems, satires, and April 1 jokes, to name a few.  Since
-   then, over 8000 RFCs have been published, ranging across best
-   practice information, experimental protocols, informational material,
-   and, of course, standards.  Material is accepted for publication
-   through the IETF, the IAB, the IRTF, and the Independent Submissions
-   stream, each with clear processes on how drafts are submitted and
-   potentially approved for publication as an RFC.  Ultimately, the goal
-   of the RFC Series is to provide a canonical source for the material
-   published by the RFC Editor, and to support the preservation of that
-   material in perpetuity.
+   Software" by Steve Crocker.  The early RFCs were, in fact, requests
+   for comments on ideas and proposals; the goal was to start
+   conversations, rather than to create an archival record of a standard
+   or best practice.  This goal changed over time, as the formality of
+   the publication process evolved, and the community consuming the
+   material grew.  Today, over 8500 RFCs have been published, ranging
+   across best practice information, experimental protocols,
+   informational material, and, of course, Internet standards.  Material
+   is accepted for publication through the IETF, the IAB, the IRTF, and
+   the Independent Submissions stream, each with clear processes on how
+   drafts are submitted and potentially approved for publication as an
+   RFC.  Ultimately, the goal of the RFC Series is to provide a
+   canonical source for the material published by the RFC Editor, and to
+   support the preservation of that material in perpetuity.
 
-   Since the very first RFC was published fifty years ago, the focus of
-   the Series has evolved to be a stable record of what has been
-   published and to provide a source for the dissemination to the world
-   of the ideas contained in the RFCs.  In particular, when Internet
-   Drafts first started being produced [need a date check], RFCs became
-   a much more formal body of material requiring serious curation, from
-   the editing process through to the curation and archiving of the
-   documents.  Today, there is still a tension between having that
-   stable, archival record, versus making the latest ideas available as
-
-
+   The RFC Editor as a role came a few years after the first RFC was
+   published.  The actual date when the term was first used is murky;
+   Jon Postel, the first RFC Editor, defined the role by his actions and
+   later by defining the initial processes surrounding the publication
+   of RFCs.  What is certain is that the RFC Editor is responsible for
+   making sure that the editorial quality of the RFCs published is high,
 
 
-Flanagan               Expires September 19, 2019               [Page 2]
+
+
+Flanagan                 Expires October 5, 2019                [Page 2]
 
-Internet-Draft             Fifty Years of RFCs                March 2019
+Internet-Draft             Fifty Years of RFCs                April 2019
 
 
-   soon as possible; evolution will continue, in no small part driven by
-   that tension.
+   and that the archival record of what has been published is
+   maintained.
 
    Change does come to the Series, albeit slowly.  First, we saw the
    distribution method change from postal mail to FTP and email.  From
    there, we saw increased guidance for authors on how to write an RFC.
    The editorial staff went from one person, Jon Postel, to a team of
    five to seven.  The actual editing and publishing work split from the
-   service for registration of protocol codepoints.  The whole RFC
-   Editor structure was reviewed and refined [RFC6635].  And, in the
-   last few years, we have started the process to change the format of
-   the RFC documents themselves.
+   service for registration of protocol code points.  The whole RFC
+   Editor structure was reviewed [RFC4844] and refined [RFC5620] and
+   refined again[RFC6635].  And, in the last few years, we have started
+   the process to change the format of the RFC documents themselves.
 
    This is evolution, and the Series will continue to adapt in order to
    meet the needs and expectations of the community of authors,
@@ -133,7 +133,7 @@ Internet-Draft             Fifty Years of RFCs                March 2019
    will be always be balanced against the core mission of the Series: to
    maintain a strong, stable, archival record of technical
    specifications, protocols, and other information relevant to the
-   Arpanet and Internet networking communities.
+   ARPANET and Internet networking communities.
 
    There is more to the history of the RFC Series than can be covered in
    this document.  Readers interested in earlier perspectives may find
@@ -165,9 +165,9 @@ Internet-Draft             Fifty Years of RFCs                March 2019
 
 
 
-Flanagan               Expires September 19, 2019               [Page 3]
+Flanagan                 Expires October 5, 2019                [Page 3]
 
-Internet-Draft             Fifty Years of RFCs                March 2019
+Internet-Draft             Fifty Years of RFCs                April 2019
 
 
    This document brings up to date the historical records started in
@@ -175,72 +175,85 @@ Internet-Draft             Fifty Years of RFCs                March 2019
 
 2.  Key Moments in RFC History
 
-   +----------------+-----------+--------------------------------------+
-   | Marker         | Date      | Event                                |
-   +----------------+-----------+--------------------------------------+
-   | [RFC0001]      | 1969      | First RFC published                  |
-   |                |           |                                      |
-   | [RFC0114]      | 1971      | First distribution of RFCs over the  |
-   |                |           | network                              |
-   |                |           |                                      |
-   | [RFC0433]      | December  | First mention of the Czar of Socket  |
-   |                | 1972      | Numbers and the proposal for a       |
-   |                |           | formal registry                      |
-   |                |           |                                      |
-   | [RFC0690]      | June 1975 | Relationship starts between ISI and  |
-   |                |           | the RFC Editor, judging by Jon       |
-   |                |           | Postel's affiliation change          |
-   |                |           |                                      |
-   | [RFC0748]      | March     | First April 1st RFC                  |
-   |                | 1977      |                                      |
-   |                |           |                                      |
-   | [RFC1083]      | December  | Three stage standards process        |
-   |                | 1988      | defined                              |
-   |                |           |                                      |
-   | [RFC1150]      | March     | FYI sub-series started               |
-   |                | 1990      |                                      |
-   |                |           |                                      |
-   | [RFC1311]      | March     | STD sub-series started               |
-   |                | 1992      |                                      |
-   |                |           |                                      |
-   | [RFC1818]      | August    | BCP sub-series started               |
-   |                | 1995      |                                      |
-   |                |           |                                      |
-   | [RFC-ONLINE]   | (approx)  | RFC Online Project                   |
-   |                | 1998-2010 |                                      |
-   |                |           |                                      |
-   | [IAB-19880712] | July 1988 | IAB approves the creation of an      |
-   |                |           | Internet Draft series                |
-   |                |           |                                      |
-   | [RFC2441]      | 15        | Jon Postel's death                   |
-   |                | October   |                                      |
-   |                | 1998      |                                      |
-   |                |           |                                      |
-   | [ISI-to-AMS]   | October   | Transition starts from ISI to        |
-   |                | 2009      | Association Management Solutions     |
+   +----------------+-------------------+------------------------------+
+   | Marker         | Date              | Event                        |
+   +----------------+-------------------+------------------------------+
+   | [RFC0001]      | 1969              | First RFC published          |
+   |                |                   |                              |
+   | [RFC0114]      | 1971              | First distribution of RFCs   |
+   |                |                   | over the network             |
+   |                |                   |                              |
+   | [RFC0433]      | December 1972     | First mention of the Czar of |
+   |                |                   | Socket Numbers and the       |
+   |                |                   | proposal for a formal        |
+   |                |                   | registry                     |
+   |                |                   |                              |
+   | [RFC0690]      | June 1975         | Relationship starts between  |
+   |                |                   | ISI and the RFC Editor,      |
+   |                |                   | judging by Jon Postel's      |
+   |                |                   | affiliation change           |
+   |                |                   |                              |
+   | [RFC0748]      | March 1977        | First Internet Engineering   |
+   |                |                   | Task Force (IETF) meeting    |
+   |                |                   |                              |
+   | [IETF1]        | January 1986      | First April 1st RFC          |
+   |                |                   |                              |
+   | [RFC1083]      | December 1988     | First major effort to review |
+   |                |                   | key specifications and write |
+   |                |                   | applicability statements     |
+   |                |                   |                              |
+   | [RFC1122]      | October 1989      | Three stage standards        |
+   | [RFC1123]      |                   | process defined              |
+   |                |                   |                              |
+   | [RFC1150]      | March 1990        | FYI sub-series started       |
+   |                |                   |                              |
+   | [RFC1311]      | March 1992        | STD sub-series started       |
+   |                |                   |                              |
+   | [RFC1818]      | August 1995       | BCP sub-series started       |
+   |                |                   |                              |
+   | [RFC-ONLINE]   | (approx)          | RFC Online Project           |
+   |                | 1998-2010         |                              |
+   |                |                   |                              |
+   | [IAB-19880712] | July 1988         | IAB approves the creation of |
+   |                |                   | an Internet Draft series     |
+   |                |                   |                              |
+   | [RFC2441]      | 15 October 1998   | Jon Postel's death           |
 
 
 
-Flanagan               Expires September 19, 2019               [Page 4]
+Flanagan                 Expires October 5, 2019                [Page 4]
 
-Internet-Draft             Fifty Years of RFCs                March 2019
+Internet-Draft             Fifty Years of RFCs                April 2019
 
 
-   |                |           | (AMS)                                |
-   |                |           |                                      |
-   | [RFC4844]      | July 2007 | RFC Stream structure                 |
-   |                |           |                                      |
-   | [RFC6360]      | August    | FYI sub-series ended                 |
-   |                | 2011      |                                      |
-   |                |           |                                      |
-   | [RFC6410]      | October   | Two stage standards process          |
-   |                | 2011      | formalized                           |
-   |                |           |                                      |
-   | [RFC6949]      | May 2013  | RFC Format change project started    |
-   |                |           |                                      |
-   | [RFC8153]      | April     | RFCs no longer printed to paper upon |
-   |                | 2017      | publication                          |
-   +----------------+-----------+--------------------------------------+
+   |                |                   |                              |
+   | [ISI-to-AMS]   | October 2009      | Transition starts from ISI   |
+   |                |                   | to Association Management    |
+   |                |                   | Solutions (AMS)              |
+   |                |                   |                              |
+   | [RFC4844]      | July 2007         | RFC Stream structure         |
+   |                |                   |                              |
+   | [RFC4846]      | Formalize the     | July 2007                    |
+   |                | Independent       |                              |
+   |                | Submission        |                              |
+   |                | document stream   |                              |
+   |                |                   |                              |
+   | [RFC5746]      | Formalize the     | December 2009                |
+   |                | Internet Research |                              |
+   |                | Task Force        |                              |
+   |                | document stream   |                              |
+   |                |                   |                              |
+   | [RFC6360]      | August 2011       | FYI sub-series ended         |
+   |                |                   |                              |
+   | [RFC6410]      | October 2011      | Two stage standards process  |
+   |                |                   | formalized                   |
+   |                |                   |                              |
+   | [RFC6949]      | May 2013          | RFC Format change project    |
+   |                |                   | started                      |
+   |                |                   |                              |
+   | [RFC8153]      | April 2017        | RFCs no longer printed to    |
+   |                |                   | paper upon publication       |
+   +----------------+-------------------+------------------------------+
 
                     Table 1: Key Moments in RFC History
 
@@ -252,15 +265,23 @@ Internet-Draft             Fifty Years of RFCs                March 2019
    more than thirty years ago.]
 
    The Internet community now includes millions of nodes and billions of
-   users.  It owes its beginning to the Arpanet, which was once but a
-   gleam in the eyes of Bob Taylor, Larry Roberts, and J.  C.  R.
-   Licklider of ARPA.  While much of the development proceeded according
+   users.  It owes its beginning to the ARPANET, which was once but a
+   gleam in the eyes of J.  C.  R.  Licklider, Bob Taylor, and Larry
+   Roberts of ARPA.  While much of the development proceeded according
    to plan, the initial design of the protocols and the creation of the
    RFCs was largely accidental.
 
    The procurement of the ARPANET was initiated in the summer of 1968
    --remember Vietnam, flower children, etc.? There had been prior
    experiments at various ARPA sites to link together computer systems,
+
+
+
+Flanagan                 Expires October 5, 2019                [Page 5]
+
+Internet-Draft             Fifty Years of RFCs                April 2019
+
+
    but this was the first version to explore packet-switching as a core
    part of the communication strategy.  ("ARPA" didn't become "DARPA"
    until 1972.  It briefly changed back to ARPA in 1993 and then back
@@ -273,15 +294,6 @@ Internet-Draft             Fifty Years of RFCs                March 2019
    These sites, respectively, were running a Scientific Data Systems
    (SDS) Sigma 7, an SDS 940, an IBM 360/75, and a DEC PDP-10.  These
    machines not only had different operating systems, but even details
-
-
-
-
-Flanagan               Expires September 19, 2019               [Page 5]
-
-Internet-Draft             Fifty Years of RFCs                March 2019
-
-
    like character sets and byte sizes varied, and other sites would have
    further variations.
 
@@ -318,6 +330,14 @@ Internet-Draft             Fifty Years of RFCs                March 2019
    Over the next several months, a small, fairly consistent set of
    graduate students and staff members from the first four sites met.
    We used the term Network Working Group (NWG) to designate ourselves.
+
+
+
+Flanagan                 Expires October 5, 2019                [Page 6]
+
+Internet-Draft             Fifty Years of RFCs                April 2019
+
+
    This was the same term Elmer Shapiro had used when he convened our
    first meeting, although it had been used until that point to refer to
    the principal investigators and ARPA personnel -- senior people who
@@ -330,14 +350,6 @@ Internet-Draft             Fifty Years of RFCs                March 2019
    official charter or leadership, and it remained unclear, at least to
    me, whether someone or some group would show up with the official
    authority and responsibility to take over the problems we were
-
-
-
-Flanagan               Expires September 19, 2019               [Page 6]
-
-Internet-Draft             Fifty Years of RFCs                March 2019
-
-
    dealing with.  Without clear definition of what the host-IMP
    interface would look like, or even a precise definition of what
    functions the IMP would provide, we focused on broader ideas.  We
@@ -373,6 +385,15 @@ Internet-Draft             Fifty Years of RFCs                March 2019
    complete before I assigned a number because I wanted to minimize the
    number of holes in the sequence.
 
+
+
+
+
+Flanagan                 Expires October 5, 2019                [Page 7]
+
+Internet-Draft             Fifty Years of RFCs                April 2019
+
+
    I tried a couple of times to write a note on how the notes would be
    organized, but I found myself full of trepidation.  Would these notes
    look as if we were asserting authority we didn't have?  Would we
@@ -384,15 +405,6 @@ Internet-Draft             Fifty Years of RFCs                March 2019
    dreamed these notes would eventually be distributed through the very
    medium we were discussing in these notes.  Talk about Sorcerer's
    Apprentice!
-
-
-
-
-
-Flanagan               Expires September 19, 2019               [Page 7]
-
-Internet-Draft             Fifty Years of RFCs                March 2019
-
 
    After BBN distributed the specification for the hardware and software
    interface to the IMPs to the initial ARPANET sites, our attention
@@ -430,6 +442,14 @@ Internet-Draft             Fifty Years of RFCs                March 2019
    large pile of RFCs.  When the 100th RFC was in sight, Peggy Karp at
    MITRE took on the task of indexing them.  That seemed like a large
    task then, and we could have hardly anticipated seeing more than a
+
+
+
+Flanagan                 Expires October 5, 2019                [Page 8]
+
+Internet-Draft             Fifty Years of RFCs                April 2019
+
+
    1000 RFCs several years later, and the evolution toward Internet
    Drafts yet later.
 
@@ -442,14 +462,6 @@ Internet-Draft             Fifty Years of RFCs                March 2019
       related to the HOST software or other aspect of the network.
       Notes are encouraged to be timely rather than polished.
       Philosophical positions without examples or other specifics,
-
-
-
-Flanagan               Expires September 19, 2019               [Page 8]
-
-Internet-Draft             Fifty Years of RFCs                March 2019
-
-
       specific suggestions or implementation techniques without
       introductory or background explication, and explicit questions
       without any attempted answers are all acceptable.  The minimum
@@ -486,26 +498,26 @@ Internet-Draft             Fifty Years of RFCs                March 2019
    email working on the ARPANET, we distributed RFCs electronically.
    When the ARPANET became just a portion of the Internet, this
    distribution process became worldwide.  The effect of this openness
+
+
+
+Flanagan                 Expires October 5, 2019                [Page 9]
+
+Internet-Draft             Fifty Years of RFCs                April 2019
+
+
    is often overlooked.  Students and young professionals all over the
    world have been able to download the RFCs, learn about the many
    pieces of technology, and then build the most amazing software.  And
    they still are.  [They are also a fantastic resource for historians.]
 
-   Where will it end?  The Arpanet begat the Internet and the underlying
+   Where will it end?  The ARPANET begat the Internet and the underlying
    technology transitioned from the original host-host protocol to TCP/
    IP, but the superstructure of protocol layers, community driven
    protocol design, and the RFCs continued.  Through the many changes in
    physical layer technology - analog copper circuits, digital circuits,
    fiber and wireless -- resulting in speed increases from thousands to
    billions of bits per second and a similar increase from thousands to
-
-
-
-Flanagan               Expires September 19, 2019               [Page 9]
-
-Internet-Draft             Fifty Years of RFCs                March 2019
-
-
    billions of users, this superstructure, including the RFCs has
    continued to serve the community.  All of the computers have changed,
    as have all of the transmission lines.  But the RFCs march on.  Maybe
@@ -542,6 +554,14 @@ Internet-Draft             Fifty Years of RFCs                March 2019
    Robert (Bob) Braden into the team and when Jon unexpectedly passed
    away in October 1998 (see [RFC2468]), Joyce and Bob undertook to
    carry on with the RFC work in his stead, adding Sandy Ginoza to the
+
+
+
+Flanagan                 Expires October 5, 2019               [Page 10]
+
+Internet-Draft             Fifty Years of RFCs                April 2019
+
+
    team.  During the period when Jon and Joyce worked closely together,
    Joyce would challenge me to tell which edits had been made by Jon and
    which by her.  I found this impossible, so aligned were they in their
@@ -549,18 +569,6 @@ Internet-Draft             Fifty Years of RFCs                March 2019
    have passed on and we have only the product of their joint work and
    Sandy Ginoza's and others' corporate memory by which to recall
    history.
-
-
-
-
-
-
-
-
-Flanagan               Expires September 19, 2019              [Page 10]
-
-Internet-Draft             Fifty Years of RFCs                March 2019
-
 
 3.3.  Formalizing the RFC Editor Model - Leslie Daigle
 
@@ -602,6 +610,14 @@ Internet-Draft             Fifty Years of RFCs                March 2019
    supportable by a loosely-coupled set of organizations of people who
    had been there since the beginning and knew each other well.  New
    forms of governance and were needed, as well as rationalized funding
+
+
+
+Flanagan                 Expires October 5, 2019               [Page 11]
+
+Internet-Draft             Fifty Years of RFCs                April 2019
+
+
    The IANA function was absorbed into a purpose-built international
    not-for-profit organization.  The IETF stepped up to manage its own
    organizational destiny, creating the IETF Administrative Support
@@ -610,13 +626,6 @@ Internet-Draft             Fifty Years of RFCs                March 2019
 
    This left the RFC Editor function as an Internet Society-supported,
    independent effort.
-
-
-
-Flanagan               Expires September 19, 2019              [Page 11]
-
-Internet-Draft             Fifty Years of RFCs                March 2019
-
 
    That independent nature was necessary for the historic role of the
    RFC Series in considering all technical contributions.  But, at that
@@ -656,6 +665,15 @@ Internet-Draft             Fifty Years of RFCs                March 2019
    significant text improvements copy editors successfully introduced,
    or the fact that not all RFCs are approved by the IESG.
 
+
+
+
+
+Flanagan                 Expires October 5, 2019               [Page 12]
+
+Internet-Draft             Fifty Years of RFCs                April 2019
+
+
    Institutionally, it was clear that the target was to have the RFC
    Editor function governance within the reach of the Internet technical
    community (as opposed to any particular private organization),
@@ -666,14 +684,6 @@ Internet-Draft             Fifty Years of RFCs                March 2019
 
    The IETF worked on a document outlining functional requirements for
    its technical specification publication.  This could have been useful
-
-
-
-Flanagan               Expires September 19, 2019              [Page 12]
-
-Internet-Draft             Fifty Years of RFCs                March 2019
-
-
    for establishing its own series, but it also was helpful in
    establishing awareness of the challenges in document publishing (it
    always looks easy when you haven't thought about it), and also to lay
@@ -685,7 +695,7 @@ Internet-Draft             Fifty Years of RFCs                March 2019
    There was still, however, a certain lack of clarity about
    responsibilities for making decisions and changes in the RFC Series
    itself.  To that end, I and the IAB worked with the various involved
-   parties to produce [RFC4744].  That document captured the RFC Series
+   parties to produce [RFC4844].  That document captured the RFC Series
    mission (for a purpose greater than IETF technical specification
    publication), as well as the roles and responsibilities of the
    parties involved.  The RFC Editor has responsibility for ensuring the
@@ -695,7 +705,7 @@ Internet-Draft             Fifty Years of RFCs                March 2019
    the same time, operational oversight was migrated to the IASA support
    function of the IETF (and IAB).
 
-   The discussions, and the resulting publication of RFC 4744, allowed
+   The discussions, and the resulting publication of RFC 4844, allowed
    greater visibility into and commitment to the RFC Series, as a
    general Internet publication.  It also meant that subsequent
    adjustments could be made, as requirements evolved - the responsible
@@ -703,35 +713,36 @@ Internet-Draft             Fifty Years of RFCs                March 2019
 
 3.4.  The Continuation, or Creation, of a Stream - Nevil Brownlee
 
-   Starting in 2006 with [RFC4714], the IAB began working towards a new
-   structure for publishing RFCs; in 2009 that emerged as the 'RFC
-   Editor (Version 1)' [RFC5629].  In this model the RFC Series Editor
-   (RSE) oversees RFC publishing and development, and four separate
-   'Streams' produce the documents to be published.  The IETF Stream
-   produces standards-related material, all of its output has full IETF
-   consensus.  The way each new Stream operates is specified in a
-   separate RFC, i.e.,
+   Arguably starting in 2006 with [RFC4714], the IAB and the IETF
+   community spent some time in the mid-2000's evolving the structure of
+   the RFC Series.  This work included defining how those groups that
+   published into the RFC Series (initially including the IETF, the IAB
+   [RFC4845], and the Independent Submissions stream [RFC4846], and
+   later growing to include the IRTF [RFC5743]) would handle approving
+   documents to be published as RFCs.  In 2009, the IAB published 'RFC
+   Editor (Version 1)' [RFC5620].  In this model, a new role was created
+   within the RFC Editor, the RFC Series Editor (RSE), an individual
 
-   [RFC 4845]  IAB: Architecture Reports and Procedures material
 
-   [RFC 5743]  IRTF: Internet Research material
 
-   [RFC 4846]  Independent: Other material
+Flanagan                 Expires October 5, 2019               [Page 13]
+
+Internet-Draft             Fifty Years of RFCs                April 2019
+
+
+   that would oversee RFC publishing and development, while leaving the
+   process for approving documents for publication outside his or her
+   mandate.  While arguably this was a role long filled by people like
+   Jon Postel, Bob Braden, and Joyce Reynolds, RFC 5620 saw the role of
+   RFC Series Editor defined in such a way as to distinctly separate it
+   from that of the Independent Submissions Editor (ISE).
 
    Before 2009 the RFC Editor could accept 'Independent' submissions
    from individuals, and - if he judged they were significant - publish
    them as RFCs; the Independent Stream was set up to continue that
-   function.  From February 2010 through February 2018 I was the
-
-
-
-Flanagan               Expires September 19, 2019              [Page 13]
-
-Internet-Draft             Fifty Years of RFCs                March 2019
-
-
-   Independent Stream Editor (ISE) - I began by reading [RFC4846], then
-   went on to develop the Independent Stream (IS).
+   function.  From February 2010 through February 2018, I was the
+   Independent Stream Editor (ISE) and I began by reading [RFC4846],
+   then went on to develop the Independent Stream (IS).
 
    First I spent several days at the RFC Production Centre at ISI in
    Marina Del Ray with the RFC Editor (Bob Braden) and Sandy Ginoza and
@@ -766,6 +777,15 @@ Internet-Draft             Fifty Years of RFCs                March 2019
    in some IANA Registries require Expert Review - sometimes the
    interactions with Expert reviewers took quite a long time!  Again,
    sometimes a draft seemed to fit better in the IETF Stream; for these
+
+
+
+
+Flanagan                 Expires October 5, 2019               [Page 14]
+
+Internet-Draft             Fifty Years of RFCs                April 2019
+
+
    I would suggest that the draft authors try to find an Area Director
    to sponsor their work as in Individual submission to the IETF Stream.
 
@@ -778,14 +798,6 @@ Internet-Draft             Fifty Years of RFCs                March 2019
    dialogue with their reviewers, the ISE must submit that draft to the
    IESG for their "Conflict Review" [RFC5742].  Overall, each IS draft
    benefited from discussions (which were usually simple) with my Ed
-
-
-
-Flanagan               Expires September 19, 2019              [Page 14]
-
-Internet-Draft             Fifty Years of RFCs                March 2019
-
-
    Board and the IESG.  A (very) few drafts were somewhat controversial
    - for those I was able to work with the IESG to negotiate a suitable
    'IESG Statement' and/or an 'ISE Statement' to make it clearer why the
@@ -800,13 +812,14 @@ Internet-Draft             Fifty Years of RFCs                March 2019
 
       They must relate to the Internet (like all drafts)
 
-      Their readers should reach the end of page two before realising
+      Their readers should reach the end of page two before realizing
       this is an April First RFC
 
       They must actually be funny!
 
-   April First RFCs have a large following, feedback (on the rfc-
-   interest list) on 1 April each year has been enthusiastic and quick!
+   April First RFCs have a large following, and feedback from the
+   Internet community on 1 April each year has been enthusiastic and
+   quick!
 
    I published 159 Independent Stream RFCs during my eight years as ISE.
    Over those eight years I worked with, and often met with at IETF
@@ -817,6 +830,17 @@ Internet-Draft             Fifty Years of RFCs                March 2019
    working with the RFC Editor, and all the staff of the RFC Production
    Centre.  The IETF (as a whole) is very fortunate to have such an
    effective team of talented Professional Staff.
+
+
+
+
+
+
+
+Flanagan                 Expires October 5, 2019               [Page 15]
+
+Internet-Draft             Fifty Years of RFCs                April 2019
+
 
 3.5.  A View from Inside the RFC Editor - Sandy Ginoza
 
@@ -834,14 +858,6 @@ Internet-Draft             Fifty Years of RFCs                March 2019
    10%, but he invested much more time to keep the series running.  He
    pitched in where he could, especially when processing times were
    getting longer; at one point, he even NROFFed a couple of RFCs-to-be.
-
-
-
-Flanagan               Expires September 19, 2019              [Page 15]
-
-Internet-Draft             Fifty Years of RFCs                March 2019
-
-
    Joyce was a full-time employee, but while continuing to ensure RFCs
    were published and serve as a User Services Area Director and a
    keynote speaker about the Internet, she was also temporarily on loan
@@ -861,6 +877,26 @@ Internet-Draft             Fifty Years of RFCs                March 2019
    staff over time.  To understand the team growth, let's first take a
    look at the publication rates throughout history.  The table below
    shows average annual publication rates during 5-year periods.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Flanagan                 Expires October 5, 2019               [Page 16]
+
+Internet-Draft             Fifty Years of RFCs                April 2019
+
 
                     +-------------+-------------------+
                     |    Years    | Avg Pubs per Year |
@@ -890,14 +926,6 @@ Internet-Draft             Fifty Years of RFCs                March 2019
 
    There were significant jumps in the publication rates in the 90s and
    onward, with the number of publications almost doubling between 1993
-
-
-
-Flanagan               Expires September 19, 2019              [Page 16]
-
-Internet-Draft             Fifty Years of RFCs                March 2019
-
-
    and 2007.  The annual submission count surpassed the 300 mark for the
    first time in 2004 and reached an all-time high of 385 in 2011.  The
    submission rate did not drop below 300 until 2016 (284).
@@ -912,9 +940,19 @@ Internet-Draft             Fifty Years of RFCs                March 2019
    experiment would be lasting, as this led to a form of the process we
    have now, where the RFC Editor asks more questions during AUTH/AUTH48
    and technical changes require approval from the relevant Area
-   Directors.  These changes added to the workload and extended
-   publication times; many often now jokingly refer to AUTH48 as the
-   authors' "48 days", "48 weeks", etc.
+   Directors or stream managers, depending on the document stream.
+   These changes added to the workload and extended publication times;
+   many often now jokingly refer to AUTH48 as the authors' "48 days",
+   "48 weeks", etc.
+
+
+
+
+
+Flanagan                 Expires October 5, 2019               [Page 17]
+
+Internet-Draft             Fifty Years of RFCs                April 2019
+
 
    Because the workload continued to increase (in more ways than just
    document submissions; tool testing, editorial process changes, and
@@ -946,14 +984,6 @@ Internet-Draft             Fifty Years of RFCs                March 2019
    (chiefly, to the RSE) in matters affecting the RFC Series operation
    and development."
 
-
-
-
-Flanagan               Expires September 19, 2019              [Page 17]
-
-Internet-Draft             Fifty Years of RFCs                March 2019
-
-
    In 2010, the RPC and Publisher contracts were awarded to Association
    Management Systems (AMS); we started with three existing team members
    (Alice Russo, Megan Ferguson, and me) and we were pleased to be
@@ -972,6 +1002,14 @@ Internet-Draft             Fifty Years of RFCs                March 2019
    transition went smoothly to minimize the impact on document
    processing.
 
+
+
+
+Flanagan                 Expires October 5, 2019               [Page 18]
+
+Internet-Draft             Fifty Years of RFCs                April 2019
+
+
    Our focus during transition was to 1) keep the trains running; that
    is, we wanted to get ourselves up and running with minimal down time
    and 2) work with the Transitional RSE, the Independent Submissions
@@ -986,32 +1024,24 @@ Internet-Draft             Fifty Years of RFCs                March 2019
 
    Two of the backlogged issues were so old, they were ones someone
    asked me about at my first IETF: when is the RFC Editor going to
-   allow UTF-8 in RFCs and when will the RFC Editor adopt a more modern
-   publication format.
+   allow non-ASCII characters in RFCs, and when will the RFC Editor
+   adopt a more modern publication format.
 
-   At that time, while we understood the desire to move toward UTF-8 and
-   to have more modern outputs, we also routinely received emails from
-   individuals requesting that we send them plain-text files (instead of
-   pointing them to the website) because their Internet access was
-   limited.  We also regularly received complaints from rfc-editor.org
-   users whenever something on the site didn't work correctly with their
-   older browsers.  In short, we could not advance without leaving a
-   large number of users behind.
+   At that time, while we understood the desire to move toward
+   supporting a broader range of character sets and to have more modern
+   outputs, we also routinely received emails from individuals
+   requesting that we send them plain-text files (instead of pointing
+   them to the website) because their Internet access was limited.  We
+   also regularly received complaints from rfc-editor.org users whenever
+   something on the site didn't work correctly with their older
+   browsers.  In short, we could not advance without leaving a large
+   number of users behind.
 
    However, we now find ourselves on the precipice of change.  2019
    promises to be a BIG year for the RFC Series, as we expect to
    transition from publishing plaintext, ASCII-only files to publishing
-
-
-
-
-Flanagan               Expires September 19, 2019              [Page 18]
-
-Internet-Draft             Fifty Years of RFCs                March 2019
-
-
    multiple file formats (XML, HTML, PDF/A-3, and TXT) that allow both
-   UTF-8 and SVG art.
+   non-ASCII characters and SVG art.
 
    Interestingly enough, I find that the RFC Editor has been in an
    almost constant state of change since I joined the team, even though
@@ -1027,9 +1057,17 @@ Internet-Draft             Fifty Years of RFCs                March 2019
    aim for openness and communication, but recognize that for protocols
    and other information to support interoperability, there must be
    points of stability to build from.  Small-time app developers to
-   multi-billion dollar companies are on the same footing.  And anyone
-   can look back at a point in time and understand what was done, and
-   why.
+   multi-billion dollar companies are on the same footing.  Anyone
+
+
+
+Flanagan                 Expires October 5, 2019               [Page 19]
+
+Internet-Draft             Fifty Years of RFCs                April 2019
+
+
+   should be able to look back at a point in time and understand what
+   was done, and why.
 
    While the informality has given way to increased structure, the
    openness and solid foundation that the Series provides must continue.
@@ -1057,15 +1095,6 @@ Internet-Draft             Fifty Years of RFCs                March 2019
 
    RFCs have been digital documents since very early in the days of the
    Series.  While not always published in US-ASCII, that format has been
-
-
-
-
-Flanagan               Expires September 19, 2019              [Page 19]
-
-Internet-Draft             Fifty Years of RFCs                March 2019
-
-
    the canonical format for decades.  The fact that this format has
    lasted through so much evolution and change is remarkable.
 
@@ -1073,16 +1102,26 @@ Internet-Draft             Fifty Years of RFCs                March 2019
    the expectations and requirements of users today.  The entire field
    of online document presentation, consumption, and preservation, has
    in some cases only been invented years after the first RFC was
-   published.  While it can and has) been argued that those newer fields
-   and their tools have not had a chance to stand the test of time, the
-   RFC Series Editor, in consultation with the community, started a
-   concerted effort in 2012 to bring the RFC Series into alignment with
-   a new array of possibilities for preservation and display started.
+   published.  While it can (and has) been argued that those newer
+   fields and their tools have not had a chance to stand the test of
+   time, the RFC Series Editor, in consultation with the community,
+   started a concerted effort in 2012 to bring the RFC Series into
+   alignment with a new array of possibilities for preservation and
+   display.
 
    Information about the current RFC format project, the reasoning and
    requirements for the changes underway today, can be found in
    [RFC7990].  With the advent of these changes, the door has been
    opened to consider further changes in the future as the
+
+
+
+
+Flanagan                 Expires October 5, 2019               [Page 20]
+
+Internet-Draft             Fifty Years of RFCs                April 2019
+
+
    specifications for archiving digital material evolves, and as the
    expectation of web development advances.
 
@@ -1114,14 +1153,6 @@ Internet-Draft             Fifty Years of RFCs                March 2019
    As the Internet evolves, expectations and possibilities evolve, too.
    Over the next fifty years, the Series will continue demonstrate a
    balance between the need to stay true to the original mission of
-
-
-
-Flanagan               Expires September 19, 2019              [Page 20]
-
-Internet-Draft             Fifty Years of RFCs                March 2019
-
-
    publication and preservation, while also staying relevant to the
    needs of the authors and consumers of RFCs.  The tension in balancing
    those needs rests on the RFC Editor and the community to resolve.  We
@@ -1133,6 +1164,19 @@ Internet-Draft             Fifty Years of RFCs                March 2019
               IAB, ""IAB Minutes 1988-07-12"", July 1988,
               <https://www.iab.org/documents/minutes/minutes-1988/
               iab-minutes-1988-07-12/>.
+
+   [IETF1]    "First IETF; January 16-17, 1986; San Diego, California",
+              January 1986,
+              <https://www.ietf.org/old/2009/proceedings/prior29/
+              IETF01.pdf>.
+
+
+
+
+Flanagan                 Expires October 5, 2019               [Page 21]
+
+Internet-Draft             Fifty Years of RFCs                April 2019
+
 
    [ISI-to-AMS]
               The IETF Administrative Support Activity, "RFC Production
@@ -1168,16 +1212,6 @@ Internet-Draft             Fifty Years of RFCs                March 2019
               DOI 10.17487/RFC0748, April 1978,
               <https://www.rfc-editor.org/info/rfc748>.
 
-
-
-
-
-
-Flanagan               Expires September 19, 2019              [Page 21]
-
-Internet-Draft             Fifty Years of RFCs                March 2019
-
-
    [RFC1000]  Reynolds, J. and J. Postel, "Request For Comments
               reference guide", RFC 1000, DOI 10.17487/RFC1000, August
               1987, <https://www.rfc-editor.org/info/rfc1000>.
@@ -1186,6 +1220,24 @@ Internet-Draft             Fifty Years of RFCs                March 2019
               Activities Board, "IAB official protocol standards",
               RFC 1083, DOI 10.17487/RFC1083, December 1988,
               <https://www.rfc-editor.org/info/rfc1083>.
+
+   [RFC1122]  Braden, R., Ed., "Requirements for Internet Hosts -
+              Communication Layers", STD 3, RFC 1122,
+              DOI 10.17487/RFC1122, October 1989,
+              <https://www.rfc-editor.org/info/rfc1122>.
+
+
+
+
+Flanagan                 Expires October 5, 2019               [Page 22]
+
+Internet-Draft             Fifty Years of RFCs                April 2019
+
+
+   [RFC1123]  Braden, R., Ed., "Requirements for Internet Hosts -
+              Application and Support", STD 3, RFC 1123,
+              DOI 10.17487/RFC1123, October 1989,
+              <https://www.rfc-editor.org/info/rfc1123>.
 
    [RFC1150]  Malkin, G. and J. Reynolds, "FYI on FYI: Introduction to
               the FYI Notes", RFC 1150, DOI 10.17487/RFC1150, March
@@ -1215,43 +1267,50 @@ Internet-Draft             Fifty Years of RFCs                March 2019
               Publication Service", RFC 4714, DOI 10.17487/RFC4714,
               October 2006, <https://www.rfc-editor.org/info/rfc4714>.
 
-   [RFC4744]  Lear, E. and K. Crozier, "Using the NETCONF Protocol over
-              the Blocks Extensible Exchange Protocol (BEEP)", RFC 4744,
-              DOI 10.17487/RFC4744, December 2006,
-              <https://www.rfc-editor.org/info/rfc4744>.
-
    [RFC4844]  Daigle, L., Ed. and Internet Architecture Board, "The RFC
               Series and RFC Editor", RFC 4844, DOI 10.17487/RFC4844,
               July 2007, <https://www.rfc-editor.org/info/rfc4844>.
 
-
-
-
-
-
-Flanagan               Expires September 19, 2019              [Page 22]
-
-Internet-Draft             Fifty Years of RFCs                March 2019
-
+   [RFC4845]  Daigle, L., Ed. and Internet Architecture Board, "Process
+              for Publication of IAB RFCs", RFC 4845,
+              DOI 10.17487/RFC4845, July 2007,
+              <https://www.rfc-editor.org/info/rfc4845>.
 
    [RFC4846]  Klensin, J., Ed. and D. Thaler, Ed., "Independent
               Submissions to the RFC Editor", RFC 4846,
               DOI 10.17487/RFC4846, July 2007,
               <https://www.rfc-editor.org/info/rfc4846>.
 
+
+
+
+
+Flanagan                 Expires October 5, 2019               [Page 23]
+
+Internet-Draft             Fifty Years of RFCs                April 2019
+
+
    [RFC5540]  Editor, RFC., "40 Years of RFCs", RFC 5540,
               DOI 10.17487/RFC5540, April 2009,
               <https://www.rfc-editor.org/info/rfc5540>.
 
-   [RFC5629]  Rosenberg, J., "A Framework for Application Interaction in
-              the Session Initiation Protocol (SIP)", RFC 5629,
-              DOI 10.17487/RFC5629, October 2009,
-              <https://www.rfc-editor.org/info/rfc5629>.
+   [RFC5620]  Kolkman, O., Ed. and IAB, "RFC Editor Model (Version 1)",
+              RFC 5620, DOI 10.17487/RFC5620, August 2009,
+              <https://www.rfc-editor.org/info/rfc5620>.
 
    [RFC5742]  Alvestrand, H. and R. Housley, "IESG Procedures for
               Handling of Independent and IRTF Stream Submissions",
               BCP 92, RFC 5742, DOI 10.17487/RFC5742, December 2009,
               <https://www.rfc-editor.org/info/rfc5742>.
+
+   [RFC5743]  Falk, A., "Definition of an Internet Research Task Force
+              (IRTF) Document Stream", RFC 5743, DOI 10.17487/RFC5743,
+              December 2009, <https://www.rfc-editor.org/info/rfc5743>.
+
+   [RFC5746]  Rescorla, E., Ray, M., Dispensa, S., and N. Oskov,
+              "Transport Layer Security (TLS) Renegotiation Indication
+              Extension", RFC 5746, DOI 10.17487/RFC5746, February 2010,
+              <https://www.rfc-editor.org/info/rfc5746>.
 
    [RFC6360]  Housley, R., "Conclusion of FYI RFC Sub-Series", RFC 6360,
               DOI 10.17487/RFC6360, August 2011,
@@ -1282,12 +1341,9 @@ Internet-Draft             Fifty Years of RFCs                March 2019
 
 
 
-
-
-
-Flanagan               Expires September 19, 2019              [Page 23]
+Flanagan                 Expires October 5, 2019               [Page 24]
 
-Internet-Draft             Fifty Years of RFCs                March 2019
+Internet-Draft             Fifty Years of RFCs                April 2019
 
 
 Appendix A.  Contributors
@@ -1341,4 +1397,4 @@ Author's Address
 
 
 
-Flanagan               Expires September 19, 2019              [Page 24]
+Flanagan                 Expires October 5, 2019               [Page 25]
